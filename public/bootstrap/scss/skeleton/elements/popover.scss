@@ -1,0 +1,59 @@
+@import '../config.scss';
+
+.popover-container {
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-width: .2rem;
+  display: block;
+
+
+  .popover {
+    position: relative;
+    display: block;
+    float: left;
+    width: 260px;
+    margin: 1.25rem;
+  }
+}
+
+.bs-popover-top .arrow,
+.bs-popover-bottom .arrow {
+  left: 50%;
+}
+
+.bs-popover-left .arrow,
+.bs-popover-right .arrow {
+  top: 50%;
+}
+
+
+.popover {
+  box-shadow: $box-shadow;
+  border: none;
+  border-radius: 3px;
+  color: inherit;
+
+  .arrow:before {
+    border:none;
+  }
+
+  .popover-header {
+    background-color: $white;
+    border-bottom: none;
+    margin-top: 10px;
+  }
+
+  .popover-body {
+    color: inherit;
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+
+
+  .popover-header + .popover-body {
+    padding: 10px 15px;
+  }
+
+}

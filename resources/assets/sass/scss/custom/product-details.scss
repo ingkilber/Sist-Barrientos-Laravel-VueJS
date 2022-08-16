@@ -1,0 +1,196 @@
+.productsLayout{
+    padding:10px;
+    .img-thumbnail{
+        width: 100%;
+    }
+    .title{
+        padding:10px 0px;
+    }
+    .productInfo{
+        tr{
+            line-height: 1.9;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .pxs-0{
+        padding-right: 0 !important;
+    }
+}
+
+
+
+/*catageroy modal css*/
+.c_input{
+    width: 18.5em;
+}
+span.pull-right.dpIcon {
+    position: absolute;
+    left: 19em;
+    top: 0.5em;
+}
+span.add_icon.pull-right {
+    position: absolute;
+    left: 19em;
+    top: 1.7em;
+}
+
+.selectField{
+    width:330px!important;
+}
+.dropbtn {
+    background-color: #ffffff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #fff;
+}
+#myInput {
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding:14px 20px 12px 10px!important;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 328px!important;
+}
+#myInput:focus {outline: 3px solid #ddd;}
+.firstInput{
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.firstInput:focus {outline: 3px solid #ddd;}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 0px!important;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 300px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 99;
+    padding-right: 0px!important;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+input#dropbtn {
+    width: 20.8em;
+}
+.dropdown span a:hover {
+    background-color: #f0f2f7;
+    box-shadow: 0px 0px 10px;
+    transparent: 30%;
+    transform: translate(1px, 3px);
+    position: relative;
+
+
+}
+.show {display: block;padding-right: 0px!important;}
+/* end category modal css*/
+
+/*brand modal css */
+#myInputBrand {
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding:14px 20px 12px 10px!important;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 328px!important;
+}
+/*end brand csss*/
+
+/*group modal css*/
+#myInputGroup{
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding:14px 20px 12px 10px!important;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 328px!important;
+}
+/*end group modal css*/
+
+/*unit modal css*/
+#myInputUnit{
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding:14px 20px 12px 10px!important;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 328px!important;
+}
+/*end unit modal css*/
+
+/*tax modal css*/
+#myInputTax{
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding:14px 20px 12px 10px!important;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 328px!important;
+}
+.taxSearch{
+    top:20px!important;
+}
+/*end tax modal css*/
+
+
+
+
+
+
+
+
+.product-import-uploading{
+    width: 100%;
+}
+.product-import-uploading-wrapper{
+    display: table;
+    margin: 0 auto;
+}
+.product-import-uploading-loader{
+    display:table-cell;
+}
+.product-import-uploading-message{
+    display: table-cell;
+    vertical-align: middle;
+}
+.import-button-preview{
+    bottom: 2%;
+    position: fixed;
+}
+@media (max-width: 575px) {
+    .productsLayout{
+        .productInfo{
+            margin: 0% 5%;
+            padding-top:10px;
+        }
+    }
+ }

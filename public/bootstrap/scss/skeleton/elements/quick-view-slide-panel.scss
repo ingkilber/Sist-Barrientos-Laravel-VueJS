@@ -1,0 +1,78 @@
+@import "../config.scss";
+
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $overlay-bg;
+  opacity: $overlay-opacity;
+  z-index: 9999;
+  display: none;
+}
+
+body.quick-panel-open {
+  overflow: hidden;
+
+  .body-overlay {
+    display: block;
+  }
+
+  .quick-view-panel {
+    visibility: visible;
+
+    .quick-avatar-cover {
+      height: $quick-view-avatar-cover-height;
+      background: $quick-view-avatar-cover-bg;
+    }
+
+    .avatar-card {
+      height: $quick-view-avatar-card-height;
+      width: $quick-view-avatar-card-width;
+      margin: $quick-view-avatar-card-margin;
+    }
+  }
+
+  .close {
+    font-size: $quick-view-panel-close-font-size;
+    padding: $quick-view-panel-close-padding !important;
+    color: $quick-view-close-icon-color;
+    cursor: pointer;
+    float: right;
+    line-height: 20px;
+    position: absolute;
+    right: $quick-view-panel-close-right;
+    top: $quick-view-panel-close-top;
+    font-weight: normal;
+    outline: none;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+}
+
+.quick-view-panel {
+  overflow: scroll;
+  background: $quick-view-panel-bg;
+  padding: $quick-view-panel-padding;
+  position: fixed;
+  width: $quick-view-panel-width;
+  max-width: $quick-view-panel-mx-width;
+  height: 100vh;
+  top: 0;
+  right: -$quick-view-panel-mx-width;
+  z-index: 10000;
+  visibility: hidden;
+  @include transition(right 400ms cubic-bezier(0.05, 0.74, 0.27, 0.99) 0s);
+}
+
+//Media query of quick panel view
+@media (max-width: $media-extra-small-mobile-down) {
+  .quick-view-panel {
+    width: $quick-view-panel-width-small-mobile;
+    max-width: $quick-view-panel-width-small-mobile;
+  }
+}

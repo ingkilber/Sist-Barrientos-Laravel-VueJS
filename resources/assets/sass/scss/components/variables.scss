@@ -1,0 +1,50 @@
+//Custom colors
+$app-bg-color: #f0f2f7;
+$app-color: #535561;
+$side-bar-bg-color: #2d2f3e;
+$border-color: #ebedf2;
+$loader-color:#45a2ff;
+$cancel-btn-color: #9e9f9d;
+$link-color: #175eab;
+
+//General colors
+$white: #ffffff;
+$black: #000000;
+$primary: #4a97fd;
+$secondary: #a1a5ac;
+$success: #63b870;
+$danger: #e46370;
+$info: #5bb5c6;
+$warning: #ffcd4d;
+$light: $white;
+$dark: #343a40;
+$gallery: #eeeeee;
+$mercury: #e7e7e7;
+$athens-gray: #E4E7EA;
+$silver: #c7c6c6;
+$punch: #dc3545;
+$hover: #eee;
+$concrete: #F3F3F3;
+$alabaster: #F8F8F8;
+$alto: #D3D3D3;
+$accent: #26c7db;
+$transparent: #ffffff;
+$green: #34bfa3;
+$dark-gray: #828282;
+$disable: #9E9E9E;
+
+//Loader border
+$loader-border-size: 4px solid;
+$loader-border: $loader-border-size $loader-color;
+
+//Custom border color
+$main-layout-card-border: 1px solid $border-color;
+
+//Custom card box-shadow
+$main-layout-card-box-shadow: 0 1px 15px 1px rgba(60, 55, 68, 0.15);
+
+//Main layout variables
+$main-layout-card-padding: 24px;
+
+//
+$card-border-radius: 0.25rem;

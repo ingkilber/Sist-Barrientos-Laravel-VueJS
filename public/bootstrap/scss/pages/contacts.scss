@@ -1,0 +1,34 @@
+@import '../skeleton/config.scss';
+
+.card-list-container {
+  .card.avatar-card .card-img-top {
+    height: 17rem;
+  }
+
+  // Card list column media query
+  @media (min-width: 1600px) {
+    .card-item {
+      flex: 0 0 20% !important;
+    }
+  }
+
+  @media (min-width: 1400px) and (max-width: 1599px) {
+    .card-item {
+      flex: 0 0 25%;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1399px) {
+    .card-item {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 680px) {
+    .card-item {
+      flex: 0 0 100% ;
+      max-width: 100%;
+    }
+  }
+}

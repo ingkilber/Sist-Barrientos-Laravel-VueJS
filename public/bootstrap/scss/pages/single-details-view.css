@@ -1,0 +1,83 @@
+.details-container {
+  width: 100%; }
+  .details-container .details-left-panel {
+    width: 350px;
+    vertical-align: top; }
+    .details-container .details-left-panel .details-item-img {
+      width: 100%;
+      border-radius: 2px; }
+    .details-container .details-left-panel .item-info-box {
+      margin: 1rem 0 0 0; }
+  .details-container .details-right-panel {
+    padding: 0 0 0 30px;
+    vertical-align: top; }
+    .details-container .details-right-panel .details-item-about-box {
+      margin: 1rem 0 0 0; }
+    .details-container .details-right-panel .details-item-owner-box {
+      margin-top: 1.8rem; }
+    .details-container .details-right-panel .details-item-owner-box > .item-owner-actions-box {
+      text-align: right; }
+      .details-container .details-right-panel .details-item-owner-box > .item-owner-actions-box .btn {
+        margin-bottom: 1rem; }
+      .details-container .details-right-panel .details-item-owner-box > .item-owner-actions-box .btn:not(:first-child) {
+        margin-left: 1rem; }
+    .details-container .details-right-panel .details-item-timeline-box {
+      margin: 10px 0 0 0; }
+      .details-container .details-right-panel .details-item-timeline-box .tab-content {
+        background-color: transparent; }
+    .details-container .details-right-panel .details-item-tabs-box {
+      margin: 30px 0 0 0; }
+      .details-container .details-right-panel .details-item-tabs-box .tab-content-header {
+        margin: 10px 0 25px 0; }
+        .details-container .details-right-panel .details-item-tabs-box .tab-content-header h5 {
+          display: inline-block;
+          margin-top: 8px; }
+        .details-container .details-right-panel .details-item-tabs-box .tab-content-header button {
+          float: right;
+          margin: 0 0 0 20px; }
+      .details-container .details-right-panel .details-item-tabs-box table {
+        margin-bottom: 20px; }
+        .details-container .details-right-panel .details-item-tabs-box table tr.remove-visibility td:last-child {
+          width: 100px;
+          text-align: right; }
+      .details-container .details-right-panel .details-item-tabs-box .job-tab-container,
+      .details-container .details-right-panel .details-item-tabs-box .personal-tab-container {
+        margin-top: 10px; }
+        .details-container .details-right-panel .details-item-tabs-box .job-tab-container .form-group,
+        .details-container .details-right-panel .details-item-tabs-box .personal-tab-container .form-group {
+          margin-bottom: 1rem; }
+  .details-container .item-sub-title {
+    margin: 0 0 0.25rem 0;
+    font-weight: bold; }
+
+@media (max-width: 575px) {
+  .details-container {
+    display: block !important; }
+    .details-container .details-left-panel {
+      display: block !important;
+      width: 100%; }
+    .details-container .details-right-panel {
+      padding: 0;
+      margin-top: 1rem; }
+    .details-container .details-item-status-box .card-body {
+      margin: 15px 0; }
+    .details-container .item-owner-actions-box {
+      margin-top: 1rem; }
+      .details-container .item-owner-actions-box .btn {
+        display: block;
+        margin: 0 0 1rem 0 !important; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .details-container .details-left-panel {
+    width: 300px !important; }
+  .details-container .item-owner-actions-box .btn {
+    display: block;
+    margin: 0 0 1rem 0 !important; } }
+@media (min-width: 576px) and (max-width: 860px) {
+  .details-container .item-owner-actions-box .btn {
+    display: block;
+    margin: 0 0 1rem 0 !important; } }
+@media (max-width: 1225px) {
+  .card-deck .card-body {
+    flex: 1 1 auto !important; } }
+
+/*# sourceMappingURL=single-details-view.css.map */

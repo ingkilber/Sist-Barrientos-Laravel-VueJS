@@ -1,0 +1,8 @@
+.attendance-list-container {
+  padding: 0 0 30px 0; }
+
+@media (max-width: 767px) {
+  .attendance-list-container {
+    padding: 0; } }
+
+/*# sourceMappingURL=attendance-list.css.map */

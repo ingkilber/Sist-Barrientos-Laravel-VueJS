@@ -1,0 +1,35 @@
+.accordion .card {
+  margin: 0 0 15px 0; }
+.accordion .card-header {
+  background: #ffffff;
+  padding: 0px; }
+.accordion .card-title {
+  margin: 0px; }
+  .accordion .card-title a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px; }
+.accordion .card-title [class^="icon-"]:before,
+.accordion .card-title[class*=" icon-"]:before {
+  margin-left: 0; }
+.accordion .card-title span i {
+  margin: 0 15px 0 0; }
+.accordion .card-title a .icon {
+  font-size: 1.4rem;
+  line-height: 22px;
+  float: right;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+.accordion .card-title a:not(.collapsed) .icon {
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+.accordion .accordion-sub-item-body {
+  padding: 0 20px 10px 25px; }
+
+/*# sourceMappingURL=accordion.css.map */

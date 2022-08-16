@@ -1,0 +1,87 @@
+@import 'variables';
+
+$action-button: 20;
+$action-button-transition: 200;
+
+.action-button-wrapper {
+  display: inline-block;
+  padding: 0 1rem;
+  position: relative;
+  right: 0;
+  .action-button-container {
+    position: absolute;
+    right: 3rem;
+    top: -0.5rem;
+    visibility: hidden;
+    text-align: right;
+    display: flex;
+  }
+  .action-button {
+    text-align: center;
+    margin: 0rem 0.2rem;
+    display: inline-block;
+    color: $white;
+    position: relative;
+    overflow: hidden;
+    z-index: -11;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $app-color;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    vertical-align: middle;
+    transform: scale(0);
+    visibility: hidden;
+    transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+
+    i {
+      width: inherit;
+      height: inherit;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      font-size: 1.6rem;
+      line-height: 35px;
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+
+  i {
+    vertical-align: middle;
+    line-height: 23px;
+    position: relative;
+    z-index: 5;
+  }
+
+  &:hover {
+    cursor: pointer;
+    .la-1x{
+      color:#1b1e21;
+    }
+
+  }
+}
+
+.active {
+  .action-button-container {
+    visibility: visible;
+    &:hover {
+      cursor: pointer;
+    }
+    .action-button {
+      visibility: visible !important;
+      z-index: 1 !important;
+      @for $i from 1 through $action-button {
+        &:nth-last-of-type(#{$i}) {
+          transform: scale(1) !important;
+          transition-delay: $action-button-transition+ms !important;
+        }
+        $action-button-transition: $action-button-transition + 50;
+      }
+    }
+  }
+}

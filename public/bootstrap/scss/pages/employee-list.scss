@@ -1,0 +1,16 @@
+@import '../skeleton/config.scss';
+
+.employee-list-page {
+  .employee-list-container {
+    padding: $list-container-padding;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $media-sm-down) {
+  .employee-list-page {
+    .employee-list-container {
+      padding: 0;
+    }
+  }
+}

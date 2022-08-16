@@ -1,0 +1,124 @@
+@import '../skeleton/config.scss';
+
+.team-container {
+  width: 100%;
+
+  .team-users-header {
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: $font-weight-md;
+  }
+
+  .todo-list {
+    margin-top: 15px;
+
+    .media {
+      padding: 10px 0;
+    }
+  }
+
+  .team-color-box {
+    width: 20px;
+    height: 20px;
+    background-color: $danger;
+    margin-right: 12px;
+    border-radius: $radius;
+  }
+
+  .team-title {
+    font-size: 1.5rem;
+    font-weight: $font-weight-md;
+    color: $primary;
+    cursor: $click-cursor;
+    line-height: 1.4rem;
+  }
+
+  .team-member {
+    float: left;
+    position: relative;
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover .delete {
+      display: block;
+    }
+  }
+
+  .card-deck {
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .card-body {
+      margin: 0;
+    }
+
+    // Responsive for team card view
+    @media (min-width: 1600px) {
+      .card {
+        flex: 0 0 31.1%;
+      }
+    }
+
+    @media (max-width: 1599px) {
+      .card {
+        flex: 1 1 42%;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .card {
+        flex: 1 1 94%;
+      }
+    }
+
+    @media (max-width: $media-xs-down) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}
+
+//Role quick view
+.role-header {
+  margin: 25px 0 0 0;
+  text-align: center;
+}
+
+.role-container {
+  margin-top: 30px;
+
+  .created-info {
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+
+  .role-block {
+    position: relative;
+    padding: 1rem 1.5rem;
+    background-color: #f7f7f7;
+
+    .media:first-child {
+      border-top: none;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+    }
+
+    .media:last-child {
+      border-bottom: none;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+
+  }
+  .role-title {
+    font-size: 1.1rem;
+    font-weight: $font-weight-lg;
+    color: $font-color;
+    margin-bottom: .75rem;
+  }
+}

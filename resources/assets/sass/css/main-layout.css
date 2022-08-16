@@ -1,0 +1,134 @@
+.main-layout-card{
+    background: #fff;
+    box-shadow: 0 1px 15px 1px rgba(60, 55, 68, 0.15) !important;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.main-layout-card-header,.main-layout-card-header-with-button{
+    padding: 24px;
+    border-bottom: 1px solid #ebedf2;
+}
+.main-layout-card-header-with-button{
+    padding-top: 19px;
+    padding-bottom: 20px;
+}
+.main-layout-card-content
+{
+    padding: 24px;
+}
+.main-layout-card-content-wrapper
+{
+    display: table;
+    width: 100%;
+}
+.main-layout-card-header-contents
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-layout-card-second
+{
+    margin-left: 20px;
+}
+.modal-layout-header
+{
+    padding: 1.6rem 0.85rem;
+    border-bottom: 1px solid #ebedf2;
+}
+
+.modal-layout-content
+{
+    padding: 1.6rem 0.85rem;
+    max-height: 75vh !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal-layout-fixed-height
+{
+    height: 65vh;
+}
+.modal-layout
+{
+    top: 0 !important;
+    bottom: 0;
+    max-height: fit-content;
+    background-color: #ffffff !important;
+    overflow: initial !important;
+}
+.modal-loader-parent
+{
+    display: table;
+    height: 55vh;
+}
+.modal-loader-child
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+}
+.modal-layout-content .time-slot-wrapper
+{
+    max-height: 23vh;
+}
+.modal-layout .time-slot-space-wrapper
+{
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px)
+{
+    .modal-layout
+    {
+        width: 100%;
+        top: 0 !important;
+        max-height: 100%;
+    }
+    .main-layout-card-second
+    {
+        margin-left: 0rem;
+    }
+    .modal-layout-content
+    {
+        max-height: 93vh !important;
+    }
+    .modal-layout-fixed-height
+    {
+        height: 93vh;
+    }
+    .modal-loader-parent {
+        height: 81vh;
+    }
+    .modal-layout-content .time-slot-wrapper
+    {
+        max-height: 50vh;
+    }
+    .import-preview-content-view {
+        max-width: 800px !important;
+    }
+
+}
+@media (max-width: 600px)
+{
+    .modal-layout-content .time-slot-wrapper
+    {
+        max-height: 34vh;
+    }
+    .modal-layout-content
+    {
+        max-height: 91vh !important;
+    }
+    .modal-layout-fixed-height
+    {
+        height: 89vh;
+    }
+    .main-layout-card{
+        margin-bottom: 10px;
+    }
+    .main-layout-card-header,.main-layout-card-header-with-button {
+        padding: 10px;
+    }
+    .main-layout-card-content
+    {
+        padding:10px;
+    }
+}

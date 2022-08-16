@@ -1,0 +1,182 @@
+@import '../components/variables';
+
+.preview-main-layout-content {
+  padding: 0 !important;
+  max-height: 75vh !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main-layout-wrapper {
+  margin-left: 10rem;
+  margin-top: 4.28rem;
+  padding: 0.75rem;
+
+  .all-products {
+    max-height: 82vh;
+    padding: 0 2px 0 3px;
+    overflow: auto;
+  }
+}
+
+.main-layout-card {
+  background: $white;
+  box-shadow: $main-layout-card-box-shadow;
+  border-radius: $card-border-radius;
+
+  .main-layout-card-header, .main-layout-card-header-with-button {
+    padding: $main-layout-card-padding;
+    border-bottom: $main-layout-card-border;
+  }
+
+  .main-layout-card-content {
+    padding: $main-layout-card-padding;
+  }
+
+}
+
+.main-layout-card-header-with-button {
+  padding-top: 17px !important;
+  padding-bottom: 17px !important;
+}
+
+.main-layout-card-content-wrapper {
+  display: table;
+  width: 100%;
+}
+
+.main-layout-card-header-contents {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-layout-header {
+  padding: $main-layout-card-padding;
+  border-bottom: $main-layout-card-border;
+
+  .icon-modal-cross {
+    margin-right: -4px;
+  }
+}
+
+.modal-layout-content {
+  padding: $main-layout-card-padding;
+  max-height: 75vh !important;
+}
+
+.modal {
+  .modal-layout-content {
+    padding-top: 16px;
+  }
+}
+
+.confirm-delete-modal {
+  max-width: 100vw;
+  margin: 0;
+  background: rgba(255, 255, 255, 1);
+
+  .modal-content {
+    border-radius: 0;
+    height: 100vh;
+    border: 0;
+  }
+}
+
+.scroll-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .main-layout-wrapper {
+    margin-left: 0;
+  }
+}
+
+//.modal-layout-fixed-height
+//{
+//  height: 65vh;
+//}
+//.modal-layout
+//{
+//  top: 0 !important;
+//  bottom: 0;
+//  max-height: fit-content;
+//  background-color: #ffffff !important;
+//  overflow: initial !important;
+//}
+
+//.modal-layout-content .time-slot-wrapper
+//{
+//  max-height: 23vh;
+//}
+//.modal-layout .time-slot-space-wrapper
+//{
+//  width: 100%;
+//}
+//@media only screen and (max-width: 992px)
+//{
+//  .modal-layout
+//  {
+//    width: 100%;
+//    top: 0 !important;
+//    max-height: 100%;
+//  }
+//  .main-layout-card-second
+//  {
+//    margin-left: 0rem;
+//  }
+.modal-layout-content {
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+//  .modal-layout-fixed-height
+//  {
+//    height: 93vh;
+//  }
+//  .modal-loader-parent {
+//    height: 81vh;
+//  }
+//  .modal-layout-content .time-slot-wrapper
+//  {
+//    max-height: 50vh;
+//  }
+//}
+//@media (max-width: 600px)
+//{
+//  .modal-layout-content .time-slot-wrapper
+//  {
+//    max-height: 34vh;
+//  }
+//  .modal-layout-content
+//  {
+//    max-height: 91vh !important;
+//  }
+//  .modal-layout-fixed-height
+//  {
+//    height: 89vh;
+//  }
+//  .main-layout-card{
+//    margin-bottom: 10px;
+//  }
+//  .main-layout-card-header,.main-layout-card-header-with-button {
+//    padding: 10px;
+//  }
+//  .main-layout-card-content
+//  {
+//    padding:10px;
+//  }
+//}
+.modal-layout-contents {
+  padding: 1.6rem 0.85rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.big-modal-dialogs {
+  max-width: 65vw;
+}

@@ -1,0 +1,63 @@
+.close,
+.close:focus,
+.close:active {
+  cursor: pointer;
+  outline: none; }
+
+.modal-no-footer .modal-body {
+  padding-bottom: 1.5rem; }
+
+.modal-content {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  height: 100%; }
+  .modal-content .close {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    padding: 1.5rem; }
+
+.modal-header {
+  padding: 1.5rem 2rem;
+  background: transparent;
+  color: #999999;
+  border-bottom: 0rem; }
+
+.modal-body {
+  padding: 0rem 2rem; }
+  .modal-body .form-group:last-child {
+    margin-bottom: 0rem; }
+
+.modal-footer {
+  display: block;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-top: 0rem; }
+  .modal-footer .left-item {
+    float: left;
+    display: inline-flex; }
+    .modal-footer .left-item .btn:not(:last-child) {
+      margin-right: 0.8rem; }
+  .modal-footer .right-item {
+    float: right;
+    display: inline-flex; }
+    .modal-footer .right-item .btn:not(:first-child) {
+      margin-left: 0.8rem; }
+  .modal-footer .link-item {
+    margin-top: 0.5rem;
+    text-decoration: none; }
+
+.modal-xs {
+  max-width: 18.8rem; }
+
+.modal-sm {
+  max-width: 37.6rem; }
+
+.modal-lg {
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  margin: 0rem; }
+
+/*# sourceMappingURL=modal.css.map */

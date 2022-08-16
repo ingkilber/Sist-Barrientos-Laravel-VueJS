@@ -1,0 +1,25 @@
+body
+{
+    font-family: "Open Sans", "Roboto";
+    background-color: #f7f7f7 !important;
+}
+.margin-fix
+{
+    margin-bottom: 0 !important;
+}
+.no-margin
+{
+    margin: 0 !important;
+}
+.right
+{
+    float: right !important;
+}
+.showContent
+{
+    display: default;
+}
+.hideContent
+{
+    display: none;
+}

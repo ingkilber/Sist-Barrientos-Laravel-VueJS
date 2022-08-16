@@ -1,0 +1,35 @@
+{
+    "core": {
+        "min_php_version" : "7.1.0"
+    },
+
+    "permissions" : {
+        "storage/" : "775",
+        "bootstrap/cache/" : "775",
+        ".env" : "777",
+        "config/" : "755"
+    },
+
+    "requirements" : {
+        "php" : [
+            "openssl",
+            "pdo",
+            "mbstring",
+            "tokenizer",
+            "JSON",
+            "cURL",
+            "bcMath",
+            "fileinfo",
+            "XML",
+            "ctype"
+        ],
+        "apache" : [
+            "mod_rewrite"
+        ]
+    },
+
+    "final" : {
+        "key" : true,
+        "publish" : false
+    }
+}

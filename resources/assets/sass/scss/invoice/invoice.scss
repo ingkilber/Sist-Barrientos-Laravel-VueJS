@@ -1,0 +1,73 @@
+.invoice-page-wrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
+
+  .thermal-invoice {
+    font-size: 12px !important;
+    font-weight: bold;
+    font-family: 'Helvetica', Arial, serif !important;
+    margin: 0 auto;
+
+    .invoice-header {
+      .app-name {
+        font-size: 25px !important;
+      }
+    }
+
+    table {
+      &.table {
+        .t-header {
+          tr {
+            th {
+              padding-top: 0.25rem;
+              padding-bottom: 0.25rem;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding-top: 0.2rem;
+              padding-bottom: 0.2rem;
+
+              &:first-child {
+                padding-left: 0;
+              }
+
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+
+        tr {
+          &.t-footer {
+            th, td {
+              border: 0 !important;
+              padding-top: 0.2rem;
+              padding-bottom: 0.2rem;
+
+              &:first-child {
+                padding-left: 0;
+              }
+
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+
+            td {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

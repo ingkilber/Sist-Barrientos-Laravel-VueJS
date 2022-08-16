@@ -1,0 +1,8 @@
+.employee-list-page .employee-list-container {
+  padding: 0 0 30px 0; }
+
+@media (max-width: 767px) {
+  .employee-list-page .employee-list-container {
+    padding: 0; } }
+
+/*# sourceMappingURL=employee-list.css.map */

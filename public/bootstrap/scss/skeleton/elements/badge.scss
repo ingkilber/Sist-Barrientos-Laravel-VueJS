@@ -1,0 +1,42 @@
+@import '../config.scss';
+
+.badge {
+  padding: $badge-padding;
+  border-radius: $badge-radius;
+  color: $badge-color;
+  font-size: $badge-font-size;
+  box-shadow: $badge-box-shadow;
+  margin-right: $badge-margin-right;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.badge-primary {
+  background-color: $badge-bg-primary;
+}
+
+.badge-secondary {
+  background-color: $badge-bg-secondary;
+}
+
+.badge-success {
+  background-color: $badge-bg-success;
+}
+
+.badge-danger {
+  background-color: $badge-bg-danger;
+}
+
+.badge-warning {
+  background-color: $badge-bg-warning;
+}
+
+.badge-light {
+  background-color: $badge-bg-light;
+}
+
+.badge-info {
+  background-color: $badge-bg-info;
+}

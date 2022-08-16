@@ -1,0 +1,31 @@
+.dashboard-wrapper
+{
+    padding: 0 1rem;
+}
+.dashboard-top-row-parent{
+    display: table;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.8rem;
+    border-radius: 8%;
+}
+.dashboard-top-row-child{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffffeb;
+}
+.dis-inline-block
+{
+    display:inline-block;
+    vertical-align: middle;
+}
+.dis-inline-block h5, .dis-inline-block small
+{
+    margin: 0 0 0 0.3rem !important;
+}
+.card-content h5
+{
+    margin-bottom: 0 !important;
+}

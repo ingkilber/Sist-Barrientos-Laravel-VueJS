@@ -1,0 +1,17 @@
+.leaves-container .details-item-tabs-box {
+  margin-top: -10px; }
+.leaves-container .tab-pane table {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee; }
+
+.leave-list-container {
+  padding: 0 0 30px 0; }
+
+@media (max-width: 767px) {
+  .tab-pane table {
+    margin-bottom: 10px !important; }
+
+  table.leave-summary-table td {
+    padding-left: 62%; } }
+
+/*# sourceMappingURL=leaves.css.map */

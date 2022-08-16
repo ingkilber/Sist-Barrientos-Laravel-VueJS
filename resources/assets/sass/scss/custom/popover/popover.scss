@@ -1,0 +1,84 @@
+$app-color:#535561;
+
+div[data-popover="foo"] {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 5px;
+  left: 12.6em!important;
+  top: -12px!important;
+  padding: 4px 18px;
+
+  width: 160px!important;
+}
+div[data-popover="foo1"] {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 5px;
+  left: -9.6em!important;
+  top: -23px!important;
+  width: 160px!important;
+  padding: 4px 18px;
+}
+#pop_mouse1,#pop_mouse2{
+  cursor:pointer;
+}
+#pop_mouse1:hover,#pop_mouse2:hover{
+  i.la.la-edit.myicon{
+    transition:0.3;
+    color: $app-color;
+    font-size:18px ;
+  }
+}
+i.la.la-edit.discount-all-item-popover {
+  left: -12.5em;
+  font-size: 16px;
+  padding-left: -11px;
+  position: absolute;
+  padding: 0px 5px;
+  color: black;
+}
+i.la.la-edit.discount-on-subtotal-popover {
+  left: -13.8em;
+  font-size: 16px;
+  padding-left: -11px;
+  position: absolute;
+  padding: 0px 5px;
+  color: black;
+}
+
+//shortcuts pages
+
+.form-group.col-md-4.re {
+  position: absolute;
+  left: 66%;
+  top: 34px;
+}
+.form-group.col-md-4 .ab{
+  position:relative;
+}
+.overflow-s{
+  overflow: hidden;
+
+}
+@media only screen and (max-width:700px)
+{
+  .form-group.col-md-8.col-sm-8.ab {
+    max-width: 74%;
+  }
+  .form-group.col-md-4.re {
+    position: absolute;
+    left: 77%;
+    top: 34px;
+  }
+
+
+
+}
+@media screen and (min-width: 300px) and (max-width: 660px) {
+  i.la.la-edit.discount-all-item-popover {
+    left: -12em !important;
+
+  }
+
+}
+

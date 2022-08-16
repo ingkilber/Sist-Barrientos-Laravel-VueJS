@@ -1,0 +1,84 @@
+.toggle-switch {
+  cursor: pointer;
+  width: 5rem;
+  margin: 0;
+  position: relative;
+  background-color: #eee;
+  border-radius: 2px;
+  overflow: hidden; }
+  .toggle-switch .on-button, .toggle-switch .off-button {
+    padding: 1rem 0;
+    border-radius: 2px;
+    font-size: 1rem;
+    color: #999999;
+    float: left;
+    text-align: center;
+    transition: all .4s; }
+  .toggle-switch .on-button {
+    width: 0;
+    background-color: #4a97fd; }
+  .toggle-switch .off-button {
+    width: 100%;
+    background-color: #eee; }
+  .toggle-switch .on-off-divider {
+    right: 3.05rem;
+    position: absolute;
+    padding: 0.9rem;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    top: 0.09rem;
+    transition: all 0.4s; }
+  .toggle-switch input {
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    left: 0; }
+    .toggle-switch input:checked ~ .on-button {
+      width: 100%;
+      background-color: #4a97fd; }
+    .toggle-switch input:checked ~ .off-button {
+      width: 0; }
+    .toggle-switch input:checked ~ .on-off-divider {
+      right: 0.15rem; }
+
+.toggle-pill {
+  width: 5rem;
+  border-radius: 10rem; }
+  .toggle-pill .on-button, .toggle-pill .off-button {
+    padding: 1rem 0;
+    border-radius: 10rem; }
+  .toggle-pill .on-off-divider {
+    padding: 0.9rem;
+    right: 3.1rem;
+    border-radius: 10rem; }
+  .toggle-pill input:checked ~ .on-off-divider {
+    right: 0.15rem; }
+
+.toggle-text {
+  height: 2rem; }
+  .toggle-text .on-button, .toggle-text .off-button {
+    padding: 0.2rem 0;
+    line-height: 1.57rem; }
+  .toggle-text .on-button {
+    color: #ffffff;
+    font-size: 0; }
+  .toggle-text .off-button {
+    color: #999999;
+    text-indent: 15px; }
+  .toggle-text input:checked ~ .on-button {
+    font-size: 1rem;
+    text-indent: -20px; }
+  .toggle-text input:checked ~ .off-button {
+    font-size: 0; }
+
+.toggle-sm {
+  width: 4rem; }
+  .toggle-sm .on-button, .toggle-sm .off-button {
+    padding: 12px 0; }
+  .toggle-sm .on-off-divider {
+    padding: 11px;
+    right: 40px;
+    top: 0.08rem; }
+
+/*# sourceMappingURL=toggle.css.map */

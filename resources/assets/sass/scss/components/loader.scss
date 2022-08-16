@@ -1,0 +1,41 @@
+@import 'variables';
+
+.large-loader-container
+{
+  height: 55vh;
+}
+.small-loader-container
+{
+  height: 25vh !important;
+}
+.loader {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: $loader-border-size #f3f3f3;
+  border-radius: 50%;
+  border-top: $loader-border;
+  border-right: $loader-border;
+  border-bottom: $loader-border;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1s linear infinite;
+}
+.loader-small
+{
+  width: 30px;
+  height: 30px;
+}
+.loader-large
+{
+  width: 80px;
+  height: 80px;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

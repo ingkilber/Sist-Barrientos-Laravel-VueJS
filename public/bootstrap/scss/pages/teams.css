@@ -1,0 +1,75 @@
+.team-container {
+  width: 100%; }
+  .team-container .team-users-header {
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 400; }
+  .team-container .todo-list {
+    margin-top: 15px; }
+    .team-container .todo-list .media {
+      padding: 10px 0; }
+  .team-container .team-color-box {
+    width: 20px;
+    height: 20px;
+    background-color: #e46370;
+    margin-right: 12px;
+    border-radius: 2px; }
+  .team-container .team-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #4a97fd;
+    cursor: pointer;
+    line-height: 1.4rem; }
+  .team-container .team-member {
+    float: left;
+    position: relative;
+    margin-left: 15px; }
+    .team-container .team-member:first-child {
+      margin-left: 0; }
+    .team-container .team-member:hover .delete {
+      display: block; }
+  .team-container .card-deck .card {
+    margin-bottom: 30px; }
+  .team-container .card-deck .card-body {
+    margin: 0; }
+  @media (min-width: 1600px) {
+    .team-container .card-deck .card {
+      flex: 0 0 31.1%; } }
+  @media (max-width: 1599px) {
+    .team-container .card-deck .card {
+      flex: 1 1 42%; } }
+  @media (max-width: 1024px) {
+    .team-container .card-deck .card {
+      flex: 1 1 94%; } }
+  @media (max-width: 575px) {
+    .team-container .card-deck .card {
+      flex: 1 1 100%; } }
+
+.role-header {
+  margin: 25px 0 0 0;
+  text-align: center; }
+
+.role-container {
+  margin-top: 30px; }
+  .role-container .created-info {
+    padding: 1rem 1.5rem;
+    width: 100%; }
+  .role-container .role-block {
+    position: relative;
+    padding: 1rem 1.5rem;
+    background-color: #f7f7f7; }
+    .role-container .role-block .media:first-child {
+      border-top: none;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px; }
+    .role-container .role-block .media:last-child {
+      border-bottom: none;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px; }
+  .role-container .role-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #999999;
+    margin-bottom: .75rem; }
+
+/*# sourceMappingURL=teams.css.map */

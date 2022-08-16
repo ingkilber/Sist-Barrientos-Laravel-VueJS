@@ -1,0 +1,367 @@
+@import '../components/variables';
+@import '../helper/place-holder';
+
+.side-bar
+{
+  display: unset;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: $side-bar-bg-color;
+  width: 10rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  animation: sidebar-slide-right 0.8s;
+  z-index: 1030;
+  font-weight: 300;
+
+    ul
+    {
+      padding: 0;
+
+      li
+      {
+        list-style: none;
+        height: 7rem;
+        width: 100.42%;
+      ;
+        &:hover i{
+          transition: color .3s;
+          color: #8387a5;
+        }
+
+        a
+        {
+          text-align: center;
+          color: #8387a5;
+          font-size: 0.9rem;
+          height: 100%;
+          display: inline-block;
+          vertical-align: middle;
+          width: 100%;
+
+          &:hover
+          {
+
+            text-decoration: none;
+          }
+
+          i{
+            color: #4e526d;
+            font-size: 2rem;
+            margin: 1.5rem auto 0;
+            width: 100%;
+          }
+          div{
+            font-weight: 300 !important;
+            font-size: 14px;
+          }
+        }
+      }
+      li.active-side-bar
+      {
+        background-color: #222435;
+
+        a{
+          color: #fefefe;
+          &:after{
+            @extend %custom-ticker;
+            transform: rotate(135deg);
+            background: linear-gradient(-45deg, #eff1f6 50%, transparent 50%);
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            right: -5.05rem;
+            top: -2.2rem;
+          }
+        }
+        i{
+          color: $accent;
+        }
+      }
+      li.active-hover:hover {
+        transition: background-color .3s;
+        background-color: #292b3a;
+      }
+      li.side-bar-logo
+      {
+        height: 68px !important;
+        display: table !important;
+        border-bottom: 1px solid #232435;
+        a{
+          display: table-cell !important;
+          vertical-align: middle;
+          img{
+            max-height: 64px;
+            max-width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+}
+
+
+@keyframes sidebar-slide-right {
+  0% {
+    left:-10%;
+  }
+  100% {
+    left:0;
+  }
+}
+
+
+//.img-link
+//{
+//  padding: 0 0.634rem;
+//  height: 64px;
+//}
+//
+//.logo
+//{
+//  max-height: 64px;
+//  vertical-align: middle;
+//  margin-top: -0.34rem;
+//}
+//#sidenav-overlay {
+//  z-index: 1 !important;
+//
+//}
+//.side-nav {
+//  top: 64px !important;
+//}
+//
+//#profile-dropdown {
+//  width: 17rem !important;
+//  box-shadow: none;
+//  background: rgba(255,255,255,0);
+//  padding: 0.8rem;
+//  margin: 0 -0.8rem;
+//}
+//#notification-dropdown {
+//  box-shadow: none;
+//  background: rgba(255,255,255,0);
+//  padding: 0.8rem;
+//  margin: 0 -0.8rem;
+//  max-height: none !important;
+//}
+//.dropdown-wrapper{
+//  background: #fff;
+//  box-shadow: 0 0 15px 2px rgba(60, 55, 68, 0.15);
+//  border-radius: 2px;
+//}
+//
+//.dropdown-header, .dropdown-footer a
+//{
+//  padding: 10px 10px !important;
+//  line-height: 1.5rem;
+//  font-weight: 500;
+//}
+//.dropdown-header{
+//  border-bottom: 1px solid #dddfe2;
+//}
+//.dropdown-footer{
+//  border-top: 1px solid #dddfe2;
+//}
+//
+//
+//.notification-view
+//{
+//  padding: 5px 5px !important;
+//}
+//.notification-view-parent{
+//  display: table;
+//  height: 100%;
+//}
+//.all-notification-view-parent{
+//  display: table
+//}
+//.all-notification-view-child{
+//  display: table-cell;
+//  vertical-align: middle;
+//  padding-left: 10px;
+//}
+//.all-notification-view-child:nth-of-type(1){
+//  padding-left: 0.5rem
+//}
+//.notification-view-child {
+//  display: table-cell;
+//  vertical-align: middle;
+//}
+//.notification-view-child:nth-child(2n){
+//  padding-left: 10px;
+//}
+//.notification-view-child p
+//{
+//  line-height: 1.2rem;
+//}
+//
+//.dropdown-content li > a, .dropdown-content li > span {
+//
+//  line-height: 23px !important;
+//
+//}
+//
+//.notification-dropdown-button
+//{
+//  height: 64px;
+//}
+//.notifications {
+//  overflow-y: auto;
+//  overflow-x: hidden;
+//  width: 100%;
+//  max-height: 420px;
+//}
+//.notifications li a{
+//  color: #787a7d !important;
+//  display: table-cell;
+//  vertical-align: middle;
+//}
+//.notifications li{
+//  border-bottom: 1px solid #dddfe2;
+//  height: 4.2rem;
+//  display: table;
+//  width: 100.3%;
+//}
+//.notifications li:last-of-type{
+//  border-bottom: 0;
+//}
+//
+//.notifications li:hover a
+//{
+//  color: #4a97fd !important;
+//}
+//a.unread-notification
+//{
+//  color: #4a97fd !important;
+//  background: #d0dff34d;
+//}
+//.read-all-notification{
+//  background-color: #fff;
+//}
+//.unread-all-notification
+//{
+//  background-color: #cadffe73;
+//}
+//.unread-all-notification:hover .notification-title
+//{
+//  color: #4996fd;
+//}
+//.notification-loader{
+//  padding: 5rem 0 3.5rem;
+//}
+//.all-notification{
+//  margin-top:0 !important;
+//  margin-bottom:0 !important;
+//}
+//.all-notification-item{
+//  padding: 0.4rem 0;
+//  border-bottom: 1px solid #dddfe2;
+//}
+//.all-notification-item:first-of-type{
+//  border-top: 1px solid #dddfe2;
+//}
+//.all-notification-item:hover
+//{
+//  background-color: #f6f6f7;
+//  cursor: pointer;
+//}
+//.all-notifications-link{
+//  position: relative;
+//  top: 1.5rem;
+//}
+//.received-date{
+//  font-size: 0.8rem
+//}
+//#notification-dropdown.dropdown-content li{
+//  min-height: auto;
+//}
+//#notification-dropdown.dropdown-content li > a, #notification-dropdown.dropdown-content li > span {
+//  padding: 10px 10px 5px 10px !important;
+//}
+//.nav-wrapper .button-collapse {
+//  margin: 0 !important;
+//}
+//.dropdown-wrapper li > a, .dropdown-wrapper li > span
+//{
+//  font-size: 15px;
+//}
+//.client-new-booking a
+//{
+//  height: 64px;
+//  display: table;
+//}
+//.client-new-booking a i
+//{
+//  display: table-cell;
+//  vertical-align: middle;
+//  padding-right: 0.3rem;
+//}
+//.client-new-booking a:hover,.client-new-booking a:hover i
+//{
+//  color:#4a97fd !important;
+//}
+
+@media only screen and (max-width: 991px)
+{
+  .side-bar
+  {
+    display: none;
+  }
+  //.nav-wrapper{
+  //  margin-left: 1rem;
+  //}
+  //div.user-name
+  //{
+  //  height: 79px;
+  //}
+  //.client-new-booking
+  //{
+  //  display: none;
+  //  opacity: 0;
+  //}
+
+}
+//@media (max-width: 600px) {
+//  .side-nav {
+//    top: 56px !important;
+//  }
+//  .notification-dropdown-button
+//  {
+//    height: 56px;
+//    padding: 0px 0.664rem !important;
+//  }
+//  .notification-badge {
+//    left: 11px;
+//    top: -48px;
+//  }
+//  .img-link {
+//    padding: 0 0.45rem;
+//    height: 56px;
+//  }
+//  #profile-dropdown
+//  {
+//    width: 17rem !important;
+//    top: 56px !important;
+//  }
+//  #notification-dropdown
+//  {
+//    width: 19.8rem !important;
+//    top: 56px !important;
+//  }
+//
+//  .brand-logo,.client-new-booking a
+//  {
+//    height: 56px;
+//  }
+//  .logo
+//  {
+//    max-height: 56px;
+//  }
+//  .avatar {
+//    height: 30px;
+//    width: 30px;
+//  }
+//}

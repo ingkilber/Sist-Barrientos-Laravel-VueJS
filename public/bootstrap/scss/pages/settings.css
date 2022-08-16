@@ -1,0 +1,27 @@
+.settings-page-container .details-left-panel {
+  width: 350px;
+  vertical-align: top; }
+.settings-page-container .details-right-panel {
+  padding: 0 0 0 30px;
+  vertical-align: top; }
+.settings-page-container .accordion {
+  height: calc(100vh - 120px);
+  padding-top: 5px; }
+
+@media (max-width: 575px) {
+  .settings-page-container {
+    display: block !important; }
+    .settings-page-container .details-left-panel {
+      display: block !important;
+      width: 100%;
+      margin-bottom: 15px; }
+    .settings-page-container .details-right-panel {
+      padding: 0;
+      margin-top: 1rem; }
+    .settings-page-container .accordion {
+      height: 100%; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .settings-page-container .details-left-panel {
+    width: 300px !important; } }
+
+/*# sourceMappingURL=settings.css.map */

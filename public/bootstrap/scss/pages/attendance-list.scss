@@ -1,0 +1,12 @@
+@import '../skeleton/config.scss';
+
+.attendance-list-container {
+  padding: $list-container-padding;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $media-sm-down) {
+  .attendance-list-container {
+    padding: 0;
+  }
+}

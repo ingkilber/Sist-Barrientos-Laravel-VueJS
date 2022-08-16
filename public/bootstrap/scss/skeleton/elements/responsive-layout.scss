@@ -1,0 +1,84 @@
+@import '../config.scss';
+
+//Inner left panel
+.layout-table {
+  display: table;
+}
+
+.layout-table-cell {
+  display: table-cell;
+}
+
+.inner-left-panel {
+  width: $inner-left-panel-width;
+  vertical-align: top;
+}
+
+.inner-right-panel {
+  padding: $inner-right-panel-padding;
+  vertical-align: top;
+}
+
+@media (max-width: 800px) {
+  .inner-right-panel {
+    .filter-left-items {
+      .btn-sm {
+        padding: 0.5rem 1.8rem;
+      }
+    }
+
+    .filter-right-items {
+      .page-search {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-down) {
+  .layout-table {
+    display: block !important;
+  }
+
+  .inner-left-panel {
+    display: block !important;
+    width: 100%;
+  }
+
+  .inner-right-panel {
+    display: block;
+    padding: 0;
+
+    .page-header {
+      margin: 30px 0;
+    }
+
+    .page-header {
+      .filter-left-items {
+        width: 100%;
+        margin-bottom: 10px;
+
+        .filter-item {
+          margin-right: 1.25rem;
+        }
+      }
+
+      .filter-right-items {
+        .filter-item:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: $media-iphone5-down) and (max-width: 568px) and (orientation: portrait) {
+  .inner-right-panel {
+    .filter-right-items {
+      .page-search {
+        width: 94%;
+      }
+    }
+  }
+}

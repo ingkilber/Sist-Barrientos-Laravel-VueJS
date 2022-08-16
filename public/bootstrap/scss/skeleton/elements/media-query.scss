@@ -1,0 +1,51 @@
+@import '../config.scss';
+
+@media (max-width: $media-iphone6-plus-v-down) {
+  .page-wrapper {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: $media-xs-up) {
+  .container-fluid {
+    padding: 15px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  .nav-right {
+    .notification-dropdown {
+      position: inherit;
+
+      .dropdown-menu {
+        width: 100%;
+        //margin: 1px 15px;
+      }
+    }
+  }
+
+  .notification-container {
+    width: 100%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

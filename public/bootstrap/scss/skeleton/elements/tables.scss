@@ -1,0 +1,124 @@
+@import '../config.scss';
+
+.table {
+  width: $table-width;
+  max-width: $table-max-width;
+  margin-bottom: $table-margin-bottom;
+  background-color: $table-bg;
+  font-size: $table-font-size;
+  color: $table-color;
+
+  thead th {
+    border-bottom: $table-border;
+    background-color: $table-bg-header;
+  }
+
+  th, td {
+    text-align: $table-row-text-align;
+    padding: $table-row-padding;
+    border-top: $table-border;
+  }
+
+  tr {
+
+    td {
+      background-color: $table-row-bg;
+    }
+    &:last-child {
+      border-bottom: $table-border;
+    }
+  }
+
+  &.border-header-0 {
+    th {
+      border-top: 0px;
+    }
+  }
+}
+
+.table-bordered {
+  td, th {
+    border: $table-border;
+  }
+}
+
+.table-hover {
+  tbody tr:hover {
+    background-color: $table-row-hover-bg;
+    color: $table-row-hover-color;
+  }
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  table.custom-table-responsive {
+    display: block;
+    /* Force table to not be like tables anymore */
+    thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      border: $table-border;
+
+      &:first-child {
+        border-top-left-radius: $table-responsive-row-radius;
+        border-top-right-radius: $table-responsive-row-radius;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: $table-responsive-row-radius;
+        border-bottom-right-radius: $table-responsive-row-radius;
+      }
+    }
+
+    tr:nth-of-type(odd) {
+      background-color: $table-responsive-row-bg;
+      margin: -1px 0;
+    }
+
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td:before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-label);
+    }
+
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  table.custom-table-responsive {
+    body {
+      padding: 0;
+      margin: 0;
+      width: 320px;
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  table.custom-table-responsive {
+    body {
+      width: 495px;
+    }
+  }
+}

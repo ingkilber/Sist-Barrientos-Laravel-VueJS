@@ -1,0 +1,33 @@
+.profile-bot-pad
+{
+    padding-bottom: 21px !important;
+}
+.profile-tabs
+{
+    margin-top: -9px !important;
+    padding: 0 12px 12px 12px !important;
+}
+.profile-tabs .max-content-height
+{
+    max-height: 77vh;
+}
+.user-name-text
+{
+    font-size: 1.3rem !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+
+.file-field input.file-path {
+    font-size: 0.9rem;
+}
+.active-field
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    background: #4a97fd;
+    height: 0;
+    transition: top 0.2s;
+}

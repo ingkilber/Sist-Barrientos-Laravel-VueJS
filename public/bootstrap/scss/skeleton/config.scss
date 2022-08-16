@@ -1,0 +1,1094 @@
+//Start color variables
+$body-bg: #f8f8f8;
+$font-size: 1rem;
+$uppercase: uppercase;
+
+//General colors
+$white: #ffffff;
+$black: #000000;
+$primary: #4a97fd;
+$secondary: #a1a5ac;
+$success: #63b870;
+$danger: #e46370;
+$info: #5bb5c6;
+$warning: #ffcd4d;
+$light: $white;
+$dark: #343a40;
+$gallery: #eeeeee;
+$mercury: #e7e7e7;
+$athens-gray: #E4E7EA;
+$silver: #c7c6c6;
+$punch: #dc3545;
+$hover: #eee;
+$concrete: #F3F3F3;
+$alabaster: #F8F8F8;
+$alto: #D3D3D3;
+
+//Font color
+$font-color: #999999;
+$font-color-read: $font-color;
+$font-color-unread: $font-color;
+$font-color-disable: $silver;
+$font-color-placeholder: $silver;
+
+$font-weight-lg: 500;
+$font-weight-md: 400;
+
+//Cursor
+$click-cursor: pointer;
+$text-cursor: text;
+$default-cursor: default;
+$disable-cursor: not-allowed;
+
+//Opacity
+$disable-opacity: 0.5;
+
+//Padding
+$list-container-padding: 0 0 30px 0;
+
+//Hover bg
+$hover-primary: #0069d9;
+$hover-secondary: #727b84;
+$hover-success: #218838;
+$hover-danger: #c82333;
+$hover-warning: #e0a800;
+$hover-info: #138496;
+$hover-light: $primary;
+$hover-custom: #727b84;
+
+//Active bg
+$active-primary: #0069d9;
+$active-secondary: #727b84;
+$active-success: #218838;
+$active-danger: #c82333;
+$active-warning: #e0a800;
+$active-info: #138496;
+$active-light: $primary;
+$hover-custom: #727b84;
+
+//Border
+$border-width: 0rem;
+$border-width-1: 1px;
+$border-style: solid;
+$border-color: $gallery;
+$border: $border-width-1 $border-style $border-color;
+$border-focus: $border-width-1 $border-style $primary;
+$border-top: $border;
+$border-right: $border;
+$border-bottom: $border;
+$border-left: $border;
+
+//Border color
+$border-primary: $primary;
+$border-secondary: $secondary;
+$border-success: $success;
+$border-danger: $danger;
+$border-warning: $warning;
+$border-info: $info;
+$border-required: $punch;
+
+//Border hover color
+$hover-primary-border: #0062cc;
+$hover-secondary-border: #6c757d;
+$success-hover-border: #1e7e34;
+$hover-danger-border: #bd2130;
+$hover-info-border: #117a8b;
+$hover-warning-border: #d39e00;
+
+//Border radius
+$radius: 2px;
+$radius-pill: 10rem;
+$radius-full: 50%;
+
+//Box-shadow
+$box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.10);
+$box-shadow-light: 0 2px 10px 1px rgba(0, 0, 0, 0.04);
+$box-shadow-card: 0px 5px 15px 0px rgba(0, 0, 0, 0.03);
+$box-shadow-checkbox: 0 0 0.3rem 0.01rem rgba(0, 0, 0, 0.18);
+$box-shadow-btn: $box-shadow;
+$box-shadow-tag: $box-shadow;
+$box-shadow-dropdown: $box-shadow;
+$box-shadow-letter-list: $box-shadow;
+$box-shadow-card-row: $box-shadow-card;
+$box-shadow-todo-list: none;
+$box-shadow-radio: 0 0 0.3rem 0.01rem rgba(0, 0, 0, 0.18);
+$box-shadow-taggle-divider: 0 2px 5px rgba(0, 0, 0, 0.3);
+$box-shadow-group-icon: $box-shadow-light;
+$box-shadow-round-icon: 0 1px 5px 0px rgba(0, 0, 0, 0.09);
+
+//Background color
+$unread-bg: $hover;
+$read-bg: $white;
+$disable-bg: $athens-gray;
+
+//Buttons color variables
+$btn-bg-primary: $primary;
+$btn-bg-secondary: $secondary;
+$btn-bg-success: $success;
+$btn-bg-danger: $danger;
+$btn-bg-warning: $warning;
+$btn-bg-info: $info;
+$btn-bg-light: $light;
+$btn-bg-custom: $mercury;
+
+$btn-box-shadow: $box-shadow-btn;
+$btn-radius: $radius;
+$btn-radius-pill: $radius-pill;
+
+$btn-color: $white;
+$btn-padding: .9rem 3rem;
+$btn-cursor: $click-cursor;
+$btn-font-size: $font-size;
+$btn-sm-padding: 0.5rem 2rem;
+$btn-sm-font-size: 0.875rem;
+$btn-lg-font-size: 1.25rem;
+
+$btn-color-primary: $btn-color;
+$btn-color-secondary: $btn-color;
+$btn-color-success: $btn-color;
+$btn-color-danger: $btn-color;
+$btn-color-warning: $btn-color;
+$btn-color-info: $btn-color;
+$btn-color-light: $font-color;
+$btn-color-custom: $btn-color;
+
+$btn-hover-bg-primary: $hover-primary;
+$btn-hover-bg-secondary: $hover-secondary;
+$btn-hover-bg-success: $hover-success;
+$btn-hover-bg-danger: $hover-danger;
+$btn-hover-bg-warning: $hover-warning;
+$btn-hover-bg-info: $hover-info;
+$btn-hover-bg-light: $hover-light;
+$btn-hover-bg-custom: $hover-custom;
+
+$btn-hover-color-primary: $btn-color;
+$btn-hover-color-secondary: $btn-color;
+$btn-hover-color-success: $btn-color;
+$btn-hover-color-danger: $btn-color;
+$btn-hover-color-warning: $btn-color;
+$btn-hover-color-info: $btn-color;
+$btn-hover-color-light: $btn-color;
+$btn-hover-color-custom: $btn-color;
+
+$bnt-light-box-shadow: $box-shadow-light;
+
+//End buttons color variables
+
+//Button group icon variables
+$btn-group-icon-padding: 0.7rem;
+$btn-group-icon-sm-padding: 0.5rem 0.6rem;
+$btn-group-icon-lg-padding: 0.8rem 1rem;
+$btn-group-icon-box-shadow: none;
+$group-icon-box-shadow: $box-shadow-group-icon;
+
+$btn-group-icon-font-size: $btn-font-size;
+$btn-group-icon-font-size-lg: $btn-lg-font-size;
+$btn-group-icon-font-size-sm: $btn-sm-font-size;
+
+$btn-group-icon-active-cursor: $default-cursor;
+
+$btn-group-icon-active-bg-primary: $active-primary;
+$btn-group-icon-active-bg-secondary: $active-secondary;
+$btn-group-icon-active-bg-success: $active-success;
+$btn-group-icon-active-bg-danger: $active-danger;
+$btn-group-icon-active-bg-warning: $active-warning;
+$btn-group-icon-active-bg-light: $active-light;
+$btn-group-icon-active-bg-info: $active-info;
+
+$btn-group-icon-active-color-primary: $btn-color;
+$btn-group-icon-active-color-secondary: $btn-color;
+$btn-group-icon-active-color-success: $btn-color;
+$btn-group-icon-active-color-danger: $btn-color;
+$btn-group-icon-active-color-warning: $btn-color;
+$btn-group-icon-active-color-light: $btn-color;
+$btn-group-icon-active-color-info: $btn-color;
+
+//End button group icon variables
+
+//Social buttons variables
+$social-btn-cursor: $click-cursor;
+$social-btn-padding: 0.4rem 0.5rem;
+$social-btn-border-radius: $radius;
+$social-btn-font-size: $font-size;
+$social-btn-active-cursor: $default-cursor;
+//End social buttons variables
+
+//Round button variables
+$round-icon-color: $font-color;
+$round-icon-width: 35px;
+$round-icon-height: 35px;
+$round-icon-border-radius: $radius-full;
+$round-icon-cursor: $click-cursor;
+$round-icon-font-size: $font-size;
+$round-icon-line-height: 2.3rem;
+//End round button variables
+
+//Badge variables
+$badge-radius: $radius;
+$badge-padding: .25em 1.2em;
+$badge-color: $white;
+$badge-font-size: 0.8rem;
+$badge-box-shadow: $box-shadow;
+$badge-margin-right: 0.5rem;
+
+$badge-bg-primary: $primary;
+$badge-bg-secondary: $secondary;
+$badge-bg-success: $success;
+$badge-bg-danger: $danger;
+$badge-bg-warning: $warning;
+$badge-bg-light: $light;
+$badge-bg-info: $info;
+
+//End badge variables
+
+//Tag variables
+$tag-bg-primary: $primary;
+$tag-bg-secondary: $secondary;
+$tag-bg-success: $success;
+$tag-bg-danger: $danger;
+$tag-bg-warning: $warning;
+$tag-bg-info: $info;
+$tag-bg-light: $light;
+$tag-bg-dark: $dark;
+
+$tag-color: $white;
+$tag-cancel-cursor: $click-cursor;
+$tag-font-size: 0.8rem;
+$tag-padding: 0.4rem 0.6rem;
+$tag-margin: 0 0.5rem 0.5rem 0;
+
+$tag-box-shadow: $box-shadow-tag;
+$tag-box-shadow-light: $box-shadow-light;
+$tag-radius-pill: $radius-pill;
+
+$tag-color-primary: $tag-color;
+$tag-color-secondary: $tag-color;
+$tag-color-success: $tag-color;
+$tag-color-danger: $tag-color;
+$tag-color-warning: $tag-color;
+$tag-color-info: $tag-color;
+$tag-color-light: $font-color;
+$tag-color-dark: $tag-color;
+$tag-color-cancel: $tag-color;
+
+$tag-hover-bg-primary: $tag-bg-primary;
+$tag-hover-bg-secondary: $tag-bg-secondary;
+$tag-hover-bg-success: $tag-bg-success;
+$tag-hover-bg-danger: $tag-bg-danger;
+$tag-hover-bg-warning: $tag-bg-warning;
+$tag-hover-bg-info: $tag-bg-info;
+$tag-hover-bg-light: $tag-bg-light;
+$tag-hover-bg-dark: $tag-bg-dark;
+
+$tag-hover-color-primary: $tag-color;
+$tag-hover-color-secondary: $tag-color;
+$tag-hover-color-success: $tag-color;
+$tag-hover-color-danger: $tag-color;
+$tag-hover-color-warning: $tag-color;
+$tag-hover-color-info: $tag-color;
+$tag-hover-color-light: $font-color;
+$tag-hover-color-dark: $tag-color;
+$tag-hover-color-cancel: $tag-color;
+
+//End tag variables
+
+//Start avatar size variable
+$avatar-radius: 50%;
+$avatar-border: 0rem;
+$avatar-box-shadow: none;
+$avatar-xs-height: 1.6rem;
+$avatar-xs-width: 1.6rem;
+$avatar-sm-height: 2.8rem;
+$avatar-sm-width: 2.8rem;
+$avatar-md-height: 4.7rem;
+$avatar-md-width: 4.7rem;
+$avatar-lg-height: 6.25rem;
+$avatar-lg-width: 6.25rem;
+//End avatar size variable
+
+//Card variables
+$card-bg: $white;
+$card-radius: $radius;
+$card-border-none: none;
+$card-box-shadow: $box-shadow-card;
+
+$card-body-padding: 1.25rem;
+$card-body-block-padding: $card-body-padding;
+$card-body-block-radius: $radius;
+$card-body-block-box-shadow: $box-shadow-card;
+$card-body-block-color: $font-color;
+
+$card-body-bg-primary: $primary;
+$card-body-bg-secondary: $secondary;
+$card-body-bg-success: $success;
+$card-body-bg-danger: $danger;
+$card-body-bg-warning: $warning;
+$card-body-bg-info: $info;
+
+$card-body-color: $font-color;
+$card-body-color-primary: $white;
+$card-body-color-secondary: $white;
+$card-body-color-success: $white;
+$card-body-color-danger: $white;
+$card-body-color-warning: $white;
+$card-body-color-info: $white;
+
+$card-header-bg-primary: $primary;
+$card-header-bg-secondary: $secondary;
+$card-header-bg-success: $success;
+$card-header-bg-danger: $danger;
+$card-header-bg-warning: $warning;
+$card-header-bg-info: $info;
+
+$card-header-color: $white;
+$card-header-color-primary: $card-header-color;
+$card-header-color-secondary: $card-header-color;
+$card-header-color-success: $card-header-color;
+$card-header-color-danger: $card-header-color;
+$card-header-color-warning: $card-header-color;
+$card-header-color-info: $card-header-color;
+
+$card-header-border-bottom: none;
+
+$card-footer-border: $border;
+$card-footer-bg: $white;
+$card-footer-padding: 1rem;
+
+$card-row-bg: $card-bg;
+$card-row-padding: 1rem 0.5rem;
+$card-row-icon-font-size: $font-size;
+$card-row-margin-bottom: 20px;
+$card-row-box-shadow: $box-shadow-card-row;
+
+$card-row-hover-box-width: 60px;
+$card-row-hover-box-height: 100%;
+$card-row-hover-box-border-left: $border;
+$card-row-hover-icon-top: 38%;
+$card-row-hover-icon-bg-primary: $primary;
+$card-row-hover-icon-color: $white;
+
+//End card variables
+
+//Group letter list variables
+$letter-list-radius: $radius;
+$letter-list-box-shadow: $box-shadow-letter-list;
+$letter-list-bg: $white;
+
+$letter-list-first-child-radius: $letter-list-radius 0 0 $letter-list-radius;
+$letter-list-last-child-radius: 0 $letter-list-radius $letter-list-radius 0;
+
+$letter-list-text-align: center;
+$letter-list-text-transform: $uppercase;
+$letter-list-text-decoration: none;
+
+$letter-list-hover-bg: $secondary;
+$letter-list-hover-radius: $letter-list-radius;
+
+$letter-list-primary: $primary;
+$letter-list-secondary: $secondary;
+$letter-list-success: $success;
+
+$letter-list-color: $font-color;
+$letter-list-color-primary: $white;
+$letter-list-color-secondary: $white;
+$letter-list-color-success: $white;
+
+$letter-list-hover-primary: $hover-primary;
+$letter-list-hover-secondary: $hover-secondary;
+$letter-list-hover-success: $hover-success;
+
+$letter-list-hover-color: $white;
+$letter-list-hover-color-primary: $letter-list-color-primary;
+$letter-list-hover-color-secondary: $letter-list-color-secondary;
+$letter-list-hover-color-success: $letter-list-color-success;
+
+//End Group letter list variables
+
+//Checkbox variables
+$checkbox-padding-left: 2.5rem;
+
+$checkbox-box-shadow: $box-shadow-checkbox;
+$checkbox-radius: $radius;
+$checkbox-line-height: 1.5;
+$checkbox-margin: 0;
+$checkbox-cursor: $click-cursor;
+$checkbox-disabled-cursor: $disable-cursor;
+$checkbox-disable-opacity: $disable-opacity;
+
+$checkbox-checked-bg: $white;
+$checkbox-checked-height: 1.8rem;
+$checkbox-checked-width: 1.8rem;
+$checkbox-checked-font-size: 1.1rem;
+
+$checkbox-checked-icon-line-height: 1.6;
+$checkbox-checked-icon-margin-left: 0.1rem;
+
+$checkbox-bg: $white;
+$checkbox-bg-primary: $checkbox-bg;
+$checkbox-bg-secondary: $checkbox-bg;
+$checkbox-bg-success: $checkbox-bg;
+$checkbox-bg-danger: $checkbox-bg;
+$checkbox-bg-warning: $checkbox-bg;
+$checkbox-bg-info: $checkbox-bg;
+
+$checkbox-checked-bg-primary: $primary;
+$checkbox-checked-bg-secondary: $secondary;
+$checkbox-checked-bg-success: $success;
+$checkbox-checked-bg-danger: $danger;
+$checkbox-checked-bg-warning: $warning;
+$checkbox-checked-bg-info: $info;
+
+$checkbox-checked-color-primary: $white;
+$checkbox-checked-color-secondary: $white;
+$checkbox-checked-color-success: $white;
+$checkbox-checked-color-danger: $white;
+$checkbox-checked-color-warning: $white;
+$checkbox-checked-color-info: $white;
+
+$checkbox-lg-padding-left: 3rem;
+$checkbox-lg-line-height: 2.4;
+$checkbox-lg-height: 2.2rem;
+$checkbox-lg-width: 2.2rem;
+
+$checkbox-lg-checked-icon-line-height: 1.8;
+$checkbox-lg-checked-font-size: 1.3rem;
+
+$checkbox-sm-padding-left: 2.5rem;
+$checkbox-sm-line-height: 1.5;
+$checkbox-sm-height: 1.5rem;
+$checkbox-sm-width: 1.5rem;
+
+$checkbox-sm-checked-icon-line-height: 1.8;
+$checkbox-sm-checked-font-size: 0.9rem;
+$checkbox-sm-checked-icon-margin-left: 0.1rem;
+
+//End checkbox variables
+
+//Start radio-checkbox variables
+$radio-padding-left: 2.5rem;
+$radio-radius: 10rem;
+$radio-margin: 0;
+$radio-cursor: $click-cursor;
+$radio-disabled-cursor: $disable-cursor;
+$radio-disable-opacity: $disable-opacity;
+$radio-box-shadow: $box-shadow-radio;
+
+$radio-bg: $white;
+$radio-bg-primary: $radio-bg;
+$radio-bg-success: $radio-bg;
+
+$radio-checked-height: 1.8rem;
+$radio-checked-width: 1.8rem;
+$radio-checked-margin-top: 0.3rem;
+$radio-checked-font-size: 0.8rem;
+
+$radio-checked-bg: $white;
+$radio-checked-bg-primary: $primary;
+$radio-checked-bg-success: $success;
+$radio-checked-box-shadow: none;
+
+$radio-checked-color: $white;
+$radio-checked-color-primary: $radio-checked-color;
+$radio-checked-color-success: $radio-checked-color;
+
+//End radio-checkbox variables
+
+//Start todo-list variables
+$todo-list-padding: 16px;
+$todo-list-media-sm-padding: 10px;
+$todo-list-media-xs-padding: 8px;
+$todo-list-margin: 0;
+$todo-list-border-width: $border-width-1;
+$todo-list-border-style: $border-style;
+$todo-list-border-color: $border-color;
+$todo-list-box-shadow: $box-shadow-todo-list;
+
+$todo-list-bg: $white;
+$todo-list-read-bg: $read-bg;
+$todo-list-unread-bg: $unread-bg;
+
+$todo-list-color: $font-color;
+$todo-list-color-read: $font-color-read;
+$todo-list-color-unread: $font-color-unread;
+
+$todo-list-hover-bg: $hover;
+$todo-list-hover-color: $todo-list-color;
+
+$todo-list-border-top: $border-top;
+$todo-list-border-bottom: $border-bottom;
+
+$todo-list-hover-border-top: $border-top;
+$todo-list-hover-border-bottom: $border-bottom;
+
+$todo-list-hover-box-color: $primary;
+$todo-list-hover-box-cursor: $click-cursor;
+
+//End todo-list variables
+
+//Form variables
+$form-group-margin-bottom: 1.5rem;
+
+$form-control-radius: $radius;
+$form-control-bg: $white;
+$form-control-padding: 0.8rem;
+$form-control-line-height: 1.25;
+$form-control-color: $font-color;
+$form-control-color-focus: $font-color;
+$form-control-font-size: $font-size;
+$form-control-border: $border;
+$form-control-border-focus: $border-focus;
+$form-control-disable-opacity: $disable-opacity;
+
+$form-control-sm-padding: 0.5rem 0.8rem;
+
+//End form variables
+
+//Toggle variables
+$toggle-cursor: $click-cursor;
+$toggle-font-size: $font-size;
+$toggle-color: $font-color;
+$toggle-on-color: $white;
+$toggle-off-color: $toggle-color;
+
+$toggle-width: 5rem;
+$toggle-width-pill: 5rem;
+
+$toggle-on-off-padding: 1rem;
+$taggle-on-off-radius: $radius;
+
+$toggle-on-off-padding-pill: 1rem;
+$taggle-on-off-radius-pill: $radius-pill;
+
+$taggle-divider-padding: 0.9rem;
+$taggle-divider-padding-pill: 0.9rem;
+$taggle-divider-radius: $radius;
+$taggle-divider-radius-pill: $radius-pill;
+$taggle-divider-box-shadow: $box-shadow-taggle-divider;
+$taggle-divider-top: 0.09rem;
+$taggle-divider-right: 3.05rem;
+$taggle-divider-right-pill: 3.1rem;
+
+$taggle-divider-checked-right: .15rem;
+$taggle-divider-checked-right-pill: .15rem;
+
+$toggle-bg: $hover;
+$toggle-bg-on-button: $primary;
+$toggle-bg-off-button: $toggle-bg;
+$toggle-bg-divider: $white;
+
+$toggle-text-height: 2rem;
+$toggle-text-on-off-padding: 0.2rem 0;
+$toggle-text-on-off-line-height: 1.57rem;
+$toggle-text-on-text-indent: -20px;
+$toggle-text-off-text-indent: 15px;
+$toggle-text-font-size: $font-size;
+
+$toggle-sm-width: 4rem;
+$toggle-sm-on-off-padding: 12px 0;
+$toggle-sm-divider-padding: 11px;
+$toggle-sm-divider-right: 40px;
+
+//End toggle variables
+
+$hover-bg: #f0f0f0;
+
+//Tabs variables
+$tab-padding: 1rem 1.5rem;
+$tab-padding-v: 0.5rem 1rem;
+$tab-content-padding: 1rem 1.5rem;
+$tab-content-bg: $white;
+$tab-margin: 0 0.2rem 0 0;
+$tab-margin-v: 0 0 0.2rem 0;
+$tab-radius-v: 0;
+$tab-border-left-width-v: 0.1rem;
+$tab-border-bottom-height: 2px;
+
+$tab-border-width: $border-width;
+$tab-color: $primary;
+$tab-bg: transparent;
+$tab-radius: $radius;
+
+$tab-content-header-margin: 10px 0 25px 0;
+$tab-content-header-btn-margin: 0 0 0 20px;
+
+//End tab variables
+
+//Table variables
+$table-width: 100%;
+$table-font-size: $font-size;
+$table-max-width: 100%;
+$table-margin-bottom: 0;
+
+$table-row-padding: 0.75rem;
+$table-row-text-align: left;
+
+$table-border: $border;
+
+$table-bg: transparent;
+$table-bg-header: transparent;
+$table-color: $font-color;
+
+$table-row-bg: transparent;
+$table-row-hover-bg: $hover;
+$table-row-hover-color: $font-color;
+
+$table-responsive-row-radius: $radius;
+$table-responsive-row-bg: $body-bg;
+
+//End Table variables
+
+//Drop-down variables
+$dropdown-radius: $radius;
+$dropdown-menu-divider-margin: 0.5rem 0;
+$dropdown-menu-divider-border: $border;
+$dropdown-menu-box-shadow: $box-shadow-dropdown;
+
+$dropdown-btn-sm-padding: 0.5rem 1rem;
+
+$dropdown-btn-bg-active-primary: $active-primary;
+$dropdown-btn-bg-active-secondary: $active-secondary;
+$dropdown-btn-bg-active-success: $active-success;
+$dropdown-btn-bg-active-danger: $active-danger;
+$dropdown-btn-bg-active-warning: $active-warning;
+$dropdown-btn-bg-active-light: $active-light;
+$dropdown-btn-bg-active-info: $active-info;
+
+$dropdown-btn-active-color-primary: $btn-color;
+$dropdown-btn-active-color-secondary: $btn-color;
+$dropdown-btn-active-color-success: $btn-color;
+$dropdown-btn-active-color-danger: $btn-color;
+$dropdown-btn-active-color-warning: $btn-color;
+$dropdown-btn-active-color-light: $btn-color;
+$dropdown-btn-active-color-info: $btn-color;
+
+$dropdown-menu-bg: $white;
+$dropdown-menu-border: none;
+$dropdown-menu-padding: 0;
+$dropdown-menu-margin: 0.125rem 0 0;
+
+$dropdown-menu-item-padding: .5rem 1.5rem;
+
+$dropdown-menu-item-bg-default: $primary;
+$dropdown-menu-item-bg-primary: $active-primary;
+$dropdown-menu-item-bg-secondary: $active-secondary;
+$dropdown-menu-item-bg-success: $active-success;
+$dropdown-menu-item-bg-danger: $active-danger;
+$dropdown-menu-item-bg-warning: $active-warning;
+$dropdown-menu-item-bg-light: $active-light;
+$dropdown-menu-item-bg-info: $active-info;
+
+$dropdown-menu-item-color: $font-color;
+$dropdown-menu-item-active-color: $btn-color;
+$dropdown-menu-item-hover-color: $btn-color;
+//End drop-down variables
+
+//Contact card
+$avatar-card-header-bg: transparent;
+$avatar-card-img-height: 20rem;
+$avatar-card-avatar-margin: 0 0 1.8rem 0;
+$avatar-card-overlay-bg: rgba(0, 123, 255, 0.9);
+$avatar-card-overlay-link-row-height: 9.5rem;
+$avatar-card-overlay-link-row-margin: 0 1.5rem;
+$avatar-card-overlay-link-row-margin-first-child: 1.55rem;
+$avatar-card-overlay-link-color: $white;
+$avatar-card-overlay-link-padding: 0.8rem 1.5rem;
+
+$avatar-card-overlay-link-radius: $radius;
+$avatar-card-overlay-link-border: 0.1rem solid;
+$avatar-card-overlay-link-height: 100%;
+$avatar-card-overlay-link-width: 100%;
+$avatar-card-overlay-icon-color: $primary;
+$avatar-card-overlay-icon-bg: $white;
+$avatar-card-overlay-icon-padding: 0.6rem 0.5rem;
+$avatar-card-overlay-icon-margin: 0 0 1rem 0;
+$avatar-card-overlay-icon-border: 0.1rem solid;
+$avatar-card-overlay-icon-radius: 50%;
+$avatar-card-overlay-icon-border-color: $white;
+$avatar-card-tags-box-bg: rgba(255, 255, 255, 0.7);
+$avatar-card-title-color: $primary;
+$avatar-card-title-margin: 0 0 0.4rem 0;
+$avatar-card-tags-padding: .75rem 1.25rem;
+$avatar-info-box-margin: 1rem 0 0 0;
+$avatar-info-box-text-align: center;
+$avatar-social-link-box-margin: 1rem 0 0 0;
+$avatar-social-link-padding: 0.5rem;
+
+//Quick view
+$quick-view-panel-bg: $white;
+$quick-view-panel-padding: 1.5rem;
+$quick-view-panel-width: 480px;
+$quick-view-panel-width-small-mobile: 100%;
+$quick-view-panel-mx-width: 32rem;
+$quick-view-panel-close-padding: 0.9rem;
+$quick-view-panel-close-font-size: 1.8rem;
+$quick-view-panel-close-top: 0rem;
+$quick-view-panel-close-right: 0rem;
+$quick-view-close-icon-color: $white;
+$quick-view-avatar-cover-bg: $primary;
+$quick-view-avatar-cover-height: 150px;
+$quick-view-avatar-card-height: 150px;
+$quick-view-avatar-card-width: 150px;
+$quick-view-avatar-card-margin: -100px auto 0;
+
+//Overlay
+$overlay-bg: rgba(0, 0, 0, 0.36);
+$overlay-opacity: 0.4;
+
+//Topbar header
+$topbar-header-height: 3.7rem;
+$topbar-header-nav-link-padding: 1rem 0.8rem;
+$topbar-header-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+$topbar-header-brand-box-shadow: 0px -3px 4px 2px rgba(204, 204, 204, 0.37);
+$topbar-header-brand-border-bb: 1px solid #f0f0f0;
+$topbar-avatar-margin: -5px 5px 0 0;
+$topbar-header-brand-logo-max-width: 2.5rem;
+$topbar-header-brand-logo-max-height: 2.5rem;
+$topbar-header-navbar-nav-padding: 0 0.6rem;
+$topbar-navbar-box-shadow-small-view: $box-shadow;
+$topbar-brand-tenant-name-font-size: 1.20rem;
+$topbar-brand-tenant-name-margin: 0 0 0 5px;
+
+//Left sidebar menu
+$left-sidebar-width: 6.25rem;
+$left-sidebar-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+$left-sidebar-menu-padding: 1rem 1rem 0.5rem;
+$left-sidebar-menu-font-size: 0.7rem;
+$left-sidebar-menu-icon-adjust-size: 1.35rem;
+$left-sidebar-menu-xs-icon-adjust-size: 1.7rem;
+$left-sidebar-menu-icon-font-size: 1.6rem;
+$left-sidebar-active-item-bg: $tab-bg;
+$left-sidebar-active-item-color: $tab-color;
+$left-sidebar-left-border-width: $tab-border-bottom-height;
+$left-sidebar-item-radius-v: $tab-radius-v;
+$left-sidebar-item-margin-v: $tab-margin-v;
+$left-sidebar-sub-menu-box-left: $left-sidebar-width;
+$left-sidebar-sub-menu-link-align: left;
+$left-sidebar-sub-menu-box-min-width: 9.4rem;
+$left-sidebar-sub-menu-box-radius: $radius;
+$left-sidebar-sub-menu-box-padding: 0;
+$left-sidebar-sub-menu-box-bg: $white;
+$left-sidebar-sub-menu-box-shadow: $box-shadow;
+$left-sidebar-sub-menu-box-arrow-bg: $left-sidebar-sub-menu-box-bg;
+$left-sidebar-sub-menu-box-arrow-size: 0.5rem;
+$left-sidebar-sub-menu-box-arrow-top: 1.6rem;
+$left-sidebar-sub-menu-box-arrow-left: 0.1rem;
+
+$left-sidebar-width-mv: 100%;
+$left-sidebar-z-index-mv: 9999;
+$left-sidebar-pt-mv: 0;
+$left-sidebar-header-box-shadow-mv: $box-shadow;
+$left-sidebar-brand-color-mv: $font-color;
+$left-sidebar-brand-logo-padding-mv: 0 15px;
+$left-sidebar-brand-name-padding-mv: 10px 0 0 10px;
+$left-sidebar-closed-btn-padding-mv: 0 15px;
+$left-sidebar-closed-font-size-mv: 18px;
+$left-sidebar-link-icon-mr-mv: 20px;
+$left-sidebar-link-icon-max-width-mv: 30px;
+$left-sidebar-link-text-pt-mv: 3px;
+$left-sidebar-link-font-size-mv: 0.9rem;
+$left-sidebar-toggle-icon-font-size-mv: 14px;
+$left-sidebar-sub-menu-box-bg-mv: inherit;
+$left-sidebar-sub-menu-box-ml-mv: 30px;
+$left-sidebar-sub-menu-link-padding-mv: 8px 25px;
+$left-sidebar-sub-menu-box-animation-name-mv: fadeInDown;
+$left-sidebar-toggle-icon-rotate-mv: 90;
+
+//Modal
+$modal-header-padding: 1.5rem 2rem;
+$modal-header-bg: transparent;
+$modal-header-color: $font-color;
+$modal-header-border-bottom: 0rem;
+$modal-close-icon-top: 0rem;
+$modal-close-icon-right: 0rem;
+$modal-close-icon-padding: 1.5rem;
+$modal-content-border: 1px solid rgba(0, 0, 0, .2);
+$modal-content-radius: $radius;
+$modal-content-height: 100%;
+$modal-body-padding: 0rem 2rem;
+$modal-body-padding-bottom-when-no-footer: 1.5rem;
+$modal-footer-padding: 1.5rem 2rem;
+$modal-footer-border-top: 0rem;
+$modal-footer-btn-margin: 0.8rem;
+$modal-footer-link-margin: 0.5rem;
+$modal-xs-max-width: 18.8rem;
+$modal-sm-max-width: 37.6rem;
+$modal-lg-max-width: 100%;
+$modal-lg-max-height: 100%;
+$modal-lg-margin: 0rem;
+
+//Page header
+$page-header-margin: 0 0 1rem 0;
+$page-header-search-field-width: 15rem;
+$header-filter-left-container-min-width: 290px;
+$header-filter-left-item-margin: 1.25rem;
+$header-filter-right-item-margin: 1rem;
+$header-filter-item-margin-bottom: 1rem;
+$header-filter-dropdown-search-field-width: 15rem;
+$header-filter-btn-padding-small-mobile: 0.5rem 1.25rem;
+$header-filter-item-margin-small-mobile: 0.5rem;
+$header-filter-item-mb-small-mobile: 0 0 1rem 0;
+
+//Media query width
+//min-width
+$media-xs-up: 576px;
+$media-sm-up: 768px;
+$media-md-up: 992px;
+$media-lg-up: 1200px;
+
+//max-width
+$media-xs-down: 575px;
+$media-sm-down: 767px;
+$media-md-down: 991px;
+$media-lg-down: 1199px;
+
+//Iphone and others mobile view
+$media-iphone5-down: 320px;
+$media-iphone6-down: 375px;
+$media-extra-small-mobile-down: 480px;
+$media-iphone6-plus-v-down: 740px;
+
+//Time line variables
+$timeline-content-arrow-size: 10px;
+$timeline-margin: 0;
+$timeline-max-width: 1200px;
+$timeline-line-width: 3px;
+$timeline-line-bg: $white;
+$timeline-line-top: 0;
+$timeline-line-left: 25px;
+$timeline-line-margin-left: -2px;
+$timeline-article-margin: 1.25rem 0;
+$timeline-article-max-width: 94%;
+$timeline-content-bg: $white;
+$timeline-content-padding: 15px 25px;
+$timeline-content-box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+$timeline-content-arrow-border-right: $timeline-content-arrow-size solid $white;
+$timeline-breakpoint-width: 2.5rem;
+$timeline-breakpoint-height: 2.5rem;
+$timeline-breakpoint-font-size: 1.25rem;
+$timeline-breakpoint-line-height: 2.5rem;
+$timeline-breakpoint-color: $white;
+$timeline-breakpoint-bg: $primary;
+$timeline-breakpoint-box-shadow: 0 0 0 3px $white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 2px 0 2px rgba(0, 0, 0, 0.05);
+
+//Single details page variable
+$details-left-panel-width: 350px;
+$details-left-panel-width-small-view: 300px;
+$details-item-img-radius: $radius;
+$details-item-info-box-margin: 1rem 0 0 0;
+$details-right-panel-padding: 0 0 0 30px;
+$details-right-panel-padding-small-view: 0;
+$details-item-about-box-margin: 1rem 0 0 0;
+$details-item-owner-box-mt: 1.8rem;
+$details-item-owner-action-btn-mb: 1rem;
+$details-item-owner-action-btn-ml: 1rem;
+$details-item-timeline-box-margin: 10px 0 0 0;
+$details-item-tabs-box-margin: 30px 0 0 0;
+$details-item-sub-title-margin: 0 0 0.25rem 0;
+$details-item-sub-title-fw: bold;
+$details-item-status-card-margin-small-view: 15px 0;
+$details-item-owner-action-btn-margin: 0 0 1rem 0;
+$details-item-right-panel-mt-small-view: 1rem;
+$details-item-owner-box-mt-small-view: 1rem;
+
+//Full-calendar variables
+$full-calendar-darius: $radius;
+$full-calendar-padding: 30px;
+$full-calendar-header-padding: 5px 10px;
+$full-calendar-time-grid-height: 40px;
+$full-calendar-border-color: $border-color;
+$full-calendar-font-size: $font-size;
+$full-calendar-box-shadow: $box-shadow-card;
+$full-calendar-today-selected-bg: rgba(0, 123, 255, 0.2);
+
+$full-calendar-group-btn-box-radius: $radius;
+$full-calendar-group-btn-box-shadow: $box-shadow-group-icon;
+$full-calendar-group-btn-border-radius: $radius;
+
+$full-calendar-bg: $white;
+$full-calendar-group-btn-bg: $light;
+$full-calendar-list-hover-bg: $hover;
+$full-calendar-group-btn-hover-bg: $hover-light;
+
+$full-calendar-group-btn-color: $font-color;
+$full-calendar-group-btn-hover-color: $white;
+
+$full-calendar-event-bg: $primary;
+$full-calendar-event-padding: 5px;
+$full-calendar-event-radius: $radius;
+$full-calendar-event-content-color: $white;
+$full-calendar-event-margin: 1px 5px 0 5px;
+$full-calendar-left-panel-radius: $radius;
+
+//End full-calendar variables
+
+//Accordion variables
+$accordion-card-margin: 0 0 15px 0;
+$accordion-card-header-bg: $white;
+$accordion-card-header-padding: 0px;
+$accordion-card-title-margin: 0px;
+$accordion-card-title-padding: 15px 20px;
+$accordion-card-title-span-margin: 0 15px 0 0;
+$accordion-card-title-right-icon-font-size: 1.4rem;
+//End Accordion variables
+
+//Inner left or right panel layout
+$inner-left-panel-width: 350px;
+$inner-right-panel-padding: 0 0 0 30px;
+
+//Remove
+$remove-icon-padding: 8px;
+$remove-icon-font-size: 0.8rem;
+$remove-icon-color: $font-color;
+$remove-icon-hover-color: $white;
+$remove-icon-hover-bg: $danger;
+
+//Notifications variables
+$notification-container-width: 480px;
+$notification-body-max-height: 500px;
+$notification-hover-bg: $concrete;
+$notification-unread-bg: $alabaster;
+$notification-header-padding: 5px 10px;
+$notification-footer-padding: 5px 10px;
+
+//Loader variables
+$loader-container-width: 80px;
+$loader-container-margin: 30px 0;
+$loader-container-padding: 0;
+$loader-btn-width: 100%;
+$loader-btn-radius: 30px;
+
+$loader-width: 35px;
+$loader-height: 35px;
+$loader-padding: 0;
+$loader-margin: 30px auto;
+$loader-radius: $radius-full;
+$loader-box-shadow: none;
+$loader-border-width: 2px;
+$loader-border-color: $primary;
+
+//Date range picker variables
+$daterangepicker-container-padding: 0;
+$daterangepicker-container-border: none;
+$daterangepicker-container-radius: $radius;
+$daterangepicker-container-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.1);
+$daterangepicker-container-bg: $white;
+
+$daterangepicker-ranges-margin: 0;
+$daterangepicker-ranges-inputs-margin: 2px 0 5px 0;
+$daterangepicker-ranges-width: 100%;
+$daterangepicker-ranges-padding: 0.5rem 1.5rem;
+$daterangepicker-ranges-color: $font-color;
+$daterangepicker-ranges-font-size: $font-size;
+
+$daterangepicker-input-radious: $radius;
+$daterangepicker-input-padding: 2px 10px;
+$daterangepicker-input-border: $border;
+$daterangepicker-input-color: $font-color;
+$daterangepicker-input-border-color: $primary;
+
+$daterangepicker-ranges-bg: $white;
+$daterangepicker-ranges-hover-bg: $primary;
+$daterangepicker-ranges-hover-color: $white;
+
+$daterangepicker-td-active-bg: $primary;
+$daterangepicker-td-active-color: $white;
+
+//Maxin variable
+//***Start transition mixin**//
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+//Transition property
+@mixin transition-property($property) {
+  -moz-transition-property: $property;
+  -o-transition-property: $property;
+  -webkit-transition-property: $property;
+  -ms-transition: $property;
+  transition-property: $property;
+}
+
+//Transition duration
+@mixin transition-duration($duration) {
+  -moz-transition-property: $duration;
+  -o-transition-property: $duration;
+  -webkit-transition-property: $duration;
+  -ms-transition: $duration;
+  transition-property: $duration;
+}
+
+//Transition timing function
+@mixin transition-timing-function($timing) {
+  -moz-transition-timing-function: $timing;
+  -o-transition-timing-function: $timing;
+  -ms-transition: $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function: $timing;
+}
+
+//Transition delay
+@mixin transition-delay($delay) {
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  -ms-transition: $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
+//End transition mixin
+
+//Start boxshadow mixin
+@mixin boxshadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+//***End boxshadow mixin***//
+
+//***Start transform mixin***//
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+//***End transform mixin***//

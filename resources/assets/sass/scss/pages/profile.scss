@@ -1,0 +1,26 @@
+@import '../components/variables';
+@import '../helper/place-holder';
+
+.main-layout-card
+{
+  ul
+  {
+    &.list-group-border-fix
+    {
+      li
+      {
+        &.list-group-item
+        {
+          &:nth-of-type(1)
+          {
+            border-top-left-radius: $card-border-radius;
+            border-top-right-radius: $card-border-radius;
+          }
+        }
+      }
+    }
+  }
+
+  @extend %custom-list-with-active-border;
+
+}

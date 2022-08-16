@@ -1,0 +1,167 @@
+@import '../config.scss';
+
+.dropdown {
+  display: inline-block;
+
+  .btn-sm {
+    padding: $dropdown-btn-sm-padding;
+  }
+
+  .dropdown-menu {
+    border: $dropdown-menu-border;
+    border-radius: $dropdown-radius;
+    background-color: $dropdown-menu-bg;
+    box-shadow: $dropdown-menu-box-shadow;
+    padding: $dropdown-menu-padding;
+    margin: $dropdown-menu-margin;
+    color: inherit;
+
+    .dropdown-item {
+      padding: $dropdown-menu-item-padding;
+      color: $dropdown-menu-item-color;
+
+      &:hover {
+        color: $dropdown-menu-item-hover-color;
+        background-color: $dropdown-menu-item-bg-default;
+      }
+    }
+
+    .dropdown-item:first-child:hover,
+    .dropdown-item:first-child.active{
+      border-top-left-radius: $dropdown-radius;
+      border-top-right-radius: $dropdown-radius;
+    }
+
+    .dropdown-item:last-child:hover,
+    .dropdown-item:last-child.active{
+      border-bottom-left-radius: $dropdown-radius;
+      border-bottom-right-radius: $dropdown-radius;
+    }
+
+    .active {
+      color: $dropdown-menu-item-active-color;
+      background-color: $dropdown-menu-item-bg-default;
+    }
+
+    .dropdown-divider {
+      margin: $dropdown-menu-divider-margin;
+      border-top: $dropdown-menu-divider-border;
+    }
+  }
+
+  .btn-primary + .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: $dropdown-menu-item-bg-primary;
+      }
+    }
+    .active {
+      background-color: $dropdown-menu-item-bg-primary;
+    }
+  }
+
+  .btn-secondary + .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: $dropdown-menu-item-bg-secondary;
+      }
+    }
+    .active {
+      background-color: $dropdown-menu-item-bg-secondary;
+    }
+  }
+  .btn-success + .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: $dropdown-menu-item-bg-success;
+      }
+    }
+    .active {
+      background-color: $dropdown-menu-item-bg-success;
+    }
+  }
+  .btn-danger + .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: $dropdown-menu-item-bg-danger;
+      }
+    }
+    .active {
+      background-color: $dropdown-menu-item-bg-danger;
+    }
+  }
+  .btn-warning + .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: $dropdown-menu-item-bg-warning;
+      }
+    }
+    .active {
+      background-color: $dropdown-menu-item-bg-warning;
+    }
+  }
+  .btn-light + .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: $dropdown-menu-item-bg-light;
+      }
+    }
+    .active {
+      background-color: $dropdown-menu-item-bg-light;
+    }
+  }
+  .btn-info + .dropdown-menu {
+    .dropdown-item {
+      &:hover {
+        background-color: $dropdown-menu-item-bg-info;
+      }
+    }
+    .active {
+      background-color: $dropdown-menu-item-bg-info;
+    }
+  }
+}
+//End dropdown style
+
+.dropdown.show {
+  .btn-primary.dropdown-toggle {
+    background-color: $dropdown-btn-bg-active-primary;
+    color: $dropdown-btn-active-color-primary;
+  }
+
+  .btn-secondary.dropdown-toggle {
+    background-color: $dropdown-btn-bg-active-secondary;
+    color: $dropdown-btn-active-color-secondary;
+  }
+
+  .btn-success.dropdown-toggle {
+    background-color: $dropdown-btn-bg-active-success;
+    color: $dropdown-btn-active-color-success;
+  }
+
+  .btn-danger.dropdown-toggle {
+    background-color: $dropdown-btn-bg-active-danger;
+    color: $dropdown-btn-active-color-danger;
+  }
+
+  .btn-warning.dropdown-toggle {
+    background-color: $dropdown-btn-bg-active-warning;
+    color: $dropdown-btn-active-color-warning;
+  }
+
+  .btn-light.dropdown-toggle {
+    background-color: $dropdown-btn-bg-active-light;
+    color: $dropdown-btn-active-color-light;
+  }
+
+  .btn-info.dropdown-toggle {
+    background-color: $dropdown-btn-bg-active-info;
+    color: $dropdown-btn-active-color-info;
+  }
+}
+
+//Common dropdown cret arrow hidden
+
+.hidden-dropdown-arrow:after {
+  display: none;
+}

@@ -1,0 +1,44 @@
+@import '../components/variables';
+@import '../helper/place-holder';
+.custom-tabs
+{
+  ul.nav-tabs
+  {
+    border-bottom: $main-layout-card-border;
+    li.nav-item
+    {
+      //position: relative;
+      padding: 0.5rem 0;
+      &:nth-of-type(1)
+      {
+        border-top-left-radius: 0.25rem;
+      }
+
+      &:nth-last-of-type(1)
+      {
+        border-top-right-radius: 0.25rem;
+      }
+
+      &.active
+      {
+        border: none;
+        border-bottom: 2px solid $app-color;
+        //&:after
+        //{
+        //  @extend %custom-ticker;
+        //  transform: rotate(45deg);
+        //  background: linear-gradient(-45deg, $app-color 50%, transparent 50%);
+        //  position: absolute;
+        //  bottom: -0.5rem;
+        //}
+      }
+      .nav-link
+      {
+        border: none;
+        border-radius: 0;
+        color: $app-color !important;
+      }
+    }
+
+  }
+}

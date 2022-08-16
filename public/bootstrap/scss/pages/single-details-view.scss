@@ -1,0 +1,162 @@
+@import '../skeleton/config.scss';
+
+.details-container {
+  width: 100%;
+  .details-left-panel {
+    width: $details-left-panel-width;
+    vertical-align: top;
+
+    .details-item-img {
+      width: 100%;
+      border-radius: $details-item-img-radius;
+    }
+
+    .item-info-box {
+      margin: $details-item-info-box-margin;
+    }
+  }
+
+  .details-right-panel {
+    padding: $details-right-panel-padding;
+    vertical-align: top;
+
+    .details-item-about-box {
+      margin: $details-item-about-box-margin;
+    }
+
+    .details-item-owner-box {
+      margin-top: $details-item-owner-box-mt;
+    }
+
+    .details-item-owner-box > .item-owner-actions-box {
+      text-align: right;
+
+      .btn {
+        margin-bottom: $details-item-owner-action-btn-mb;
+      }
+
+      .btn:not(:first-child) {
+        margin-left: $details-item-owner-action-btn-ml;
+      }
+    }
+
+    .details-item-timeline-box {
+      margin: $details-item-timeline-box-margin;
+
+      .tab-content {
+        background-color: transparent;
+      }
+    }
+
+    .details-item-tabs-box {
+      margin: $details-item-tabs-box-margin;
+
+      .tab-content-header {
+        margin: $tab-content-header-margin;
+
+        h5 {
+          display: inline-block;
+          margin-top: 8px;
+        }
+
+        button {
+          float: right;
+          margin: $tab-content-header-btn-margin;
+        }
+      }
+
+      table {
+        margin-bottom: 20px;
+
+        tr.remove-visibility td {
+          &:last-child {
+            width: 100px;
+            text-align: right;
+          }
+        }
+      }
+
+      .job-tab-container,
+      .personal-tab-container {
+        margin-top: 10px;
+
+        .form-group {
+          margin-bottom: 1rem;
+        }
+      }
+
+    }
+
+  }
+
+  //Common
+  .item-sub-title {
+    margin: $details-item-sub-title-margin;
+    font-weight: $details-item-sub-title-fw;
+  }
+}
+
+//Media query fo details view
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $media-xs-down) {
+
+  .details-container {
+    display: block !important;
+
+    .details-left-panel {
+      display: block !important;
+      width: 100%;
+    }
+
+    .details-right-panel {
+      padding: $details-right-panel-padding-small-view;
+      margin-top: $details-item-right-panel-mt-small-view;
+    }
+
+    .details-item-status-box .card-body {
+      margin: $details-item-status-card-margin-small-view;
+    }
+
+    .item-owner-actions-box {
+      margin-top: $details-item-owner-box-mt-small-view;
+
+      .btn {
+        display: block;
+        margin: $details-item-owner-action-btn-margin !important;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $media-xs-up) and (max-width: $media-sm-up) {
+  .details-container {
+    .details-left-panel {
+      width: $details-left-panel-width-small-view !important;
+    }
+
+    .item-owner-actions-box .btn {
+      display: block;
+      margin: $details-item-owner-action-btn-margin !important;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $media-xs-up) and (max-width: 860px) {
+  .details-container {
+    .item-owner-actions-box .btn {
+      display: block;
+      margin: $details-item-owner-action-btn-margin !important;
+    }
+  }
+}
+
+// card deck column responsive of single details page
+@media (max-width: 1225px) {
+  .card-deck {
+    .card-body {
+      flex: 1 1 auto !important;
+    }
+  }
+}

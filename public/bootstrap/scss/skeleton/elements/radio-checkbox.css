@@ -1,0 +1,45 @@
+.radio-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 2.5rem;
+  margin: 0; }
+  .radio-checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    left: 0; }
+    .radio-checkbox input:checked ~ .control_indicator {
+      background-color: #ffffff; }
+      .radio-checkbox input:checked ~ .control_indicator i {
+        display: block; }
+    .radio-checkbox input:disabled ~ .control_indicator {
+      cursor: not-allowed;
+      opacity: 0.5; }
+  .radio-checkbox .control_indicator {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+    text-align: center;
+    border-radius: 10rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.3rem 0.01rem rgba(0, 0, 0, 0.18);
+    transition: all 0.5s; }
+    .radio-checkbox .control_indicator i {
+      display: none;
+      font-size: 0.8rem;
+      margin-top: 0.3rem; }
+  .radio-checkbox input:checked ~ .radio-primary {
+    background-color: #4a97fd;
+    box-shadow: none; }
+    .radio-checkbox input:checked ~ .radio-primary i {
+      color: #ffffff; }
+  .radio-checkbox input:checked ~ .radio-success {
+    background-color: #63b870;
+    box-shadow: none; }
+    .radio-checkbox input:checked ~ .radio-success i {
+      color: #ffffff; }
+
+/*# sourceMappingURL=radio-checkbox.css.map */

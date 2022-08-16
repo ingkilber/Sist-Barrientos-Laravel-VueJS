@@ -1,0 +1,10 @@
+@import "../config.scss";
+
+//Start top bar header menu
+.page-header {
+  margin: $page-header-margin;
+
+  .page-search{
+    width: $page-header-search-field-width;
+  }
+}

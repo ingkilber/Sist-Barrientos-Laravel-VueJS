@@ -1,0 +1,119 @@
+@import '../config.scss';
+
+.tag {
+  display: inline-block;
+  text-align: center;
+  padding: $tag-padding;
+  margin: $tag-margin;
+  box-shadow: $tag-box-shadow;
+  border-radius: $radius;
+  color: $tag-color;
+  font-size: $tag-font-size;
+  white-space: nowrap;
+  line-height: 1;
+  font-weight: 100;
+
+  span {
+    padding: 0rem .6rem;
+  }
+
+  i.cancel {
+    padding: .25em;
+    color: $tag-color-cancel;
+    cursor: $tag-cancel-cursor;
+    opacity: 0.6;
+  }
+
+  &:hover i.cancel {
+    opacity: 1;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.tag-pill {
+  border-radius: $tag-radius-pill;
+}
+
+.tag-primary {
+  background-color: $tag-bg-primary;
+  color: $tag-color-primary;
+
+  &:hover {
+    background-color: $tag-hover-bg-primary;
+    color: $tag-hover-color-primary;
+  }
+}
+
+.tag-secondary {
+  background-color: $tag-bg-secondary;
+  color: $tag-color-secondary;
+
+  &:hover {
+    background-color: $tag-hover-bg-secondary;
+    color: $tag-hover-color-secondary;
+  }
+}
+
+.tag-success {
+  background-color: $tag-bg-success;
+  color: $tag-color-success;
+
+  &:hover {
+    background-color: $tag-hover-bg-success;
+    color: $tag-hover-color-success;
+  }
+}
+
+.tag-danger {
+  background-color: $tag-bg-danger;
+  color: $tag-color-danger;
+
+  &:hover {
+    background-color: $tag-hover-bg-danger;
+    color: $tag-hover-color-danger;
+  }
+}
+
+.tag-warning {
+  background-color: $tag-bg-warning;
+  color: $tag-color-info;
+
+  &:hover {
+    background-color: $tag-hover-bg-warning;
+    color: $tag-hover-color-warning;
+  }
+}
+
+.tag-info {
+  background-color: $tag-bg-info;
+  color: $tag-color-warning;
+
+  &:hover {
+    background-color: $tag-hover-bg-info;
+    color: $tag-hover-color-info;
+  }
+}
+
+.tag-light {
+  background-color: $tag-bg-light;
+  color: $tag-color-light;
+  box-shadow: $tag-box-shadow-light;
+
+  &:hover {
+    background-color: $tag-hover-bg-light;
+    color: $tag-hover-color-light;
+  }
+}
+
+.tag-dark {
+  background-color: $tag-bg-dark;
+  color: $tag-color-dark;
+
+  &:hover {
+    background-color: $tag-hover-bg-dark;
+    color: $tag-hover-color-dark;
+  }
+}

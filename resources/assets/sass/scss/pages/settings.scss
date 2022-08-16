@@ -1,0 +1,40 @@
+@import '../components/variables';
+@import '../helper/place-holder';
+
+.settings-left-card
+{
+  padding-left: 0 !important;
+  .main-layout-card
+  {
+    margin-bottom: 0.75rem;
+  }
+  @extend %custom-list-with-active-border;
+}
+
+//Email
+#test-mail
+{
+  &::placeholder
+  {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 991px){
+  .settings-left-card
+  {
+    padding-right: 0 !important;
+  }
+}
+
+//Styles for shortcut setting
+.btn-shortcut-info{
+  cursor: help !important;
+  font-size: 20px !important;
+  padding-right: 0 !important;
+}
+#shortcut-setup-form{
+  .disabled-button {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}

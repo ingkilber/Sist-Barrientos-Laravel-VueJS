@@ -1,0 +1,116 @@
+@import '../config.scss';
+
+.daterangepicker {
+  padding: $daterangepicker-container-padding;
+  border: $daterangepicker-container-border;
+  border-radius: $daterangepicker-container-radius;
+  background-color: $daterangepicker-container-bg;
+  box-shadow: $daterangepicker-container-box-shadow;
+
+  //Arrow hidden
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  .ranges {
+    margin: $daterangepicker-ranges-margin;
+
+    ul {
+      width: $daterangepicker-ranges-width;
+
+      li {
+        border: none;
+        border-radius: 0;
+        padding: $daterangepicker-ranges-padding;
+        margin: 0;
+        background-color: $daterangepicker-ranges-bg;
+        color: $daterangepicker-ranges-color;
+        font-size: $daterangepicker-ranges-font-size;
+
+        &:hover {
+          background-color: $daterangepicker-ranges-hover-bg;
+          color: $daterangepicker-ranges-hover-color;
+        }
+      }
+
+      li.active {
+        background-color: $daterangepicker-ranges-hover-bg;
+        color: $daterangepicker-ranges-hover-color;
+      }
+    }
+
+    .range_inputs {
+      margin: $daterangepicker-ranges-inputs-margin;
+    }
+
+  }
+
+  .daterangepicker_input {
+    .input-mini {
+      display: inline-block;
+      border-radius: $daterangepicker-input-radious;
+      padding: $daterangepicker-input-padding;
+      border: $daterangepicker-input-border;
+      color: $daterangepicker-input-color;
+      height: inherit;
+    }
+    .active {
+      border-color: $daterangepicker-input-border-color;
+    }
+  }
+
+  .calendar-table {
+
+    th.prev, th.next {
+      i::before {
+        font-family: "fontello";
+        font-style: normal;
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+
+    th.prev {
+      i::before {
+        content: '\E85E';
+      }
+    }
+
+    th.next {
+      i::before {
+        content: '\E85F';
+      }
+    }
+
+    td.start-date {
+      border-radius: $radius 0 0 $radius;
+    }
+
+    td.end-date {
+      border-radius: 0 $radius $radius 0;
+    }
+
+    td {
+      color: $font-color;
+      border-radius: $radius;
+    }
+
+    td.in-range {
+      background-color: #4996FD12;
+    }
+
+    td.active {
+      background-color: $daterangepicker-td-active-bg;
+      color: $daterangepicker-td-active-color;
+
+      &:hover {
+        background-color: $daterangepicker-td-active-bg;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,94 @@
+@import '../config.scss';
+
+.letter-list {
+  display: table;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: $letter-list-radius;
+  background-color: $letter-list-bg;
+  box-shadow: $letter-list-box-shadow;
+
+  li {
+    display: table-cell;
+    width: 1%;
+  }
+
+  li:first-child a {
+    border-radius: $letter-list-first-child-radius;
+  }
+
+  li:last-child a {
+    border-radius: $letter-list-last-child-radius;
+  }
+
+  li > a {
+    display: block;
+    padding: 10px 0;
+    color: $letter-list-color;
+    background-color: $letter-list-bg;
+    text-align: $letter-list-text-align;
+    text-transform: $letter-list-text-transform;
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    text-decoration: $letter-list-text-decoration;
+
+    &:hover, &:focus, &:active {
+      background-color: $letter-list-hover-bg;
+      color: $letter-list-hover-color;
+      border-radius: $letter-list-hover-radius;
+    }
+  }
+
+  li.active a {
+    background-color: $hover-secondary;
+    color: $letter-list-hover-color;
+    border-radius: $letter-list-hover-radius;
+  }
+}
+
+.letter-list-primary {
+  background-color: $letter-list-primary;
+
+  li > a {
+    background-color: $letter-list-primary;
+    color: $letter-list-color-primary;
+  }
+
+  li.active a, li > a:hover,
+  li > a:focus, li > a:active {
+    background-color: $letter-list-hover-primary;
+    color: $letter-list-hover-color-primary;
+  }
+}
+
+.letter-list-secondary {
+  background-color: $letter-list-secondary;
+
+  li > a {
+    background-color: $letter-list-secondary;
+    color: $letter-list-color-secondary;
+  }
+
+  li.active a, li > a:hover,
+  li > a:focus, li > a:active {
+    background-color: $letter-list-hover-secondary;
+    color: $letter-list-hover-color-secondary;
+  }
+}
+
+.letter-list-success {
+  background-color: $letter-list-success;
+
+  li > a {
+    background-color: $letter-list-success;
+    color: $letter-list-color-success;
+  }
+
+  li.active a, li > a:hover,
+  li > a:focus, li > a:active {
+    background-color: $letter-list-hover-success;
+    color: $letter-list-hover-color-success;
+  }
+}

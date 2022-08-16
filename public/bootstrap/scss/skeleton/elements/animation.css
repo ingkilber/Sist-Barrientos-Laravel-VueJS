@@ -1,0 +1,14 @@
+.dropdown-menu.animated {
+  animation-duration: 0.08s;
+  animation-delay: .02s; }
+.dropdown-menu.topbar-dropdown {
+  animation-duration: 0.3s;
+  animation-delay: 0.0s; }
+
+.avatar-link-animate {
+  animation-duration: .5s; }
+
+.sub-menu .animated {
+  animation-duration: .3s; }
+
+/*# sourceMappingURL=animation.css.map */

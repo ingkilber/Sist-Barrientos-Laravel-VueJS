@@ -1,0 +1,205 @@
+.todo-wrapper {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  .todo-header-content{
+    padding: 1.35rem 10px;
+    border-bottom: 1px solid #ebedf2;
+    .close-btn {
+
+    }
+  }
+  .todo-layout-content{
+    padding: 10px;
+    .form-row{
+      .custom-control-label{
+        padding-left: 4px;
+        &:before{
+          top: 0.15rem;
+          width: 1.15rem;
+          height: 1.15rem
+        }
+        &:after{
+          top: 0.15rem;
+          width: 1.15rem;
+          height: 1.15rem
+        }
+      }
+      .sort-by{
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        label{
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin-bottom: 0;
+          margin-left: auto;
+        }
+        .custom-select{
+          border: 0;
+          width: auto;
+          height: calc(1.5em + 0.5rem + 0px);
+          color: #fff;
+          font-size: 0.75rem;
+          margin-right: 0 !important;
+          background: $app-color url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
+          padding: 0 1.5rem 0 0.5rem !important;
+          &:focus{
+            outline: 0;
+            box-shadow: none;
+          }
+        }
+      }
+      .horizontal-line{
+        height: 1.5px;
+        margin: 10px 0 15px 0;
+        display: block;
+        background-color: #ebedf2;
+      }
+      .task-input-group{
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        .form-control{
+          border: 0;
+          &::placeholder{
+            color: #a8b3bd;
+          }
+        }
+        .btn{
+          border: 0;
+          font-weight: bolder;
+          font-size: 18px !important;
+          padding: 0 1.15rem !important;
+          i{
+            color: #ced4da;
+            font-weight: bold;
+          }
+          &:hover{
+            background-color: transparent;
+            i{
+              color: #6b737b;
+            }
+          }
+        }
+      }
+      .incomplete-task-list{
+        .single-incomplete-task{
+          padding-right: 3px;
+          .custom-control-label{
+            &:before{
+              border-color: #c5ccd3;
+            }
+            &:after{
+              border-color: #c5ccd3;
+            }
+          }
+          .add-due-date{
+            color: #175eab;
+            font-size: 0.9rem;
+            border: 0 !important;
+            &:hover{
+              cursor: pointer;
+            }
+            &:focus{
+              border: 0;
+              outline: 0;
+              box-shadow: none;
+            }
+            &::placeholder{
+              color: #175eab;
+            }
+          }
+          .vdp-datepicker__calendar{
+            border: 0;
+            right: -10px !important;
+            box-shadow: rgb(204, 204, 204) -3px 4px 12px -1px;
+            .day-header{
+              color: #999;
+            }
+            .cell{
+              height: 35px;
+              font-size: 12px;
+              line-height: 35px;
+            }
+            .selected{
+              color: #fff;
+              background: #2d2f3d;
+            }
+            .cell{
+              &:hover{
+                border: 0;
+                color: #000;
+                background: #eee;
+              }
+            }
+            .blank{
+              &:hover{
+                background: transparent;
+              }
+            }
+          }
+          .delete-icon-wrapper{
+            padding-top: 1px;
+            .delete{
+              color: #000;
+              opacity: .2;
+              font-size: 0.9rem;
+              &:hover{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .hide-completed-task{
+        .btn{
+          padding: .2rem 1.15rem !important;
+        }
+      }
+      .complete-task-list{
+        .single-complete-task{
+          .custom-control{
+            .custom-control-input:checked~.custom-control-label::before {
+              color: #ced4da;
+              border-color: #ced4da;
+              background-color: #ced4da;
+            }
+            .custom-control-label{
+              text-decoration: line-through;
+            }
+            span{
+              color: #6c757d;
+              font-size: 0.8rem;
+              .avatar{
+                width: 18px !important;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.todo-overlay {
+  z-index: 1035;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #ababab6b;
+}

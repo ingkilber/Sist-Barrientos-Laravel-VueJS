@@ -1,0 +1,91 @@
+@import '../config.scss';
+
+//It's common close icon code
+.close,
+.close:focus,
+.close:active {
+  cursor: pointer;
+  outline: none;
+}
+
+//Start modal sass style
+.modal-no-footer {
+  .modal-body {
+    padding-bottom: $modal-body-padding-bottom-when-no-footer;
+  }
+}
+
+.modal-content {
+  position: relative;
+  border: $modal-content-border;
+  border-radius: $modal-content-radius;
+  height: $modal-content-height;
+
+  .close {
+    position: absolute;
+    right: $modal-close-icon-right;
+    top: $modal-close-icon-top;
+    padding: $modal-close-icon-padding;
+  }
+}
+
+.modal-header {
+  padding: $modal-header-padding;
+  background: $modal-header-bg;
+  color: $modal-header-color;
+  border-bottom: $modal-header-border-bottom;
+}
+
+.modal-body {
+  padding: $modal-body-padding;
+
+  .form-group:last-child {
+    margin-bottom: 0rem;
+  }
+}
+
+.modal-footer {
+  display: block;
+  text-align: center;
+  padding: $modal-footer-padding;
+  border-top: $modal-footer-border-top;
+
+  .left-item {
+    float: left;
+    display: inline-flex;
+
+    .btn:not(:last-child){
+      margin-right: $modal-footer-btn-margin;
+    }
+  }
+
+  .right-item {
+    float: right;
+    display: inline-flex;
+
+    .btn:not(:first-child){
+      margin-left: $modal-footer-btn-margin;
+    }
+  }
+
+  .link-item {
+    margin-top: $modal-footer-link-margin;
+    text-decoration: none;
+  }
+}
+
+//Modal width size
+.modal-xs {
+  max-width: $modal-xs-max-width;
+}
+
+.modal-sm {
+  max-width: $modal-sm-max-width;
+}
+
+.modal-lg {
+   max-width: none;
+   width: $modal-lg-max-width;
+   height: $modal-lg-max-height;
+   margin: $modal-lg-margin;
+ }

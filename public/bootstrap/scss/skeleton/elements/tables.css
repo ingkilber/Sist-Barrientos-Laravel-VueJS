@@ -1,0 +1,74 @@
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #999999; }
+  .table thead th {
+    border-bottom: 1px solid #eeeeee;
+    background-color: transparent; }
+  .table th, .table td {
+    text-align: left;
+    padding: 0.75rem;
+    border-top: 1px solid #eeeeee; }
+  .table tr td {
+    background-color: transparent; }
+  .table tr:last-child {
+    border-bottom: 1px solid #eeeeee; }
+  .table.border-header-0 th {
+    border-top: 0px; }
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid #eeeeee; }
+
+.table-hover tbody tr:hover {
+  background-color: #eee;
+  color: #999999; }
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  table.custom-table-responsive {
+    display: block;
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */ }
+    table.custom-table-responsive thead, table.custom-table-responsive tbody, table.custom-table-responsive th, table.custom-table-responsive td, table.custom-table-responsive tr {
+      display: block; }
+    table.custom-table-responsive thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
+    table.custom-table-responsive tr {
+      border: 1px solid #eeeeee; }
+      table.custom-table-responsive tr:first-child {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px; }
+      table.custom-table-responsive tr:last-child {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px; }
+    table.custom-table-responsive tr:nth-of-type(odd) {
+      background-color: #f8f8f8;
+      margin: -1px 0; }
+    table.custom-table-responsive td {
+      border: none;
+      position: relative;
+      padding-left: 50%; }
+    table.custom-table-responsive td:before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-label); } }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  table.custom-table-responsive body {
+    padding: 0;
+    margin: 0;
+    width: 320px; } }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  table.custom-table-responsive body {
+    width: 495px; } }
+
+/*# sourceMappingURL=tables.css.map */

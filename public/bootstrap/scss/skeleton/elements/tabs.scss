@@ -1,0 +1,131 @@
+@import '../config.scss';
+
+//Start tab style
+
+.nav-tabs {
+  border-width: $tab-border-width;
+
+  .nav-link {
+    color: inherit;
+    padding: $tab-padding;
+    border-width: $tab-border-width;
+    position: relative;
+    margin: $tab-margin;
+  }
+
+  .nav-link.active,
+  .nav-link:hover {
+    color: $tab-color;
+    background-color: $tab-bg;
+    border-radius: $tab-radius;
+
+    &:after {
+      transform: scale(1);
+    }
+  }
+
+  .nav-link:after {
+    content: "";
+    background: $tab-color;
+    height: $tab-border-bottom-height;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+  }
+}
+
+//Vertical tab
+.flex-column.tabs-vertical {
+  .nav-link {
+    color: inherit;
+    padding: $tab-padding-v;
+    margin: $tab-margin-v;
+    position: relative;
+  }
+
+  .nav-link.active,
+  .nav-link:hover {
+    color: $tab-color;
+    background-color: $tab-bg;
+    border-radius: $tab-radius-v;
+
+    &:before {
+      transform: scale(1);
+    }
+  }
+
+  .nav-link:before {
+    content: "";
+    background: $tab-color;
+    height: 100%;
+    position: absolute;
+    width: $tab-border-left-width-v;
+    left: 0;
+    top: 0;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+  }
+}
+
+.tab-content {
+  background-color: $tab-content-bg;
+  padding: $tab-content-padding;
+  margin-top: -1px;
+
+  .tab-content-title {
+    margin: 5px 0 15px;
+  }
+}
+
+//Responsive tabs
+.responsive-tabs {
+
+  .tab-dropdown {
+    display: none;
+  }
+
+  .tab-more {
+    padding: $tab-padding;
+    text-align: center;
+    cursor: $click-cursor;
+    border-width: $tab-border-width;
+    position: relative;
+    box-shadow: none;
+    background-color: transparent;
+    line-height: inherit;
+  }
+
+  .tab-more.active,
+  .tab-more:hover {
+    color: $tab-color;
+    background-color: $tab-bg;
+    border-radius: $tab-radius;
+
+    &:after {
+      transform: scale(1);
+    }
+  }
+
+  .tab-more:after {
+    content: "";
+    background: $tab-color;
+    height: $tab-border-bottom-height;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+  }
+
+  .btn-light {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+//End tab style

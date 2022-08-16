@@ -1,0 +1,317 @@
+@import '../skeleton/config.scss';
+
+.fc-button-group {
+  box-shadow: $full-calendar-group-btn-box-shadow;
+  border-radius: $full-calendar-group-btn-box-shadow;
+  margin: 0;
+
+  .fc-state-default {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: $full-calendar-group-btn-bg;
+    color: $full-calendar-group-btn-color;
+    background-image: none;
+    text-shadow: none;
+
+    &:hover, &:focus {
+      background-color: $full-calendar-group-btn-hover-bg;
+      color: $full-calendar-group-btn-hover-color;
+      outline: none;
+    }
+
+    .fc-icon, .fc-button {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .fc-icon-right-single-arrow::after {
+      content: '\E85F';
+    }
+
+    .fc-icon-left-single-arrow::after {
+      content: '\E85E';
+    }
+
+    .fc-icon-left-single-arrow::after,
+    .fc-icon-right-single-arrow::after {
+      font-family: 'fontello';
+      display: inline;
+      font-size: $font-size;
+      top: 0;
+    }
+
+    &:first-child {
+      border-top-left-radius: $full-calendar-group-btn-border-radius;
+      border-bottom-left-radius: $full-calendar-group-btn-border-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $full-calendar-group-btn-border-radius;
+      border-bottom-right-radius: $full-calendar-group-btn-border-radius;
+    }
+  }
+
+  .fc-state-active {
+    background-color: $full-calendar-group-btn-hover-bg;
+    color: $full-calendar-group-btn-hover-color;
+  }
+
+}
+
+.fc-today-button {
+  border: none;
+  outline: none;
+  background-image: none;
+  text-shadow: none;
+  box-shadow: $full-calendar-group-btn-box-shadow;
+  background-color: $full-calendar-group-btn-bg;
+  color: $full-calendar-group-btn-color;
+  border-radius: $full-calendar-group-btn-box-radius !important;
+
+  &:hover, &:focus {
+    background-color: $full-calendar-group-btn-hover-bg;
+    color: $full-calendar-group-btn-hover-color;
+    outline: none;
+  }
+}
+
+.fc-state-disabled {
+  //background-color: $full-calendar-group-btn-hover-bg;
+  //color: $full-calendar-group-btn-hover-color;
+  cursor: $default-cursor !important;
+
+  &:hover {
+    background-color: transparent;
+    color: $font-color;
+  }
+}
+
+.inner-left-panel {
+
+  .current-date-info {
+    text-align: center;
+    padding: 25px 15px;
+    background: url("../imgs/calendar-event.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: $full-calendar-left-panel-radius;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: $full-calendar-left-panel-radius;
+      z-index: 2;
+    }
+
+    div {
+      position: relative;
+      line-height: 1;
+      z-index: 3;
+    }
+
+    .date, .day {
+      margin-bottom: 8px;
+    }
+
+    .date {
+      span {
+        font-size: 65px;
+      }
+    }
+
+    .day {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .todo-list {
+    .media {
+      padding: 10px 16px;
+    }
+    .event-icon {
+      margin-right: 10px;
+    }
+
+    .media:first-child {
+      margin-top: 15px;
+    }
+  }
+
+  .event-text {
+    font-weight: 500;
+  }
+
+}
+
+.fc {
+  padding: $full-calendar-padding;
+  background-color: $full-calendar-bg;
+  border-radius: $full-calendar-darius;
+  box-shadow: $full-calendar-box-shadow;
+
+  .fc-head-container, .fc-widget-header {
+    border: none;
+  }
+
+  .fc-day-header {
+    padding: $full-calendar-header-padding;
+    font-size: $full-calendar-font-size;
+    font-weight: normal;
+  }
+
+  .fc-header-toolbar .fc-center h2 {
+    font-weight: normal;
+  }
+
+  .fc-event, .fc-not-start {
+    padding: $full-calendar-event-padding !important;
+    background-color: $full-calendar-event-bg;
+    border-radius: $full-calendar-event-radius !important;
+    margin: $full-calendar-event-margin !important;
+    border: none;
+  }
+
+  .fc-content {
+    color: $full-calendar-event-content-color;
+  }
+
+  .fc-bg {
+    background: transparent;
+    opacity: 1;
+  }
+
+  td.fc-today,
+  .fc-highlight {
+    background: $full-calendar-today-selected-bg;
+  }
+
+  .fc-day, .fc-body td {
+    border-color: $full-calendar-border-color;
+  }
+
+  .fc-time-grid .fc-slats td {
+    height: $full-calendar-time-grid-height;
+    text-align: center;
+  }
+}
+
+.fc-list-view,
+.fc-list-heading td,
+.fc-list-item td {
+  border-color: $full-calendar-border-color !important;
+}
+
+.fc-event-dot {
+  background-color: $full-calendar-event-bg;
+}
+
+.fc-list-view {
+  border-radius: $full-calendar-darius;
+
+  .fc-list-empty {
+    background-color: $full-calendar-today-selected-bg;
+  }
+}
+
+.fc-list-table {
+  table-layout: fixed !important;
+
+  .fc-list-heading td {
+    background-color: $full-calendar-event-bg;
+    color: $full-calendar-group-btn-hover-color;
+  }
+
+  tr:first-child .fc-widget-header {
+    border-top-left-radius: $full-calendar-darius;
+    border-top-right-radius: $full-calendar-darius;
+  }
+
+  .fc-list-item td {
+    background-color: $white;
+  }
+
+  .fc-list-item:hover td {
+    background-color: $full-calendar-list-hover-bg;
+  }
+}
+
+// Responsive for calendar view
+.calendar-container {
+  @media (min-width: 1600px) {
+
+  }
+
+  @media (max-width: 1599px) {
+
+  }
+
+  @media (max-width: 1024px) {
+
+  }
+
+  @media (max-width: 800px) {
+    .layout-table {
+      display: block !important;
+    }
+
+    .inner-left-panel {
+      display: block !important;
+      width: 100%;
+    }
+
+    .inner-right-panel {
+      display: block;
+      padding: 0;
+    }
+
+    .fc {
+      margin-top: 30px;
+      padding: 15px;
+    }
+  }
+
+  @media (min-width: $media-iphone5-down) and (max-width: 568px) and (orientation: portrait) {
+    .fc-left, .fc-right {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .fc-today-button {
+      float: right;
+    }
+
+    .fc-right {
+      .fc-button-group {
+        margin-left: 30px !important;
+      }
+    }
+
+    //.fc-month-view, .fc-agendaWeek-view {
+    //  width: 100%;
+    //  overflow-x: scroll;
+    //  overflow-y: scroll;
+    //  //background-color: pink;
+    //
+    //  table {
+    //    width: 980px;
+    //  }
+    //
+    //  .fc-scroller {
+    //    height: 100% !important;
+    //  }
+    //}
+  }
+
+}

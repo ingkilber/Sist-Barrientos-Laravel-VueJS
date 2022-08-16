@@ -1,0 +1,3125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gain deign demo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- Icon font CSS -->
+    <link rel="stylesheet" href="./icon-font/client/css/fontello.css">
+
+    <!--Import font from google -->
+    <link href=“https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i” rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./scss/style.css">
+
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <!-- Start topbar header -->
+    <header class="topbar fixed-top">
+        <nav class="navbar top-navbar navbar-expand navbar-light">
+            <!--It's visible only large view-->
+            <!--Brand logo for large view-->
+            <div class="navbar-header d-none desktop-navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="gain-logo.png" class="d-inline-block align-middle" alt="Gain">
+                </a>
+            </div>
+
+            <!--It's visible only mobile view-->
+            <ul class="navbar-nav mr-auto nav-left">
+                <li class="nav-item mobile-left-menu-bar">
+                    <a href="#" id="js-show-left-bar" class="nav-link">
+                        <i class="icon-g-align-left"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav nav-right">
+                <li class="nav-item">
+                    <a href="#" class="nav-link badge-alert-container">
+                        <i class="icon-tasks"></i>
+                        <span class="badge-alert">1</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link badge-alert-container dropdown-toggle hidden-dropdown-arrow"
+                       id="js-temporary-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-bell-alt"></i>
+                        <span class="badge-alert">2</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right animated bounceInDown topbar-dropdown"
+                         aria-labelledby="js-temporary-notification">
+                        <div class="p-3"> Notifications</div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <img src="imgs/masum.jpeg" alt="Md.Masum Billah" class="avatar avatar-xs">
+                        <span class="profile-name"> Md.Masum Billah </span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right animated bounceInDown topbar-dropdown"
+                         aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="profile.html">My profile</a>
+                        <a class="dropdown-item" href="settings.html">Account settings</a>
+                        <a class="dropdown-item" href="teams.html">Team settings</a>
+                        <a class="dropdown-item" href="#">Change account</a>
+                        <a class="dropdown-item" href="#">Create new account</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End topbar header-->
+
+    <!-- Start left sidebar - style you can find in sidebar.scss -->
+    <aside class="left-sidebar left-border-menu">
+        <!--Brand logo for mobile-->
+        <div class="navbar-header clearfix d-none mobile-navbar-header">
+            <a class="navbar-brand" href="#">
+                <div>
+                    <img src="gain-logo.png" class="d-inline-block align-middle" alt="Gain">
+                </div>
+                <div class="brand-name">Gain</div>
+            </a>
+            <span class="closed-left-bar" id="js-closed-left-bar"><i class="icon-g-arrow-circle-left"></i></span>
+        </div>
+        <div class="clearfix left-nav-item-container">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="icon-home"></i>
+                        <br class="d-block d-sm-none">
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">
+                        <i class="icon-address-book adjust-icon-size"></i>
+                        <br class="d-block d-sm-none">
+                        <span class="menu-text">Contacts</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deals.html">
+                        <i class="icon-bullseye"></i><br>
+                        <span class="menu-text">Deals</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">
+                        <i class="icon-barcode adjust-icon-size"></i><br>
+                        <span class="menu-text">Products</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="icon-columns adjust-icon-size"></i>
+                        <br class="d-block d-sm-none">
+                        <span class="menu-text">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conversations.html">
+                        <i class="icon-conversation"></i>
+                        <br class="d-block d-sm-none">
+                        <span class="text-break menu-text">Conver<span
+                                class="text-break-point">-<br></span>sations</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="icon-calendar adjust-icon-size"></i>
+                        <br class="d-block d-sm-none">
+                        <span class="menu-text">Calendar</span>
+                    </a>
+                </li>
+                <li class="nav-item sub-menu left-sub-menu">
+                    <a class="nav-link" href="#">
+                        <i class="icon-basket"></i>
+                        <br class="d-block d-sm-none">
+                        <span class="menu-text">Sales</span>
+                        <span class="toggle-icon icon-g-angle-right"></span>
+                    </a>
+
+                    <div class="sub-menu-container">
+                        <nav class="nav flex-column animated fadeInDown">
+                            <a class="nav-link" href="#">Create orders</a>
+                            <a class="nav-link" href="#">All orders</a>
+                            <a class="nav-link active" href="#">Sales reports</a>
+                            <a class="nav-link" href="#">Register logs</a>
+                        </nav>
+                    </div>
+
+                </li>
+                <li class="nav-item sub-menu left-sub-menu">
+                    <a class="nav-link" href="#">
+                        <i class="icon-clock"></i>
+                        <br class="d-block d-sm-none">
+                        <span class="menu-text">Timelogs</span>
+                        <span class="toggle-icon icon-g-angle-right"></span>
+                    </a>
+
+                    <div class="sub-menu-container">
+                        <nav class="nav flex-column animated fadeInDown">
+                            <a class="nav-link" href="#">Time sheet</a>
+                            <a class="nav-link" href="#">Reports</a>
+                        </nav>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- End left sidebar-->
+
+    <!-- Start page wrapper -->
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <!--Start button panel-->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Buttons</h4>
+
+                    <div class="clearfix">
+                        <div class="clearfix">
+                            1. Large Buttons
+                        </div>
+
+                        <div class="clearfix">
+                            <button type="button" class="btn btn-primary btn-lg m-xl-1">Primary</button>
+                            <button type="button" class="btn btn-secondary btn-lg m-xl-1">Secondary</button>
+                            <button type="button" class="btn btn-success btn-lg m-xl-1">Success</button>
+                            <button type="button" class="btn btn-danger btn-lg m-xl-1">Danger</button>
+                            <button type="button" class="btn btn-warning btn-lg m-xl-1">Warning</button>
+                            <button type="button" class="btn btn-info btn-lg m-xl-1">Info</button>
+                            <button type="button" class="btn btn-light btn-lg m-xl-1">Light</button>
+                        </div>
+
+                        <div class="clearfix">
+                            2. General Buttons
+                        </div>
+
+                        <div class="clearfix">
+                            <button type="button" class="btn btn-primary m-xl-2">Primary</button>
+                            <button type="button" class="btn btn-secondary m-xl-2">Secondary</button>
+                            <button type="button" class="btn btn-success m-xl-2">Success</button>
+                            <button type="button" class="btn btn-danger m-xl-2">Danger</button>
+                            <button type="button" class="btn btn-warning m-xl-2">Warning</button>
+                            <button type="button" class="btn btn-info m-xl-2">Info</button>
+                            <button type="button" class="btn btn-light m-xl-2">Light</button>
+                        </div>
+
+                        <div class="clearfix">
+                            3. Small Buttons
+                        </div>
+
+                        <div class="clearfix">
+                            <button type="button" class="btn btn-primary btn-sm m-xl-3">Primary</button>
+                            <button type="button" class="btn btn-secondary btn-sm m-xl-3">Secondary</button>
+                            <button type="button" class="btn btn-success btn-sm m-xl-3">Success</button>
+                            <button type="button" class="btn btn-danger btn-sm m-xl-3">Danger</button>
+                            <button type="button" class="btn btn-warning btn-sm m-xl-3">Warning</button>
+                            <button type="button" class="btn btn-info btn-sm m-xl-3">Info</button>
+                            <button type="button" class="btn btn-light btn-sm m-xl-3">Light</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Round Buttons</h4>
+
+                    <div class="clearfix">
+                        <div class="clearfix">
+                            4. Round Large Buttons
+                        </div>
+
+                        <div class="clearfix mb-3">
+                            <button type="button" class="btn btn-primary btn-lg btn-pill m-xl-1">Primary</button>
+                            <button type="button" class="btn btn-secondary btn-lg btn-pill m-xl-1">Secondary</button>
+                            <button type="button" class="btn btn-success btn-lg btn-pill m-xl-1">Success</button>
+                            <button type="button" class="btn btn-danger btn-lg btn-pill m-xl-1">Danger</button>
+                            <button type="button" class="btn btn-warning btn-lg btn-pill m-xl-1">Warning</button>
+                            <button type="button" class="btn btn-info btn-lg btn-pill m-xl-1">Info</button>
+                            <button type="button" class="btn btn-light btn-lg btn-pill m-xl-1">Light</button>
+                        </div>
+
+                        <div class="clearfix">
+                            5. Round General Buttons
+                        </div>
+
+                        <div class="clearfix mb-3">
+                            <button type="button" class="btn btn-primary btn-pill m-xl-2">Primary</button>
+                            <button type="button" class="btn btn-secondary btn-pill m-xl-2">Secondary</button>
+                            <button type="button" class="btn btn-success btn-pill m-xl-2">Success</button>
+                            <button type="button" class="btn btn-danger btn-pill m-xl-2">Danger</button>
+                            <button type="button" class="btn btn-warning btn-pill m-xl-2">Warning</button>
+                            <button type="button" class="btn btn-info btn-pill m-xl-2">Info</button>
+                            <button type="button" class="btn btn-light btn-pill m-xl-2">Light</button>
+                        </div>
+
+                        <div class="clearfix">
+                            6. Round Small Buttons
+                        </div>
+
+                        <div class="clearfix mb-3">
+                            <button type="button" class="btn btn-primary btn-sm btn-pill m-xl-2">Primary</button>
+                            <button type="button" class="btn btn-secondary btn-sm btn-pill m-xl-2">Secondary</button>
+                            <button type="button" class="btn btn-success btn-sm btn-pill m-xl-2">Success</button>
+                            <button type="button" class="btn btn-danger btn-sm btn-pill m-xl-2">Danger</button>
+                            <button type="button" class="btn btn-warning btn-sm btn-pill m-xl-2">Warning</button>
+                            <button type="button" class="btn btn-info btn-sm btn-pill m-xl-2">Info</button>
+                            <button type="button" class="btn btn-light btn-sm btn-pill m-xl-2">Light</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End button panel-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Tags Panel-->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Tags</h4>
+
+                    <div class="clearfix">
+                    <span class="tag tag-primary">
+                        <span>Primary</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-secondary">
+                        <span>Secondary</span>
+                       <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-success">
+                        <span>Success</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-danger">
+                        <span>Danger</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-warning">
+                        <span>Warning</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-info">
+                        <span>Info</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-light">
+                        <span>Light</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-dark">
+                        <span>Dark</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    </div>
+
+                    <div class="clearfix p-md-3"></div>
+
+                    <div class="clearfix">
+                    <span class="tag tag-primary tag-pill">
+                        <span>Primary</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-secondary tag-pill">
+                        <span>Secondary</span>
+                       <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-success tag-pill">
+                        <span>Success</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-danger tag-pill">
+                        <span>Danger</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-warning tag-pill">
+                        <span>Warning</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-info tag-pill">
+                        <span>Info</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-light tag-pill">
+                        <span>Light</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    <span class="tag tag-dark tag-pill">
+                        <span>Dark</span>
+                        <i class="icon-cancel cancel"></i>
+                    </span>
+                    </div>
+
+                    <div class="clearfix p-md-3"></div>
+
+                    <div class="clearfix">
+                    <span class="tag tag-primary">
+                        <span>Primary</span>
+                    </span>
+                    <span class="tag tag-secondary">
+                        <span>Secondary</span>
+                    </span>
+                    <span class="tag tag-success">
+                        <span>Success</span>
+                    </span>
+                    <span class="tag tag-danger">
+                        <span>Danger</span>
+                    </span>
+                    <span class="tag tag-warning">
+                        <span>Warning</span>
+                    </span>
+                    <span class="tag tag-info">
+                        <span>Info</span>
+                    </span>
+                    <span class="tag tag-light">
+                        <span>Light</span>
+                    </span>
+                    <span class="tag tag-dark">
+                        <span>Dark</span>
+                    </span>
+                    </div>
+
+                    <div class="clearfix p-md-3"></div>
+
+                    <div class="clearfix">
+                    <span class="tag tag-primary tag-pill">
+                        <span>Primary</span>
+                    </span>
+                    <span class="tag tag-secondary tag-pill">
+                        <span>Secondary</span>
+                    </span>
+                    <span class="tag tag-success tag-pill">
+                        <span>Success</span>
+                    </span>
+                    <span class="tag tag-danger tag-pill">
+                        <span>Danger</span>
+                    </span>
+                    <span class="tag tag-warning tag-pill">
+                        <span>Warning</span>
+                    </span>
+                    <span class="tag tag-info tag-pill">
+                        <span>Info</span>
+                    </span>
+                    <span class="tag tag-light tag-pill">
+                        <span>Light</span>
+                    </span>
+                    <span class="tag tag-dark tag-pill">
+                        <span>Dark</span>
+                    </span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End tags Panel-->
+
+            <div class="clearfix p-md-3"></div>
+
+
+            <div class="row">
+
+                <div class="col-xl-4">
+                    <div class="card-body card-body-primary">
+                        <div class="media">
+                            <i class="align-self-start d-flex icon-home mr-3" style="font-size: 40px;"></i>
+
+                            <div class="media-body">
+                                <h5 class="mt-0">Media left</h5>
+                                This is some text within a card block.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card-body card-body-secondary">
+                        <div class="media">
+                            <i class="icon-twitter d-flex align-self-center mr-3" style="font-size: 40px;"></i>
+
+                            <div class="media-body">
+                                <h5 class="mt-0">Media left center</h5>
+                                This is some text within a card block.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card-body card-body-success">
+                        <div class="media">
+                            <i class="d-flex align-self-end icon-user mr-3" style="font-size: 40px;"></i>
+
+                            <div class="media-body">
+                                <h5 class="mt-0">Media left bottom</h5>
+                                This is some text within a card block.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+
+            <div class="row">
+
+                <div class="col-xl-4">
+                    <div class="card-body card-body-danger">
+                        <div class="media">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media right</h5>
+                                This is some text within a card block.
+                            </div>
+                            <i class="d-flex icon-heart" style="font-size: 40px;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card-body card-body-warning">
+                        <div class="media">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media right center</h5>
+                                This is some text within a card block.
+                            </div>
+                            <i class="d-flex align-self-center icon-mail" style="font-size: 40px;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card-body card-body-info">
+                        <div class="media">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media right bottom</h5>
+                                This is some text within a card block.
+                            </div>
+                            <i class="d-flex align-self-end icon-facebook" style="font-size: 40px;"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="card-body">
+                        <div class="media">
+                            <i class="align-self-start d-flex icon-home mr-3" style="font-size: 40px;"></i>
+
+                            <div class="media-body">
+                                <h5 class="mt-0">Media left</h5>
+                                This is some text within a card block.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix p-md-4"></div>
+
+            <div class="row">
+
+                <div class="col-xl-4">
+                    <div class="card">
+                        <div class="card-header card-header-primary">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+
+                            <p class="card-text">With supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card">
+                        <div class="card-header card-header-secondary">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+
+                            <p class="card-text">With supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card">
+                        <div class="card-header card-header-success">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+
+                            <p class="card-text">With supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <a href="#" class="btn btn-success">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+
+            <div class="clearfix">
+                <ul class="letter-list">
+                    <li class="active"><a href="#">ALL</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                    <li><a href="#">E</a></li>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">G</a></li>
+                    <li><a href="#">H</a></li>
+                    <li><a href="#">I</a></li>
+                    <li><a href="#">J</a></li>
+                    <li><a href="#">K</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">N</a></li>
+                    <li><a href="#">O</a></li>
+                    <li><a href="#">P</a></li>
+                    <li><a href="#">Q</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">S</a></li>
+                    <li><a href="#">T</a></li>
+                    <li><a href="#">U</a></li>
+                    <li><a href="#">V</a></li>
+                    <li><a href="#">W</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Y</a></li>
+                    <li><a href="#">Z</a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Start alphabet list-->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Alphabet Group</h4>
+
+                    <div class="clearfix">
+                        <ul class="letter-list letter-list-success">
+                            <li class="active"><a href="#">ALL</a></li>
+                            <li><a href="#">A</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">D</a></li>
+                            <li><a href="#">E</a></li>
+                            <li><a href="#">F</a></li>
+                            <li><a href="#">G</a></li>
+                            <li><a href="#">H</a></li>
+                            <li><a href="#">I</a></li>
+                            <li><a href="#">J</a></li>
+                            <li><a href="#">K</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">N</a></li>
+                            <li><a href="#">O</a></li>
+                            <li><a href="#">P</a></li>
+                            <li><a href="#">Q</a></li>
+                            <li><a href="#">R</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">T</a></li>
+                            <li><a href="#">U</a></li>
+                            <li><a href="#">V</a></li>
+                            <li><a href="#">W</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">Y</a></li>
+                            <li><a href="#">Z</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="clearfix m-md-3 m-sm-3"></div>
+
+                    <div class="clearfix">
+                        <ul class="letter-list letter-list-primary">
+                            <li class="active"><a href="#">ALL</a></li>
+                            <li><a href="#">A</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">D</a></li>
+                            <li><a href="#">E</a></li>
+                            <li><a href="#">F</a></li>
+                            <li><a href="#">G</a></li>
+                            <li><a href="#">H</a></li>
+                            <li><a href="#">I</a></li>
+                            <li><a href="#">J</a></li>
+                            <li><a href="#">K</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">N</a></li>
+                            <li><a href="#">O</a></li>
+                            <li><a href="#">P</a></li>
+                            <li><a href="#">Q</a></li>
+                            <li><a href="#">R</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">T</a></li>
+                            <li><a href="#">U</a></li>
+                            <li><a href="#">V</a></li>
+                            <li><a href="#">W</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">Y</a></li>
+                            <li><a href="#">Z</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="clearfix m-md-3 m-sm-3"></div>
+
+                    <div class="clearfix">
+                        <ul class="letter-list letter-list-secondary">
+                            <li class="active"><a href="#">ALL</a></li>
+                            <li><a href="#">A</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">D</a></li>
+                            <li><a href="#">E</a></li>
+                            <li><a href="#">F</a></li>
+                            <li><a href="#">G</a></li>
+                            <li><a href="#">H</a></li>
+                            <li><a href="#">I</a></li>
+                            <li><a href="#">J</a></li>
+                            <li><a href="#">K</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">N</a></li>
+                            <li><a href="#">O</a></li>
+                            <li><a href="#">P</a></li>
+                            <li><a href="#">Q</a></li>
+                            <li><a href="#">R</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">T</a></li>
+                            <li><a href="#">U</a></li>
+                            <li><a href="#">V</a></li>
+                            <li><a href="#">W</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">Y</a></li>
+                            <li><a href="#">Z</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!--End alphabet list-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Start icon buttons-->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Icon buttons</h4>
+
+                    <div class="clearfix mb-3">
+                        1. Large icon Buttons
+                    </div>
+
+                    <div class="clearfix">
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success btn-lg"><i class="icon-cog"></i></button>
+                        </div>
+
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-primary btn-lg active"><i class="icon-th-large"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-lg"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-secondary btn-lg"><i class="icon-th-large"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-lg"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success btn-lg"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-success btn-lg"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-danger btn-lg"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-danger btn-lg"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-warning btn-lg"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-warning btn-lg"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-info btn-lg"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-info btn-lg"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-light btn-lg active"><i class="icon-th-large"></i>
+                            </button>
+                            <button type="button" class="btn btn-light btn-lg"><i class="icon-table"></i></button>
+                            <button type="button" class="btn btn-light btn-lg"><i class="icon-cog"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="clearfix m-md-3 m-sm-3"></div>
+
+                    <div class="clearfix mb-3">
+                        1. General icon Buttons
+                    </div>
+
+                    <div class="clearfix">
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success"><i class="icon-cog"></i></button>
+                        </div>
+
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success"><i class="icon-search"></i></button>
+                        </div>
+
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-primary active"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-primary"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-secondary"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-secondary"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-success"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-danger"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-warning"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-warning"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-info active"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-info"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-primary"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-primary"><i class="icon-table"></i></button>
+                            <button type="button" class="btn btn-primary"><i class="icon-cog"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-light"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-light"><i class="icon-table"></i></button>
+                            <button type="button" class="btn btn-light"><i class="icon-cog"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="clearfix m-md-3 m-sm-3"></div>
+
+                    <div class="clearfix mb-3">
+                        1. Small icon Buttons
+                    </div>
+
+                    <div class="clearfix">
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success btn-sm"><i class="icon-cog"></i></button>
+                        </div>
+
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success btn-sm"><i class="icon-search"></i></button>
+                        </div>
+
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-primary btn-sm active"><i class="icon-th-large"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-sm"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="icon-th-large"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-success btn-sm"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-success btn-sm"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-danger btn-sm active"><i class="icon-th-large"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-warning btn-sm"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-warning btn-sm"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-info btn-sm"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-info btn-sm"><i class="icon-table"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-primary btn-sm"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-primary btn-sm"><i class="icon-table"></i></button>
+                            <button type="button" class="btn btn-primary btn-sm"><i class="icon-cog"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="icon-th-large"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="icon-table"></i></button>
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="icon-cog"></i></button>
+                        </div>
+                        <div class="btn-group btn-group-icon mr-3">
+                            <button type="button" class="btn btn-light btn-sm"><i class="icon-th-large"></i></button>
+                            <button type="button" class="btn btn-light btn-sm"><i class="icon-table"></i></button>
+                            <button type="button" class="btn btn-light btn-sm"><i class="icon-cog"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--End icon buttons-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Start checkbox buttons-->
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Checkbox</h4>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-lg">
+                                        <input type="checkbox" checked="checked"/> Large checkbox
+                                        <div class="control_indicator checkbox-primary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-lg">
+                                        <input type="checkbox" checked="checked"/> Large checkbox
+                                        <div class="control_indicator checkbox-secondary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-lg">
+                                        <input type="checkbox" checked="checked"/> Large checkbox
+                                        <div class="control_indicator checkbox-success">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-lg">
+                                        <input type="checkbox" checked="checked"/> Large checkbox
+                                        <div class="control_indicator checkbox-danger">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-lg">
+                                        <input type="checkbox" checked="checked"/> Large checkbox
+                                        <div class="control_indicator checkbox-warning">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-lg">
+                                        <input type="checkbox" checked="checked"/> Large checkbox
+                                        <div class="control_indicator checkbox-info">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked="checked"/> Default checkbox
+                                        <div class="control_indicator">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked="checked"/> primary checkbox
+                                        <div class="control_indicator checkbox-primary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox text-disable">
+                                        <input type="checkbox" disabled/> Disabled checkbox
+                                        <div class="control_indicator checkbox-secondary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked="checked"/> Success checkbox
+                                        <div class="control_indicator checkbox-success">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked="checked"/> Danger checkbox
+                                        <div class="control_indicator checkbox-danger">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" checked="checked"/> Warning checkbox
+                                        <div class="control_indicator checkbox-warning">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm text-disable">
+                                        <input type="checkbox" checked="checked" disabled/> Small checkbox
+                                        <div class="control_indicator checkbox-primary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm text-disable">
+                                        <input type="checkbox" checked="checked" disabled/> Small checkbox
+                                        <div class="control_indicator checkbox-secondary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm text-disable">
+                                        <input type="checkbox" checked="checked" disabled/> Small checkbox
+                                        <div class="control_indicator checkbox-success">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm text-disable">
+                                        <input type="checkbox" checked="checked" disabled/> Small checkbox
+                                        <div class="control_indicator checkbox-danger">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm text-disable">
+                                        <input type="checkbox" checked="checked" disabled/> Small checkbox
+                                        <div class="control_indicator checkbox-warning">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm text-disable">
+                                        <input type="checkbox" checked="checked" disabled/> Small checkbox
+                                        <div class="control_indicator checkbox-info">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm">
+                                        <input type="checkbox" checked="checked"/> Small checkbox
+                                        <div class="control_indicator checkbox-primary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm">
+                                        <input type="checkbox" checked="checked"/> Small checkbox
+                                        <div class="control_indicator checkbox-secondary">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm">
+                                        <input type="checkbox" checked="checked"/> Small checkbox
+                                        <div class="control_indicator checkbox-success">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm">
+                                        <input type="checkbox" checked="checked"/> Small checkbox
+                                        <div class="control_indicator checkbox-danger">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm">
+                                        <input type="checkbox" checked="checked"/> Small checkbox
+                                        <div class="control_indicator checkbox-warning">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="clearfix mb-4">
+                                    <label class="custom-checkbox checkbox-sm">
+                                        <input type="checkbox" checked="checked"/> Small checkbox
+                                        <div class="control_indicator checkbox-info">
+                                            <i class="icon-ok"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--End checkbox buttons-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Start todo-list-->
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Todo-list</h4>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+
+                                <div class="clearfix">1.General todo-list</div>
+
+                                <div class="clearfix m-md-3 m-sm-3"></div>
+
+                                <div class="clearfix todo-list">
+                                    <div class="media media-border">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" checked="checked"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="clearfix">2.Hover todo-list</div>
+
+                                <div class="clearfix m-md-3 m-sm-3"></div>
+
+                                <div class="clearfix todo-list">
+                                    <div class="media media-border hover">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" checked="checked"/>
+
+                                                <div class="control_indicator checkbox-warning">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border hover">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border hover">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border hover">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media media-border hover">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="clearfix">3.Read/Unread todo-list</div>
+
+                                <div class="clearfix m-md-3 m-sm-3"></div>
+
+                                <div class="todo-list clearfix">
+
+                                    <div class="media media-border read">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" checked="checked"/>
+
+                                                <div class="control_indicator checkbox-danger">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media media-border unread">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media media-border read">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media media-border unread">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="media media-border read">
+                                        <div class="d-flex align-self-start">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox"/>
+
+                                                <div class="control_indicator checkbox-success">
+                                                    <i class="icon-ok"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque
+                                            eius
+                                            error
+                                            et, excepturi harum illum inventore iste labore.
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-success"><i class="icon-down"></i></a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#">Add due date</a>
+                                        </div>
+                                        <div class="d-flex align-self-start ml-3">
+                                            <a href="#" class="text-secondary"><i class="icon-star-empty"></i></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End todo-list-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Start user-list-->
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Users list</h4>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+
+                                <div class="clearfix">1. Users list</div>
+
+                                <div class="clearfix m-md-3 m-sm-3"></div>
+
+                                <div class="clearfix todo-list">
+
+                                    <div class="media">
+                                        <div class="d-flex align-self-start users-avatar-sm-right-margin">
+                                            <img class="avatar avatar-sm" src="imgs/skd.jpeg" alt="Shakti Kumar Das">
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            <div>Shakti Kumar Das</div>
+                                            <div class="badge badge-primary">Active</div>
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box dropdown">
+                                                <span data-toggle="dropdown"><i class="icon-ellipsis-vert"></i></span>
+
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item active" href="#">Active</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="d-flex align-self-start users-avatar-sm-right-margin">
+                                            <img class="avatar avatar-sm" src="imgs/masum.jpeg" alt="Masum Billah">
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            <div>Masum Billah</div>
+                                            <div class="badge badge-warning">Invite</div>
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box dropdown">
+                                                <span data-toggle="dropdown"><i class="icon-ellipsis-vert"></i></span>
+
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="d-flex align-self-start users-avatar-sm-right-margin">
+                                            <img class="avatar avatar-sm" src="imgs/skhan.jpg" alt="Sharuk Khan">
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            <div>Sharuk Khan</div>
+                                            <div class="badge badge-secondary">Inactive</div>
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box dropdown">
+                                                <span data-toggle="dropdown"><i class="icon-ellipsis-vert"></i></span>
+
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Inactive</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="clearfix">2. Hover users list</div>
+
+                                <div class="clearfix m-md-3 m-sm-3"></div>
+
+                                <div class="clearfix todo-list">
+
+                                    <div class="media hover">
+                                        <div class="d-flex align-self-start users-avatar-sm-right-margin">
+                                            <img class="avatar avatar-sm" src="imgs/skd.jpeg" alt="Shakti Kumar Das">
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            <div>Shakti Kumar Das</div>
+                                            <div class="badge badge-primary">Active</div>
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box dropdown">
+                                                <span data-toggle="dropdown"><i class="icon-ellipsis-vert"></i></span>
+
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item active" href="#">Active</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media hover">
+                                        <div class="d-flex align-self-start users-avatar-sm-right-margin">
+                                            <img class="avatar avatar-sm" src="imgs/masum.jpeg" alt="Masum Billah">
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            <div>Masum Billah</div>
+                                            <div class="badge badge-warning">Invite</div>
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box dropdown">
+                                                <span data-toggle="dropdown"><i class="icon-ellipsis-vert"></i></span>
+
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media hover">
+                                        <div class="d-flex align-self-start users-avatar-sm-right-margin">
+                                            <img class="avatar avatar-sm" src="imgs/skhan.jpg" alt="Sharuk Khan">
+                                        </div>
+                                        <div class="media-body text-truncate">
+                                            <div>Sharuk Khan</div>
+                                            <div class="badge badge-secondary">Inactive</div>
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box dropdown">
+                                                <span data-toggle="dropdown"><i class="icon-ellipsis-vert"></i></span>
+
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Inactive</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="clearfix">3. Users list</div>
+
+                                <div class="clearfix m-md-3 m-sm-3"></div>
+
+                                <div class="todo-list clearfix">
+
+                                    <div class="media media-xs-padding">
+                                        <div class="d-flex align-self-center users-avatar-xs-right-margin">
+                                            <img class="avatar avatar-xs" src="imgs/skd.jpeg" alt="Shakti Kumar Das">
+                                        </div>
+                                        <div class="media-body align-self-center text-truncate">
+                                            Shakti Kumar Das
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box">
+                                                <span><i class="icon-ellipsis-vert"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media media-xs-padding">
+                                        <div class="d-flex align-self-center users-avatar-xs-right-margin">
+                                            <img class="avatar avatar-xs" src="imgs/masum.jpeg" alt="Masum Billah">
+                                        </div>
+                                        <div class="media-body align-self-center text-truncate">
+                                            Masum Billah
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box">
+                                                <span><i class="icon-ellipsis-vert"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media media-xs-padding">
+                                        <div class="d-flex align-self-center users-avatar-xs-right-margin">
+                                            <img class="avatar avatar-xs" src="imgs/skhan.jpg" alt="Sharuk Khan">
+                                        </div>
+                                        <div class="media-body align-self-center text-truncate">Sharuk Khan
+                                        </div>
+                                        <div class="d-flex align-self-center">
+                                            <div class="hover-box">
+                                                <span><i class="icon-ellipsis-vert"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End user list-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Start form design-->
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">General form design</h4>
+
+                        <div class="clearfix">
+
+                            <form>
+                                <div class="form-group">
+                                    <label class="form-control-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Example input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Another label</label>
+                                    <input type="text" class="form-control is-invalid" placeholder="Another input"
+                                           required>
+
+                                    <div class="invalid-feedback">Field is required</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Email</label>
+                                    <input type="email" class="form-control is-valid" placeholder="name@example.com"
+                                           value="test@regfire.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Disabled field</label>
+                                    <input type="text" class="form-control" value="Example input" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Radio</label>
+
+                                    <div class="clearfix row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox">
+                                                    <input type="radio" name="radio"/> Primary
+
+                                                    <div class="control_indicator radio-primary">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox">
+                                                    <input type="radio" name="radio" checked/> Success
+
+                                                    <div class="control_indicator radio-success">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox">
+                                                    <input type="radio" name="radio"/> Default
+
+                                                    <div class="control_indicator">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox text-disable">
+                                                    <input type="radio" name="radio" disabled/> Disabled
+
+                                                    <div class="control_indicator">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox text-disable">
+                                                    <input type="radio" name="radio-disable" checked disabled/> Disabled
+
+                                                    <div class="control_indicator radio-success">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Example textarea</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Toggle</label>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch" for="toggle">
+                                            <input class="js-toggle-switch" id="toggle" type="checkbox">
+
+                                            <div class="on-button"></div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button"></div>
+                                        </label>
+                                    </div>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch toggle-pill" for="toggle-pill">
+                                            <input class="js-toggle-switch" id="toggle-pill" type="checkbox">
+
+                                            <div class="on-button"></div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button"></div>
+                                        </label>
+                                    </div>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch toggle-text" for="toggle-text">
+                                            <input class="js-toggle-switch" id="toggle-text" type="checkbox">
+
+                                            <div class="on-button">Yes</div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button">No</div>
+                                        </label>
+                                    </div>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch toggle-pill toggle-text" for="toggle-text-pill">
+                                            <input class="js-toggle-switch" id="toggle-text-pill" type="checkbox">
+
+                                            <div class="on-button">Yes</div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button">No</div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Select</label>
+                                    <input type="text" class="form-control select-control" placeholder="Select user">
+
+                                    <ul class="list-group select-options">
+                                        <li class="list-group-item"><a href="#">Option-1</a></li>
+                                        <li class="list-group-item"><a href="#">Option-2</a></li>
+                                        <li class="list-group-item"><a href="#">Option-3</a></li>
+                                        <li class="list-group-item"><a href="#">Option-4</a></li>
+                                        <li class="list-group-item"><a href="#">Option-5</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Select</label>
+                                    <input type="text" class="form-control" placeholder="Select Contact">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="clearfix p-md-3"></div>
+
+                        <div class="clearfix">
+                            <h3>Small form fields</h3>
+                        </div>
+                        <div class="clearfix p-md-3"></div>
+
+                        <div class="clearfix">
+
+                            <form>
+                                <div class="form-group">
+                                    <label class="form-control-label">Name</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Example input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Another label</label>
+                                    <input type="text" class="form-control form-control-sm is-invalid"
+                                           placeholder="Another input" required>
+
+                                    <div class="invalid-feedback">Field is required</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Email</label>
+                                    <input type="email" class="form-control form-control-sm is-valid"
+                                           placeholder="name@example.com"
+                                           value="test@regfire.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Disabled field</label>
+                                    <input type="text" class="form-control form-control-sm" value="Example input"
+                                           disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Radio</label>
+
+                                    <div class="clearfix row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox">
+                                                    <input type="radio" name="radio"/> Primary
+
+                                                    <div class="control_indicator radio-primary">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox">
+                                                    <input type="radio" name="radio" checked/> Success
+
+                                                    <div class="control_indicator radio-success">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox">
+                                                    <input type="radio" name="radio"/> Default
+
+                                                    <div class="control_indicator">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox text-disable">
+                                                    <input type="radio" name="radio" disabled/> Disabled
+
+                                                    <div class="control_indicator">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="clearfix mb-3">
+                                                <label class="radio-checkbox text-disable">
+                                                    <input type="radio" name="radio-disable" checked disabled/> Disabled
+
+                                                    <div class="control_indicator radio-success">
+                                                        <i class="icon-circle"></i>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Example textarea</label>
+                                    <textarea class="form-control form-control-sm" rows="3"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Toggle</label>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch" for="toggle">
+                                            <input class="js-toggle-switch" id="toggle" type="checkbox">
+
+                                            <div class="on-button"></div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button"></div>
+                                        </label>
+                                    </div>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch toggle-pill" for="toggle-pill">
+                                            <input class="js-toggle-switch" id="toggle-pill" type="checkbox">
+
+                                            <div class="on-button"></div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button"></div>
+                                        </label>
+                                    </div>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch toggle-text" for="toggle-text">
+                                            <input class="js-toggle-switch" id="toggle-text" type="checkbox">
+
+                                            <div class="on-button">Yes</div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button">No</div>
+                                        </label>
+                                    </div>
+
+                                    <div class="clearfix mb-3">
+                                        <label class="toggle-switch toggle-pill toggle-text" for="toggle-text-pill">
+                                            <input class="js-toggle-switch" id="toggle-text-pill" type="checkbox">
+
+                                            <div class="on-button">Yes</div>
+
+                                            <div class="on-off-divider"></div>
+
+                                            <div class="off-button">No</div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Select</label>
+                                    <input type="text" class="form-control select-control" placeholder="Select user">
+
+                                    <ul class="list-group select-options open">
+                                        <li class="list-group-item"><a href="#">Option-1</a></li>
+                                        <li class="list-group-item"><a href="#">Option-2</a></li>
+                                        <li class="list-group-item"><a href="#">Option-3</a></li>
+                                        <li class="list-group-item"><a href="#">Option-4</a></li>
+                                        <li class="list-group-item"><a href="#">Option-5</a></li>
+                                    </ul>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End form design-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Dropdown</h4>
+
+                        <div class="clearfix">
+                            <div class="clearfix mb-2">
+                                <h5>1. Button type dropdown </h5>
+                            </div>
+                            <!--Default tab-->
+                            <div class="clearfix">
+                                <div class="dropdown  mr-3 float-left">
+                                    <button class="btn btn-sm btn-primary dropdown-toggle" type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn" aria-labelledby="">
+                                        <a class="dropdown-item active" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown mr-3 float-left">
+                                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn" aria-labelledby="">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item active" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown mr-3 float-left">
+                                    <button class="btn btn-sm btn-success dropdown-toggle" type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn" aria-labelledby="">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item active" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown mr-3 float-left">
+                                    <button class="btn btn-sm btn-danger dropdown-toggle" type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn" aria-labelledby="">
+                                        <a class="dropdown-item active" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown mr-3 float-left">
+                                    <button class="btn btn-sm btn-light dropdown-toggle" type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        Light Dropdown
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item active" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-5"></div>
+
+                        <div class="clearfix">
+                            <div class="clearfix mb-2">
+                                <h5>1. Text and <code>a</code> tag dropdown </h5>
+                            </div>
+                            <!--Default tab-->
+                            <div class="clearfix">
+                                <div class="dropdown mr-3 float-left">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        Dropdown button
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn"
+                                         aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown mr-3 float-left">
+                                    <a href="#" class="btn btn-sm btn-success dropdown-toggle" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn"
+                                         aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-5"></div>
+
+                        <div class="clearfix">
+                            <div class="clearfix mb-2">
+                                <h5>1. Icon dropdown </h5>
+                            </div>
+                            <!--Default tab-->
+                            <div class="clearfix">
+                                <div class="dropdown mr-3 float-left">
+                                    <a href="#" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right animated zoomIn"
+                                         aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#"> <i class="icon-cog"></i> Action</a>
+                                        <a class="dropdown-item" href="#"> <i class="icon-bell"></i> Message</a>
+                                        <a class="dropdown-item" href="#"> <i class="icon-users"></i> Users </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4"></div>
+
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Modal</h4>
+
+                        <div class="clearfix">
+                            <!-- Button trigger modal -->
+
+                            <div class="form-group float-left mr-3">
+                                <label for="">Default modal only content(No footer)</label><br/>
+                                <button type="button" class="btn btn-sm btn-secondary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                    Modal demo only content
+                                </button>
+                            </div>
+
+                            <div class="form-group float-left mr-3">
+                                <label for="">Default modal only content with footer</label><br/>
+                                <button type="button" class="btn btn-sm btn-success" data-toggle="modal"
+                                        data-target="#exampleModalFooter">
+                                    Modal demo with footer
+                                </button>
+                            </div>
+
+                            <div class="form-group float-left mr-3">
+                                <label for=""><code>.modal-xs</code></label><br/>
+                                <button type="button" class="btn btn-sm btn-danger" data-toggle="modal"
+                                        data-target="#exampleModalSmall">
+                                    Modal demo of small
+                                </button>
+                            </div>
+
+                            <div class="form-group float-left  mr-3">
+                                <label for=""><code>.modal-sm</code></label><br/>
+                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                                        data-target="#exampleModalForForm">
+                                    Modal demo for form
+                                </button>
+                            </div>
+
+                            <div class="form-group float-left mr-3">
+                                <label for=""><code>.modal-lg</code></label><br/>
+                                <button type="button" class="btn btn-sm btn-info" data-toggle="modal"
+                                        data-target="#exampleModalLarge">
+                                    Modal demo of large
+                                </button>
+                            </div>
+
+                            <!-- Only content modal -->
+                            <div class="modal fade modal-no-footer" id="exampleModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body content...</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illum
+                                                inventore labore nesciunt nostrum officia porro reiciendis voluptatum?
+                                                Eveniet ipsa laborum nihil nobis omnis possimus quam qui quidem sed
+                                                ut?</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet aperiam
+                                                culpa, debitis delectus doloremque eaque est exercitationem iusto modi
+                                                saepe similique sunt tempora vitae voluptatem. A consequuntur et
+                                                voluptates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Content with footer modal -->
+                            <div class="modal fade" id="exampleModalFooter" tabindex="-1" role="dialog"
+                                 aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body content...</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illum
+                                                inventore labore nesciunt nostrum officia porro reiciendis voluptatum?
+                                                Eveniet ipsa laborum nihil nobis omnis possimus quam qui quidem sed
+                                                ut?</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet aperiam
+                                                culpa, debitis delectus doloremque eaque est exercitationem iusto modi
+                                                saepe similique sunt tempora vitae voluptatem. A consequuntur et
+                                                voluptates.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="right-item">
+                                                <button type="button" class="btn btn-sm btn-secondary"
+                                                        data-dismiss="modal">Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Small modal -->
+                            <div class="modal fade" id="exampleModalSmall" tabindex="-1" role="dialog"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-xs" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body content...</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                                                inventore labore nesciunt nostrum officia porro reiciendis voluptatum?
+                                                Eveniet ipsa laborum nihil nobis omnis possimus quam qui?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">
+                                                Ok
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Form modal -->
+                            <div class="modal fade" id="exampleModalForForm" tabindex="-1" role="dialog"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form>
+
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Name</label>
+                                                    <input type="text" class="form-control" placeholder="Enter name">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Address</label>
+                                                    <input type="text" class="form-control" placeholder="Type address">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Email</label>
+                                                    <input type="email" class="form-control" placeholder="Enter email"
+                                                           value="test@regfire.com" required>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Example textarea</label>
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="left-item">
+                                                <a class="link-item" href="#">+Add new</a>
+                                            </div>
+                                            <div class="right-item">
+                                                <button type="button" class="btn btn-sm btn-secondary"
+                                                        data-dismiss="modal">Cancel
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Large modal -->
+                            <div class="modal fade bd-example-modal-lg modal-no-footer" id="exampleModalLarge"
+                                 tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Modal body content...</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illum
+                                                inventore labore nesciunt nostrum officia porro reiciendis voluptatum?
+                                                Eveniet ipsa laborum nihil nobis omnis possimus quam qui quidem sed
+                                                ut?</p>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet aperiam
+                                                culpa, debitis delectus doloremque eaque est exercitationem iusto modi
+                                                saepe similique sunt tempora vitae voluptatem. A consequuntur et
+                                                voluptates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix p-md-4"></div>
+
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Avatar size</h4>
+
+                        <div class="clearfix">
+                            <div class="float-left mr-3">
+                                <code>.avatar-xs</code><br>
+                                <img class="avatar avatar-xs mt-2" src="imgs/skd.jpeg" alt="avatar-xs">
+                            </div>
+                            <div class="float-left mr-3">
+                                <code>.avatar-sm</code><br>
+                                <img class="avatar avatar-sm mt-2" src="imgs/skd.jpeg" alt="avatar-sm">
+                            </div>
+                            <div class="float-left mr-3">
+                                <code>.avatar-md</code><br>
+                                <img class="avatar avatar-md mt-2" src="imgs/skd.jpeg" alt="avatar-md">
+                            </div>
+                            <div class="float-left mr-3">
+                                <code>.avatar-lg</code><br>
+                                <img class="avatar avatar-lg mt-2" src="imgs/skd.jpeg" alt="avatar-lg">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4"></div>
+
+            <!--Start button panel-->
+            <div class="card card-body">
+                <h4 class="card-title mb-4">Tabs</h4>
+
+                <div class="clearfix">
+                    <div class="clearfix mb-2">
+                        <h5>1. Default </h5>
+                    </div>
+                    <!--Default tab-->
+                    <div class="clearfix">
+                        <nav class="nav nav-tabs" id="myTab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                               role="tab" aria-controls="nav-home" aria-expanded="true">Home</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                               role="tab" aria-controls="nav-profile">Profile</a>
+                            <a class="nav-item nav-link" id="nav-message-tab" data-toggle="tab" href="#nav-message"
+                               role="tab" aria-controls="nav-profile">Message</a>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active animated zoomIn" id="nav-home" role="tabpanel"
+                                 aria-labelledby="nav-home-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-profile" role="tabpanel"
+                                 aria-labelledby="nav-profile-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-message" role="tabpanel"
+                                 aria-labelledby="nav-message-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clearfix p-md-3"></div>
+
+            <!--Right side tabs-->
+            <div class="card card-body">
+                <div class="clearfix">
+                    <div class="clearfix mb-2">
+                        <h5>2. Center align </h5>
+                    </div>
+
+                    <div class="clearfix">
+                        <nav class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-center-home-tab" data-toggle="tab"
+                               href="#nav-center-home" role="tab" aria-controls="nav-home" aria-expanded="true">Home</a>
+                            <a class="nav-item nav-link" id="nav-center-profile-tab" data-toggle="tab"
+                               href="#nav-center-profile" role="tab" aria-controls="nav-profile">Profile</a>
+                            <a class="nav-item nav-link" id="nav-center-message-tab" data-toggle="tab"
+                               href="#nav-center-message" role="tab" aria-controls="nav-profile">Message</a>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active animated zoomIn" id="nav-center-home" role="tabpanel"
+                                 aria-labelledby="nav-center-home-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-center-profile" role="tabpanel"
+                                 aria-labelledby="nav-center-profile-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-center-message" role="tabpanel"
+                                 aria-labelledby="nav-center-message-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+            <!--Right side tabs-->
+            <div class="card card-body">
+                <div class="clearfix">
+                    <div class="clearfix mb-2">
+                        <h5>3. Right align </h5>
+                    </div>
+
+                    <div class="clearfix">
+                        <nav class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-right-home-tab" data-toggle="tab"
+                               href="#nav-right-home" role="tab" aria-controls="nav-home" aria-expanded="true">Home</a>
+                            <a class="nav-item nav-link" id="nav-right-profile-tab" data-toggle="tab"
+                               href="#nav-right-profile" role="tab" aria-controls="nav-profile">Profile</a>
+                            <a class="nav-item nav-link" id="nav-right-message-tab" data-toggle="tab"
+                               href="#nav-right-message" role="tab" aria-controls="nav-profile">Message</a>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active animated zoomIn" id="nav-right-home" role="tabpanel"
+                                 aria-labelledby="nav-right-home-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-right-profile" role="tabpanel"
+                                 aria-labelledby="nav-right-profile-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-right-message" role="tabpanel"
+                                 aria-labelledby="nav-right-message-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+            <!--Justify tab-->
+            <div class="card card-body">
+                <div class="clearfix">
+                    <div class="clearfix mb-2">
+                        <h5>4. Fill/justify </h5>
+                    </div>
+
+                    <div class="clearfix">
+                        <nav class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-fill-home-tab" data-toggle="tab"
+                               href="#nav-fill-home" role="tab" aria-controls="nav-home" aria-expanded="true">Home</a>
+                            <a class="nav-item nav-link" id="nav-fill-profile-tab" data-toggle="tab"
+                               href="#nav-fill-profile" role="tab" aria-controls="nav-profile">Profile</a>
+                            <a class="nav-item nav-link" id="nav-fill-message-tab" data-toggle="tab"
+                               href="#nav-fill-message" role="tab" aria-controls="nav-profile">Message</a>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active animated zoomIn" id="nav-fill-home" role="tabpanel"
+                                 aria-labelledby="nav-fill-home-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, mollitia nesciunt
+                                    nostrum placeat quas repellendus unde voluptatum. Earum enim explicabo hic
+                                    laboriosam optio sapiente, ullam. Architecto asperiores minima nam veritatis!</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-fill-profile" role="tabpanel"
+                                 aria-labelledby="nav-fill-profile-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aut corporis,
+                                    deserunt doloribus eaque eius eveniet facilis iste iure mollitia necessitatibus,
+                                    officiis possimus, praesentium quas quo repellat sapiente vitae.</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aut corporis,
+                                    deserunt doloribus eaque eius eveniet facilis iste iure mollitia necessitatibus,
+                                    officiis possimus, praesentium quas quo repellat sapiente vitae.</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aut corporis,
+                                    deserunt doloribus eaque eius eveniet facilis iste iure mollitia necessitatibus,
+                                    officiis possimus, praesentium quas quo repellat sapiente vitae.</p>
+                            </div>
+                            <div class="tab-pane fade animated zoomIn" id="nav-fill-message" role="tabpanel"
+                                 aria-labelledby="nav-fill-message-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem dolor dolore
+                                    ea exercitationem, laudantium modi nihil numquam, pariatur recusandae reiciendis
+                                    reprehenderit sint sunt veritatis vero voluptas voluptatibus! Dolor, eligendi?</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem dolor dolore
+                                    ea exercitationem, laudantium modi nihil numquam, pariatur recusandae reiciendis
+                                    reprehenderit sint sunt veritatis vero voluptas voluptatibus! Dolor, eligendi?</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem dolor dolore
+                                    ea exercitationem, laudantium modi nihil numquam, pariatur recusandae reiciendis
+                                    reprehenderit sint sunt veritatis vero voluptas voluptatibus! Dolor, eligendi?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="clearfix p-md-3"></div>
+            <!--Start justify tab-->
+            <div class="card card-body">
+                <div class="clearfix">
+                    <div class="clearfix mb-2">
+                        <h5>5. Vertical left </h5>
+                    </div>
+
+                    <div class="clearfix row">
+
+                        <div class="col-2">
+                            <div class="nav flex-column tabs-vertical" id="v-pills-tab" role="tablist">
+                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                   role="tab" aria-controls="v-pills-home" aria-expanded="true">Home</a>
+                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                   role="tab" aria-controls="v-pills-profile" aria-expanded="true">Profile</a>
+                                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                                   href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                   aria-expanded="true">Messages</a>
+                                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                   href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                   aria-expanded="true">Settings</a>
+                            </div>
+                        </div>
+
+                        <div class="col-10">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active  animated zoomIn" id="v-pills-home"
+                                     role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi
+                                        expedita illum itaque libero maxime necessitatibus nisi officiis optio quidem
+                                        quos recusandae, reiciendis sequi veniam veritatis? Assumenda eum laboriosam
+                                        nisi.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi
+                                        expedita illum itaque libero maxime necessitatibus nisi officiis optio quidem
+                                        quos recusandae, reiciendis sequi veniam veritatis? Assumenda eum laboriosam
+                                        nisi.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi
+                                        expedita illum itaque libero maxime necessitatibus nisi officiis optio quidem
+                                        quos recusandae, reiciendis sequi veniam veritatis? Assumenda eum laboriosam
+                                        nisi.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi
+                                        expedita illum itaque libero maxime necessitatibus nisi officiis optio quidem
+                                        quos recusandae, reiciendis sequi veniam veritatis? Assumenda eum laboriosam
+                                        nisi.</p>
+                                </div>
+                                <div class="tab-pane fade  animated zoomIn" id="v-pills-profile" role="tabpanel"
+                                     aria-labelledby="v-pills-profile-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque eum ex
+                                        modi veniam. A, ab aliquid asperiores autem beatae commodi, distinctio eaque
+                                        eveniet placeat, possimus quae quisquam saepe! Nostrum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque eum ex
+                                        modi veniam. A, ab aliquid asperiores autem beatae commodi, distinctio eaque
+                                        eveniet placeat, possimus quae quisquam saepe! Nostrum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque eum ex
+                                        modi veniam. A, ab aliquid asperiores autem beatae commodi, distinctio eaque
+                                        eveniet placeat, possimus quae quisquam saepe! Nostrum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque eum ex
+                                        modi veniam. A, ab aliquid asperiores autem beatae commodi, distinctio eaque
+                                        eveniet placeat, possimus quae quisquam saepe! Nostrum.</p>
+                                </div>
+                                <div class="tab-pane fade  animated zoomIn" id="v-pills-messages" role="tabpanel"
+                                     aria-labelledby="v-pills-messages-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, et eum non
+                                        quaerat quia ratione, recusandae reiciendis similique sint soluta vitae
+                                        voluptates. Hic labore odit placeat quaerat. Aliquam, ipsum nisi?</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, et eum non
+                                        quaerat quia ratione, recusandae reiciendis similique sint soluta vitae
+                                        voluptates. Hic labore odit placeat quaerat. Aliquam, ipsum nisi?</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, et eum non
+                                        quaerat quia ratione, recusandae reiciendis similique sint soluta vitae
+                                        voluptates. Hic labore odit placeat quaerat. Aliquam, ipsum nisi?</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, et eum non
+                                        quaerat quia ratione, recusandae reiciendis similique sint soluta vitae
+                                        voluptates. Hic labore odit placeat quaerat. Aliquam, ipsum nisi?</p>
+                                </div>
+                                <div class="tab-pane fade  animated zoomIn" id="v-pills-settings" role="tabpanel"
+                                     aria-labelledby="v-pills-settings-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis
+                                        cupiditate, dignissimos illum impedit, laborum magnam minus odio, quia quibusdam
+                                        quisquam recusandae sequi tenetur. Animi ea nobis quam quos sit!</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis
+                                        cupiditate, dignissimos illum impedit, laborum magnam minus odio, quia quibusdam
+                                        quisquam recusandae sequi tenetur. Animi ea nobis quam quos sit!</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis
+                                        cupiditate, dignissimos illum impedit, laborum magnam minus odio, quia quibusdam
+                                        quisquam recusandae sequi tenetur. Animi ea nobis quam quos sit!</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis
+                                        cupiditate, dignissimos illum impedit, laborum magnam minus odio, quia quibusdam
+                                        quisquam recusandae sequi tenetur. Animi ea nobis quam quos sit!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--End justify tab-->
+
+            <div class="clearfix p-md-3"></div>
+
+            <!--Start Table-->
+            <div class="clearfix">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Table</h4>
+
+                        <div class="clearfix">
+                            <div class="clearfix mb-2">
+                                <h5>1. Table </h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Username</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@TwBootstrap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="clearfix p-md-3 p-sm-3"></div>
+
+                        <div class="clearfix">
+                            <div class="clearfix mb-2">
+                                <h5>2. Table</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Username</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@TwBootstrap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="clearfix p-md-3 p-sm-3"></div>
+
+                        <div class="clearfix">
+                            <div class="clearfix mb-2">
+                                <h5>3. Table Hover</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Username</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@TwBootstrap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="clearfix p-md-3 p-sm-3"></div>
+
+                        <div class="clearfix">
+                            <div class="clearfix mb-2">
+                                <h5>3. Responsive Table</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table custom-table-responsive">
+                                    <thead>
+                                    <tr>
+                                        <th>Number</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td data-label="Number">1</td>
+                                        <td data-label="First Name">Mark</td>
+                                        <td data-label="Last Name">Otto</td>
+                                        <td data-label="Username">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Number">2</td>
+                                        <td data-label="First Name">Mark</td>
+                                        <td data-label="Last Name">Otto</td>
+                                        <td data-label="Username">@TwBootstrap</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Number">3</td>
+                                        <td data-label="First Name">Jacob</td>
+                                        <td data-label="Last Name">Thornton</td>
+                                        <td data-label="Username">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Number">4</td>
+                                        <td colspan="2" data-label="First Name">Larry the Bird</td>
+                                        <td data-label="Username">@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--End Table-->
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+<!-- End page wrapper-->
+
+</div>
+<!--End main wrapper-->
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+
+<script>
+    //Show left menu bar
+    $("#js-show-left-bar").click(function (e) {
+        $("body").addClass('mobile-left-menu-open');
+        $(".left-sidebar").css({"left": "0px"});
+    })
+
+    //Closed left menu bar
+    $("#js-closed-left-bar").click(function (e) {
+        $(".left-sidebar").css({"left": ""});
+        setTimeout(function () {
+            $("body").removeClass('mobile-left-menu-open');
+        }, 200);
+    })
+
+    //Sub menu collapsed options
+    $(".sub-menu").click(function (e) {
+        var $selector = $(this);
+        if ($selector.hasClass('open')) {
+            if (!$(e.target).closest(".sub-menu-container").length)  $selector.removeClass('open');
+        } else  $selector.addClass('open');
+    });
+
+</script>
+</body>
+</html>

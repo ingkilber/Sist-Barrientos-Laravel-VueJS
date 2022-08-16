@@ -1,0 +1,137 @@
+@import '../config.scss';
+
+.toggle-switch {
+  cursor: $toggle-cursor;
+  width: $toggle-width;
+  margin: 0;
+  position: relative;
+  background-color: $toggle-bg;
+  border-radius: $taggle-on-off-radius;
+  overflow: hidden;
+
+  .on-button, .off-button {
+    padding: $toggle-on-off-padding 0;
+    border-radius: $taggle-on-off-radius;
+    font-size: $toggle-font-size;
+    color: $toggle-color;
+    float: left;
+    text-align: center;
+    transition: all .4s;
+  }
+
+  .on-button {
+    width: 0;
+    background-color: $toggle-bg-on-button;
+  }
+
+  .off-button {
+    width: 100%;
+    background-color: $toggle-bg-off-button;
+  }
+
+  .on-off-divider {
+    right: $taggle-divider-right;
+    position: absolute;
+    padding: $taggle-divider-padding;
+    background-color: $toggle-bg-divider;
+    border-radius: $taggle-divider-radius;
+    box-shadow: $taggle-divider-box-shadow;
+    top: $taggle-divider-top;
+    transition: all 0.4s;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    left: 0;
+
+    &:checked ~ {
+      .on-button {
+        width: 100%;
+        background-color: $toggle-bg-on-button;
+      }
+
+      .off-button {
+        width: 0;
+      }
+
+      .on-off-divider {
+        right: $taggle-divider-checked-right;
+      }
+    }
+  }
+}
+
+.toggle-pill {
+  width: $toggle-width-pill;
+  border-radius: $taggle-on-off-radius-pill;
+
+  .on-button, .off-button {
+    padding: $toggle-on-off-padding-pill 0;
+    border-radius: $taggle-on-off-radius-pill;
+  }
+
+  .on-off-divider {
+    padding: $taggle-divider-padding-pill;
+    right: $taggle-divider-right-pill;
+    border-radius: $taggle-divider-radius-pill;
+  }
+
+  input {
+    &:checked ~ {
+      .on-off-divider {
+        right: $taggle-divider-checked-right-pill;
+      }
+    }
+  }
+
+}
+
+.toggle-text {
+  height: $toggle-text-height;
+
+  .on-button, .off-button {
+    padding: $toggle-text-on-off-padding;
+    line-height: $toggle-text-on-off-line-height;
+  }
+
+  .on-button {
+    color: $toggle-on-color;
+    font-size: 0;
+  }
+
+  .off-button {
+    color: $toggle-off-color;
+    text-indent: $toggle-text-off-text-indent;
+  }
+
+  input {
+
+    &:checked ~ {
+      .on-button {
+        font-size: $toggle-text-font-size;
+        text-indent: $toggle-text-on-text-indent;
+      }
+
+      .off-button {
+        font-size: 0;
+      }
+    }
+  }
+}
+
+.toggle-sm {
+  width:$toggle-sm-width;
+
+  .on-button, .off-button {
+    padding: $toggle-sm-on-off-padding;
+  }
+
+  .on-off-divider{
+    padding: $toggle-sm-divider-padding;
+    right: $toggle-sm-divider-right;
+    top:0.08rem;
+  }
+
+}

@@ -1,0 +1,60 @@
+@import '../config.scss';
+
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
+}
+
+.select-options {
+  display: none;
+}
+
+.form-control {
+  display: inline-block;
+  background-color: $form-control-bg;
+  border-radius: $form-control-radius;
+  padding: $form-control-padding;
+  border: $form-control-border;
+  line-height: $form-control-line-height;
+  font-size: $form-control-font-size;
+  color: $form-control-color;
+
+  &:focus, &:active {
+    border: $form-control-border-focus;
+    color: $form-control-color-focus;
+    box-shadow: none !important;
+  }
+
+  &:invalid, .is-invalid {
+    border-color: $border-required;
+    box-shadow: none !important;
+  }
+
+  .is-valid {
+    border-color: $border-success;
+  }
+
+  &:disabled {
+    background-color: $disable-bg;
+    cursor: $disable-cursor;
+    border-color: transparent;
+    opacity: $form-control-disable-opacity;
+  }
+}
+
+.select-control {
+  //Open select container
+  &:focus ~, &:active ~ {
+    .select-options {
+      display: inline-block;
+      color: $font-color
+    }
+  }
+}
+
+.select-options.open {
+  display: inline-block;
+}
+
+.form-control-sm {
+  padding: $form-control-sm-padding;
+}

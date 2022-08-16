@@ -1,0 +1,200 @@
+@import '../config.scss';
+
+.btn {
+  border-radius: $btn-radius;
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  color: $btn-color;
+  font-weight: 100;
+  cursor: $btn-cursor;
+  border: none;
+  outline: none;
+  box-shadow: $btn-box-shadow;
+
+  &:active, &:focus {
+    box-shadow: $btn-box-shadow;
+  }
+}
+
+.btn-pill {
+  border-radius: $btn-radius-pill;
+}
+
+.btn-lg {
+  font-size: $btn-lg-font-size;
+}
+
+.btn-sm {
+  padding: $btn-sm-padding;
+  font-size: $btn-sm-font-size;
+}
+
+.btn-primary {
+  background-color: $btn-bg-primary;
+  color: $btn-color-primary;
+
+  &:hover {
+    background-color: $btn-hover-bg-primary;
+    color: $btn-hover-color-primary;
+  }
+}
+
+.btn-secondary {
+  background-color: $btn-bg-secondary;
+  color: $btn-color-secondary;
+
+  &:hover {
+    background-color: $btn-hover-bg-secondary;
+    color: $btn-hover-color-secondary;
+  }
+}
+
+.btn-success {
+  background-color: $btn-bg-success;
+  color: $btn-color-success;
+
+  &:hover {
+    background-color: $btn-hover-bg-success;
+    color: $btn-hover-color-success;
+  }
+}
+
+.btn-danger {
+  background-color: $btn-bg-danger;
+  color: $btn-color-danger;
+
+  &:hover {
+    background-color: $btn-hover-bg-danger;
+    color: $btn-hover-color-danger;
+  }
+}
+
+.btn-warning {
+  background-color: $btn-bg-warning;
+  color: $btn-color-warning;
+
+  &:hover {
+    background-color: $btn-hover-bg-warning;
+    color: $btn-hover-color-warning;
+  }
+}
+
+.btn-light {
+  background-color: $btn-bg-light;
+  color: $btn-color-light;
+  box-shadow: $bnt-light-box-shadow;
+
+  &:hover {
+    background-color: $btn-hover-bg-light;
+    color: $btn-hover-color-light;
+  }
+}
+
+.btn-light.active {
+  background-color: $btn-hover-bg-light;
+  color: $btn-hover-color-light;
+}
+
+.btn-custom {
+  background-color: $btn-bg-custom;
+  color: $btn-color-custom;
+
+  &:hover {
+    background-color: $btn-hover-bg-custom;
+    color: $btn-hover-color-custom;
+  }
+}
+
+//Button group icon design
+
+.btn-group-icon {
+  box-shadow: $group-icon-box-shadow;
+
+  .btn {
+    padding: $btn-group-icon-padding;
+    box-shadow: $btn-group-icon-box-shadow;
+    font-size: $btn-group-icon-font-size;
+    cursor: $btn-cursor;
+    transition: all .25s ease-in-out;
+  }
+
+  .active {
+    cursor: $btn-group-icon-active-cursor;
+  }
+
+  .btn-lg {
+    padding: $btn-group-icon-lg-padding;
+    font-size: $btn-group-icon-font-size-lg;
+  }
+
+  .btn-sm {
+    padding: $btn-group-icon-sm-padding;
+    font-size: $btn-group-icon-font-size-sm;
+  }
+
+  .btn-primary.active {
+    background-color: $btn-group-icon-active-bg-primary;
+    color: $btn-group-icon-active-color-primary;
+  }
+
+  .btn-secondary.active {
+    background-color: $btn-group-icon-active-bg-secondary;
+    color: $btn-group-icon-active-color-secondary;
+  }
+
+  .btn-success.active {
+    background-color: $btn-group-icon-active-bg-success;
+    color: $btn-group-icon-active-color-success;
+  }
+
+  .btn-danger.active {
+    background-color: $btn-group-icon-active-bg-danger;
+    color: $btn-group-icon-active-color-danger;
+  }
+  .btn-warning.active {
+    background-color: $btn-group-icon-active-bg-warning;
+    color: $btn-group-icon-active-color-warning;
+  }
+  .btn-light.active {
+    background-color: $btn-group-icon-active-bg-light;
+    color: $btn-group-icon-active-color-light;
+  }
+  .btn-info.active {
+    background-color: $btn-group-icon-active-bg-info;
+    color: $btn-group-icon-active-color-info;
+  }
+}
+
+.social-btn {
+  display: inline-block;
+  border: none;
+  border-radius: $social-btn-border-radius;
+  padding: $social-btn-padding;
+  outline: none;
+  cursor: $social-btn-cursor;
+  font-size: $social-btn-font-size;
+  box-shadow: none;
+
+  &:focus, &:active {
+    outline: none;
+    cursor: $social-btn-active-cursor;
+  }
+}
+
+.round-icon {
+  border-radius: $round-icon-border-radius;
+  color: $round-icon-color;
+  cursor: $round-icon-cursor;
+  font-size: $round-icon-font-size;
+  text-align: center;
+  width: $round-icon-width;
+  height: $round-icon-height;
+  display: inline-block;
+  line-height: $round-icon-line-height;
+  transition: all 0.3s;
+}
+
+.round-icon-primary {
+  background-color: $primary;
+  color: $white;
+}

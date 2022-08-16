@@ -1,0 +1,281 @@
+.calendar-wrapper
+{
+    width: 70.00001rem;
+}
+.calender-month
+{
+    margin:20px auto 0 auto ;
+}
+.calender-month span
+{
+    color:#4a97fd;
+}
+.month-text{
+    text-transform: uppercase;
+}
+.change-mon-btn
+{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 .5rem;
+}
+a.change-mon-btn i
+{
+    font-size: 1.7rem !important;
+}
+a i:hover , a i:focus , a i:active
+{
+    color: #4a97fd;
+}
+.calendar-week-row
+{
+    background: #fff;
+}
+.calendar-week-col
+{
+    padding: 0rem 1rem;
+    width: 10rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+}
+
+
+.calendar-date-col
+{
+    width: 10rem;
+    height: 9rem;
+    border-left: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    position: relative;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+a:last-of-type div.calendar-date-col
+{
+    border-right: 1px solid #efefef;
+}
+.event-details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 30%;
+}
+.calendar-date
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #c5c5c5;
+}
+.calendar-day
+{
+    display: none;
+    height: 2.5rem;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+.hover-animate{
+    width: 100%;
+    height: 100%;
+    background: #4a97fd;
+    transform: scale(0,0);
+    transition: all .3s ease-in-out;
+    position: absolute;
+    top:0;
+}
+
+.calendar-date-col:hover .calendar-date, .calendar-date-col:hover .calendar-day, .calendar-date-col:hover .event-details
+{
+    color: #FFFFFF !important;
+}
+
+.calendar-date-col:hover .hover-animate ,.calendar-date-col:focus .hover-animate , .calendar-date-col:active .hover-animate
+{
+    transform: scale(1,1);
+}
+.modal-trigger:focus .calendar-date-col {
+    background: #4a97fd;
+}
+.modal-trigger:focus div.calendar-date, .modal-trigger:focus div.calendar-day, .modal-trigger:focus div.event-details {
+    color: #FFFFFF !important;
+}
+a.isDisabled
+{
+    cursor: not-allowed;
+    pointer-events: none;
+}
+a.isDisabled > div.calendar-date-col{
+    background-color: #f7f7f7 !important;
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+    .calendar-date-col
+    {
+        border-top: 1px solid #efefef;
+        border-right: 1px solid #efefef;
+        height: 17rem;
+        margin:0 auto !important;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .calendar-date-row
+    {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+    .calendar-date-col
+    {
+        border-top: 1px solid #efefef;
+        border-right: 1px solid #efefef;
+        width:20rem;
+        height: 20rem;
+        margin:0 auto !important;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px)  {
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .calendar-date-row
+    {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .calendar-date-col
+    {
+        border-top: 1px solid #efefef;
+        border-right: 1px solid #efefef;
+        width:20rem;
+        height: 20rem;
+        margin:0 auto !important;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (max-width: 320px) {
+    .calendar-week-row
+    {
+        display: none;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .calendar-wrapper{
+        width: 100%;
+
+    }
+    .calendar-week-row
+    {
+        display: none;
+    }
+    .calendar-date-col
+    {
+        border-top: 1px solid #efefef;
+        border-right: 1px solid #efefef;
+        width: 100%;
+        height: 18.7rem;
+        margin:0 auto !important;
+
+    }
+    .calendar-day
+    {
+        display: flex;
+    }
+    .card-wrapper
+    {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+
+}

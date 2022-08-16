@@ -1,0 +1,48 @@
+@import '../config.scss';
+
+.accordion {
+  .card{
+    margin: $accordion-card-margin;
+  }
+
+  .card-header{
+    background: $accordion-card-header-bg;
+    padding: $accordion-card-header-padding;
+  }
+
+  .card-title{
+    margin: $accordion-card-title-margin;
+
+    a{
+      display: block;
+      text-decoration: none;
+      padding: $accordion-card-title-padding;
+    }
+  }
+
+  .card-title [class^="icon-"]:before,
+  .card-title[class*=" icon-"]:before{
+    margin-left: 0;
+  }
+
+  .card-title span i{
+    margin: $accordion-card-title-span-margin;
+  }
+
+  .card-title a .icon{
+    font-size: $accordion-card-title-right-icon-font-size;
+    line-height: 22px;
+    float: right;
+    @include transition(all 0.2s ease-in-out);
+  }
+
+  .card-title a:not(.collapsed) .icon {
+    @include rotate($deg: 90);
+  }
+  
+  //Start sub item/menu list container style
+  .accordion-sub-item-body {
+    padding: 0 20px 10px 25px;
+  }
+  //End sub item/menu list container style
+}

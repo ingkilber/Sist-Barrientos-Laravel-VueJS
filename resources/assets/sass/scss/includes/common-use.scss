@@ -1,0 +1,439 @@
+@import '../components/variables';
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: $app-bg-color;
+  color: $app-color;
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: lightgray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: lighten(darkgray, 10%);
+  }
+}
+
+input {
+  -webkit-user-select: text !important;
+}
+
+:focus {
+  outline: none !important;
+}
+
+a {
+  &.app-color-text {
+    color: $app-color;
+
+    &:hover {
+      color: #175eab;
+    }
+  }
+}
+
+.app-color {
+  background-color: $app-color !important;
+}
+
+.app-color-text {
+  color: $app-color !important;
+}
+
+.app-bg-color {
+  background: $app-bg-color !important;
+}
+
+.info-heading {
+  font-weight: bold;
+  font-size: 1.05em;
+  opacity: 0.8;
+}
+
+.info-value {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.radio-button-label {
+  padding-right: 3rem;
+  vertical-align: text-top;
+
+  &:nth-last-of-type(1) {
+    padding-right: 0;
+  }
+}
+
+.data-table-sort-parent {
+  display: table;
+  width: 100%;
+  vertical-align: middle
+}
+
+.data-table-sort-child {
+  display: table-cell;
+}
+
+.data-table-sort-icon {
+  opacity: 0.3;
+}
+
+.table {
+  th {
+    border-bottom: none !important;
+    border-top: none;
+  }
+
+  tr {
+    &:nth-last-child(1) {
+      td {
+        border-bottom: 1px solid #dee2e6;
+      }
+    }
+  }
+}
+
+.back-img {
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.back-img::before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: lightgray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: lighten(darkgray, 10%);
+  }
+}
+
+//Chips
+.chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #e4e4e4;
+  margin-bottom: 5px;
+  margin-right: 5px;
+
+  .close {
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 8px;
+  }
+}
+
+.sign-in-sign-up-content {
+  background: #ffffff;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  margin-right: -15px;
+
+  .sign-in-sign-up-form {
+    width: 100vw;
+    max-height: 100vh;
+    padding: 2.5rem !important;
+
+    .application-logo {
+      .logo {
+        max-width: 150px !important;
+        max-height: 60px !important;
+      }
+    }
+
+    .auth-button {
+      .spinner {
+        &:before {
+          top: 8% !important;
+        }
+      }
+    }
+  }
+}
+
+//Modal
+.big-modal-dialog {
+  max-width: 50vw;
+}
+
+.biggest-modal-dialog {
+  max-width: 50vw;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+//Buttons
+.btn {
+  &.app-color {
+    color: $white;
+    border-color: $app-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border-color: $green !important;
+      background-color: $green !important;
+    }
+  }
+
+  &.cancel-btn {
+    background-color: $cancel-btn-color;
+    border-color: $cancel-btn-color !important;
+    color: $white;
+
+    &:hover {
+      background-color: $dark-gray !important;
+      border-color: $transparent !important;
+    }
+  }
+
+  &.mobile-btn {
+    margin-right: 0.75rem;
+
+    &:nth-last-of-type(1) {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn.app-color:not(:disabled):not(.disabled).active, .btn.app-color:not(:disabled):not(.disabled):active, .show > .btn.app-color {
+  color: $white;
+  background-color: $green !important;
+  border-color: $green !important;
+}
+
+.btn.app-color:not(:disabled):not(.disabled):active, .btn.app-color:not(:disabled):not(.disabled).active, .show > .btn.app-color {
+  color: $white;
+  background-color: $green !important;
+  border-color: $green !important;
+}
+
+.btn.app-color.show-selected {
+  color: $white;
+  background-color: $green !important;
+  border-color: $green !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: $app-color;
+}
+
+//Position
+.absolute-right {
+  right: 0 !important;
+}
+
+.absolute-left {
+  left: 0 !important;
+}
+
+a.disabled {
+  color: $disable !important;
+  cursor: default;
+  opacity: 0.65;
+  pointer-events: none;
+
+  i {
+    color: $disable !important;
+  }
+
+  &:hover {
+    i {
+      color: $disable !important;
+    }
+  }
+}
+
+//Modal
+.product-modal {
+  max-width: 70vw;
+}
+
+//Slide effects
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #ffffff00 !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.collapse-animation {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapsed {
+  max-height: 15.7rem !important;
+}
+
+.cart-icon {
+  padding-bottom: 2px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+  color: #dee2e6;
+  font-size: 1.7rem;
+}
+
+.cart-icon-color {
+  color: #999;
+}
+
+.del-icon-color {
+  color: #999 !important;
+}
+
+.del-icon-color:hover {
+  color: #dc3545 !important;
+}
+
+.cart-icon-rotate {
+  transform: rotate(90deg);
+}
+
+.la-plus-circle:hover {
+  color: #34bfa3;
+}
+
+.la-minus-circle:hover {
+  color: #34bfa3;
+}
+
+.px-20 {
+  padding-left: 22px !important;
+  padding-right: 20px !important;
+}
+
+.py-7 {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.cart-calculatedPrice {
+  margin-left: -20px;
+  min-width: 100px;
+  font-size: 0.8rem;
+}
+
+.cart-quantity {
+  max-width: 80px;
+  min-width: 80px;
+  font-size: 0.8rem;
+}
+
+.cursor-text {
+  cursor: text !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-btn {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+  .modal-dialog {
+    max-width: 100vw;
+  }
+  #clear-cart-modal {
+    .cancel-btn {
+      margin-bottom: 0.75rem !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .biggest-modal-dialog {
+    max-width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .biggest-modal-dialog {
+    max-width: 65vw;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .biggest-modal-dialog {
+    max-width: 70vw;
+  }
+}
+
+// For toasted
+.warning-message {
+  color: $white !important;
+  background-color: $warning !important;
+}
+
+// Vue Time Selector
+.vtimeselector__input {
+  border: 0 !important;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,71 @@
+@import '../config.scss';
+
+.radio-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: $radio-cursor;
+  padding-left: $radio-padding-left;
+  margin: $radio-margin;
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+
+    &:checked ~ .control_indicator {
+      background-color: $radio-checked-bg;
+
+      i {
+        display: block;
+      }
+    }
+
+    &:disabled ~ .control_indicator {
+      cursor: $radio-disabled-cursor;
+      opacity: $radio-disable-opacity;
+    }
+  }
+
+  .control_indicator {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: $radio-checked-height;
+    width: $radio-checked-width;
+    text-align: center;
+    border-radius: $radio-radius;
+    background-color: $radio-bg;
+    box-shadow: $radio-box-shadow;
+    transition: all 0.5s;
+
+    i {
+      display: none;
+      font-size: $radio-checked-font-size;
+      margin-top: $radio-checked-margin-top;
+    }
+  }
+
+  input {
+    &:checked ~ .radio-primary {
+      background-color: $radio-checked-bg-primary;
+      box-shadow: $radio-checked-box-shadow;
+
+      i {
+        color: $radio-checked-color-primary;
+      }
+    }
+  }
+
+  input {
+    &:checked ~ .radio-success {
+      background-color: $radio-checked-bg-success;
+      box-shadow: $radio-checked-box-shadow;
+
+      i {
+        color: $radio-checked-color-success;
+      }
+    }
+  }
+
+}

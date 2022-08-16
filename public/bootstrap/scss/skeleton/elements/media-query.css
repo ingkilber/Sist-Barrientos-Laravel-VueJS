@@ -1,0 +1,16 @@
+@media (max-width: 740px) {
+  .page-wrapper {
+    margin-left: 0rem; } }
+@media (max-width: 576px) {
+  .container-fluid {
+    padding: 15px; } }
+@media (max-width: 575px) {
+  .nav-right .notification-dropdown {
+    position: inherit; }
+    .nav-right .notification-dropdown .dropdown-menu {
+      width: 100%; }
+
+  .notification-container {
+    width: 100%; } }
+
+/*# sourceMappingURL=media-query.css.map */

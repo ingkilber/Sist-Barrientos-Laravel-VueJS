@@ -1,0 +1,66 @@
+@import '../config.scss';
+
+.todo-list {
+
+  .hover-box {
+    cursor: $todo-list-hover-box-cursor;
+    opacity: 0;
+
+    i {
+      padding: 5px 0;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $todo-list-hover-box-color;
+    }
+  }
+
+  .media {
+    padding: $todo-list-padding;
+    color: $todo-list-color;
+    background-color: $todo-list-bg;
+    margin: $todo-list-margin;
+    box-shadow: $todo-list-box-shadow;
+
+    &:hover .hover-box {
+      opacity: 1;
+      @include transition(all 0.5s);
+    }
+  }
+
+  .media-border {
+    border-bottom: $todo-list-border-bottom;
+
+    &:first-child {
+      border-top: $todo-list-border-top;
+    }
+
+  }
+
+  .media-xs-padding {
+    padding: $todo-list-media-xs-padding;
+  }
+
+  .media-sm-padding {
+    padding: $todo-list-media-sm-padding;
+  }
+
+  .hover {
+    &:hover {
+      color: $todo-list-hover-color;
+      background-color: $todo-list-hover-bg;
+    }
+  }
+
+  .read {
+    color: $todo-list-color-read;
+    background-color: $todo-list-read-bg;
+  }
+
+  .unread {
+    background-color: $todo-list-unread-bg;
+    color: $todo-list-color-unread;
+  }
+
+}

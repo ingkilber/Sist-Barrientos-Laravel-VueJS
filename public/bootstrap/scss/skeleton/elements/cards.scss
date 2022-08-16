@@ -1,0 +1,296 @@
+@import '../config.scss';
+
+.card-deck {
+  .card-body {
+    margin: 0 15px 15px 15px;
+    flex: 1;
+  }
+}
+
+.card-body {
+  background-color: $white;
+  padding: $card-body-block-padding;
+  color: $card-body-block-color;
+  border-radius: $card-body-block-radius;
+  box-shadow: $card-body-block-box-shadow;
+}
+
+.card {
+  border: $card-border-none;
+  box-shadow: $card-box-shadow;
+  border-radius: $card-radius;
+  background-color: $card-bg;
+
+  .card-header {
+    border-bottom: $card-header-border-bottom;
+  }
+
+  .card-body {
+    padding: $card-body-padding;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.card-footer {
+  border-top: $card-footer-border;
+  background-color: $card-footer-bg;
+  padding: $card-footer-padding;
+}
+
+.card-header-primary {
+  background-color: $card-header-bg-primary;
+  color: $card-header-color-primary;
+}
+
+.card-header-secondary {
+  background-color: $card-header-bg-secondary;
+  color: $card-header-color-secondary;
+}
+
+.card-header-success {
+  background-color: $card-header-bg-success;
+  color: $card-header-color-success;
+}
+
+.card-header-danger {
+  background-color: $card-header-bg-danger;
+  color: $card-header-color-danger;
+}
+
+.card-header-warning {
+  background-color: $card-header-bg-warning;
+  color: $card-header-color-warning;
+}
+
+.card-header-info {
+  background-color: $card-header-bg-info;
+  color: $card-header-color-info;
+}
+
+.card-body-primary {
+  background-color: $card-body-bg-primary;
+  color: $card-body-color-primary;
+}
+
+.card-body-secondary {
+  background-color: $card-body-bg-secondary;
+  color: $card-body-color-secondary;
+}
+
+.card-body-success {
+  background-color: $card-body-bg-success;
+  color: $card-body-color-success;
+}
+
+.card-body-danger {
+  background-color: $card-body-bg-danger;
+  color: $card-body-color-danger;
+}
+
+.card-body-warning {
+  background-color: $card-body-bg-warning;
+  color: $card-body-color-warning;
+}
+
+.card-body-info {
+  background-color: $card-body-bg-info;
+  color: $card-body-color-info;
+}
+
+//Avatar sizing
+.avatar {
+  border: $avatar-border;
+  border-radius: $avatar-radius;
+  box-shadow: $avatar-box-shadow;
+}
+
+.avatar-xs {
+  height: $avatar-xs-height;
+  width: $avatar-xs-width;
+}
+
+.avatar-sm {
+  height: $avatar-sm-height;
+  width: $avatar-sm-width;
+}
+
+.avatar-md {
+  height: $avatar-md-height;
+  width: $avatar-md-width;
+}
+
+.avatar-lg {
+  height: $avatar-lg-height;
+  width: $avatar-lg-width;
+}
+
+//Avatar card override
+.card.avatar-card {
+  text-align: center;
+  overflow: hidden;
+  margin: $avatar-card-avatar-margin;
+
+  .card-header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background: $avatar-card-header-bg;
+  }
+
+  .card-img-top {
+    height: $avatar-card-img-height;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .avatar-img {
+    transition: all 1s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background-size: cover !important;
+  }
+
+  .card-tags {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: $avatar-card-tags-padding;
+    background-color: $avatar-card-tags-box-bg;
+  }
+
+  .card-body {
+    position: relative;
+
+    .card-title {
+      color: $avatar-card-title-color;
+      margin: $avatar-card-title-margin;
+    }
+  }
+
+  .avatar-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $avatar-card-overlay-bg;
+    z-index: 1;
+    display: none;
+    animation-duration: 0.5s;
+
+    .item-link-row {
+      height: $avatar-card-overlay-link-row-height;
+      margin: $avatar-card-overlay-link-row-margin;
+    }
+
+    .item-link-row:first-child {
+      margin-bottom: $avatar-card-overlay-link-row-margin-first-child;
+    }
+
+    .item-link {
+      color: $avatar-card-overlay-link-color;
+      text-decoration: none;
+      padding: $avatar-card-overlay-link-padding;
+      border: $avatar-card-overlay-link-border;
+      border-radius: $avatar-card-overlay-link-radius;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: 0.3s;
+      display: inline-block;
+      width: $avatar-card-overlay-link-width;
+      height: $avatar-card-overlay-link-height;
+    }
+
+    .item-link:hover {
+      .icon {
+        background: $avatar-card-overlay-icon-bg;
+        border-color: $avatar-card-overlay-icon-border-color;
+        color: $avatar-card-overlay-icon-color;
+      }
+    }
+
+    .link-icon {
+      margin: $avatar-card-overlay-icon-margin;
+
+      .icon {
+        padding: $avatar-card-overlay-icon-padding;
+        border: $avatar-card-overlay-icon-border;
+        border-radius: $avatar-card-overlay-icon-radius;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &:hover {
+    .avatar-card-overlay {
+      display: block;
+    }
+  }
+}
+
+.card-row {
+  background-color: $card-row-bg;
+  padding: $card-row-padding;
+  margin-bottom: $card-row-margin-bottom;
+  position: relative;
+  box-shadow: $card-row-box-shadow;
+
+  .media {
+    padding: .2rem 0;
+  }
+
+  .media-body {
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-row-info-icon {
+    font-size: $card-row-icon-font-size;
+    color: $font-color;
+    margin-right: 1rem;
+  }
+
+  .card-row-icon {
+    font-size: $card-row-icon-font-size;
+    color: $font-color;
+    margin-right: 1rem;
+  }
+
+  .card-row-hover-box {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: $card-row-hover-box-width;
+    height: $card-row-hover-box-height;
+    opacity: 0;
+    border-left: $card-row-hover-box-border-left;
+    transition: all 0.3s;
+    z-index: 999;
+
+    a {
+      display: block;
+      height: inherit;
+      text-align: center;
+
+      i {
+        top: $card-row-hover-icon-top;
+        position: relative;
+        color: $primary;
+      }
+
+      &:hover i {
+        background-color: $card-row-hover-icon-bg-primary;
+        color: $card-row-hover-icon-color;
+      }
+    }
+  }
+
+  &:hover .card-row-hover-box {
+    opacity: 1;
+  }
+}

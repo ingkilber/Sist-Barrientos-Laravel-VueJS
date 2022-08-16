@@ -1,0 +1,34 @@
+%custom-ticker
+{
+  content: "";
+  border-radius: 0em 0em 0.5em 0em;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+%custom-list-with-active-border{
+  ul{
+
+    li.list-group-item{
+
+      border: 0;
+
+      &:nth-last-of-type(1){
+        border-bottom-left-radius: $card-border-radius;
+        border-bottom-right-radius: $card-border-radius;
+      }
+
+      &:hover{
+        background-color: $app-color;
+        cursor: pointer;
+        color: $white !important;
+        transition: all 0.3s ease-in-out;
+      }
+
+    }
+  }
+  .active-border{
+    border-left: 3px solid $app-color !important;
+    transition: border-left 0.3s ease-in-out;
+  }
+}

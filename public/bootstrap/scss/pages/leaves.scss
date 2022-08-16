@@ -1,0 +1,33 @@
+@import '../skeleton/config.scss';
+
+.leaves-container {
+
+  .details-item-tabs-box {
+    margin-top: -10px;
+  }
+
+  .tab-pane {
+    table {
+      margin-bottom: 30px;
+      border-bottom: $border;
+    }
+  }
+
+}
+
+.leave-list-container {
+  padding: $list-container-padding;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $media-sm-down) {
+  .tab-pane {
+    table {
+      margin-bottom: 10px !important;
+    }
+  }
+
+  table.leave-summary-table td {
+    padding-left: 62%;
+  }
+}

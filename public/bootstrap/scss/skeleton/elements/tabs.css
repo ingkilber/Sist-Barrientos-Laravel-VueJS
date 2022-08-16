@@ -1,0 +1,91 @@
+.nav-tabs {
+  border-width: 0rem; }
+  .nav-tabs .nav-link {
+    color: inherit;
+    padding: 1rem 1.5rem;
+    border-width: 0rem;
+    position: relative;
+    margin: 0 0.2rem 0 0; }
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-link:hover {
+    color: #4a97fd;
+    background-color: transparent;
+    border-radius: 2px; }
+    .nav-tabs .nav-link.active:after,
+    .nav-tabs .nav-link:hover:after {
+      transform: scale(1); }
+  .nav-tabs .nav-link:after {
+    content: "";
+    background: #4a97fd;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all 250ms ease 0s;
+    transform: scale(0); }
+
+.flex-column.tabs-vertical .nav-link {
+  color: inherit;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0.2rem 0;
+  position: relative; }
+.flex-column.tabs-vertical .nav-link.active,
+.flex-column.tabs-vertical .nav-link:hover {
+  color: #4a97fd;
+  background-color: transparent;
+  border-radius: 0; }
+  .flex-column.tabs-vertical .nav-link.active:before,
+  .flex-column.tabs-vertical .nav-link:hover:before {
+    transform: scale(1); }
+.flex-column.tabs-vertical .nav-link:before {
+  content: "";
+  background: #4a97fd;
+  height: 100%;
+  position: absolute;
+  width: 0.1rem;
+  left: 0;
+  top: 0;
+  transition: all 250ms ease 0s;
+  transform: scale(0); }
+
+.tab-content {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  margin-top: -1px; }
+  .tab-content .tab-content-title {
+    margin: 5px 0 15px; }
+
+.responsive-tabs .tab-dropdown {
+  display: none; }
+.responsive-tabs .tab-more {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-width: 0rem;
+  position: relative;
+  box-shadow: none;
+  background-color: transparent;
+  line-height: inherit; }
+.responsive-tabs .tab-more.active,
+.responsive-tabs .tab-more:hover {
+  color: #4a97fd;
+  background-color: transparent;
+  border-radius: 2px; }
+  .responsive-tabs .tab-more.active:after,
+  .responsive-tabs .tab-more:hover:after {
+    transform: scale(1); }
+.responsive-tabs .tab-more:after {
+  content: "";
+  background: #4a97fd;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transition: all 250ms ease 0s;
+  transform: scale(0); }
+.responsive-tabs .btn-light:focus {
+  box-shadow: none; }
+
+/*# sourceMappingURL=tabs.css.map */

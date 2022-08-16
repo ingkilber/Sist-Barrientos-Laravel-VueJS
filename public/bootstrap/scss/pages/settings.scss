@@ -1,0 +1,53 @@
+@import '../skeleton/config.scss';
+
+.settings-page-container {
+
+  .details-left-panel{
+    width: $details-left-panel-width;
+    vertical-align: top;
+  }
+
+  .details-right-panel{
+    padding: $details-right-panel-padding;
+    vertical-align: top;
+  }
+
+  .accordion {
+    height: calc(100vh - 120px);
+    padding-top: 5px;
+  }
+}
+
+
+//Media query fo details view
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $media-xs-down) {
+
+  .settings-page-container {
+    display: block !important;
+
+    .details-left-panel{
+      display: block !important;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .details-right-panel{
+      padding: $details-right-panel-padding-small-view;
+      margin-top: $details-item-right-panel-mt-small-view;
+    }
+
+    .accordion {
+      height: 100%;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $media-xs-up) and (max-width: $media-sm-up) {
+  .settings-page-container {
+    .details-left-panel{
+      width: $details-left-panel-width-small-view !important;
+    }
+  }
+}

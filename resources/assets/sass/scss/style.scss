@@ -1,0 +1,45 @@
+//Components
+@import "components/variables";
+@import "components/loader";
+@import "components/action-button";
+@import "components/button-loader";
+@import "components/roller-loader";
+
+//Main Layout
+@import "includes/main-layout";
+
+//Sidebar
+@import "includes/sidebar";
+
+//Nav bar Custom
+@import "includes/navbar-custom";
+
+//User Todo List
+@import "includes/todo-list";
+
+//Tabs Custom
+@import "includes/tabs-custom";
+
+//Common Use
+@import "includes/common-use";
+
+//Customized Bootstrap Classes
+@import "includes/customized-bootstrap-class";
+
+//Pages
+@import "pages/sales";
+@import "pages/profile";
+@import "pages/settings";
+@import "custom/popover/popover";
+@import "custom/product-details";
+@import "custom/date-range-picker";
+@import "custom/sales-reports-details";
+@import "custom/product-details";
+@import "custom/popover/popover";
+@import "custom/contacts/customer-supplier";
+@import "custom/custom";
+@import "custom/new-custom";
+
+//For user defined styles
+@import "custom-style";
+@import "invoice/invoice";
