@@ -3,6 +3,15 @@
 # 🚀 Tecnología
 Laravel + vue / aplicación basada en POS!
 
+# Home - Iniciar Sesión
+
+![Home](https://github.com/ingkilber/Sist-Barrientos-Laravel-VueJS/blob/main/assets/public/images/Capture/inicio.png)
+
+# Panel de Admistración
+
+![dashboard](https://github.com/ingkilber/Sist-Barrientos-Laravel-VueJS/blob/main/assets/public/images/Capture/Panel-de-Administracion.png)
+
+![dashboard](https://github.com/ingkilber/Sist-Barrientos-Laravel-VueJS/blob/main/assets/public/images/Capture/Panel-de-Administracion2.png)
 
 ## ✋🏻 Cómo ejecutar la aplicación
 
